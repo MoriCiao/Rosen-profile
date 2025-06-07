@@ -8,7 +8,7 @@ const projects = [
     title: "TodoList",
     descript:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Id, sit?",
-    link: "Rosen-profile/projects/todolist",
+    link: "todolist",
   },
   {
     id: 2,
@@ -16,7 +16,7 @@ const projects = [
     title: "Cart",
     descript:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Id, sit?",
-    link: "Rosen-profile/projects/Cart",
+    link: "Cart",
   },
   {
     id: 3,
@@ -24,7 +24,7 @@ const projects = [
     title: "ImageSearch",
     descript:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Id, sit?",
-    link: "Rosen-profile/projects/ImageSearch",
+    link: "ImageSearch",
   },
   {
     id: 4,
@@ -32,7 +32,7 @@ const projects = [
     title: "FormData",
     descript:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Id, sit?",
-    link: "Rosen-profile/projects/FormData",
+    link: "FormData",
   },
 ];
 
