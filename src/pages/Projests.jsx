@@ -8,7 +8,7 @@ const projects = [
     title: "TodoList",
     descript:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Id, sit?",
-    link: "/Rosen-profile/projects/todolist",
+    link: "Rosen-profile/projects/todolist",
   },
   {
     id: 2,
@@ -16,7 +16,7 @@ const projects = [
     title: "Cart",
     descript:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Id, sit?",
-    link: "/Rosen-profile/projects/Cart",
+    link: "Rosen-profile/projects/Cart",
   },
   {
     id: 3,
@@ -24,7 +24,7 @@ const projects = [
     title: "ImageSearch",
     descript:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Id, sit?",
-    link: "/Rosen-profile/projects/ImageSearch",
+    link: "Rosen-profile/projects/ImageSearch",
   },
   {
     id: 4,
@@ -32,7 +32,7 @@ const projects = [
     title: "FormData",
     descript:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Id, sit?",
-    link: "/Rosen-profile/projects/FormData",
+    link: "Rosen-profile/projects/FormData",
   },
 ];
 
@@ -67,7 +67,7 @@ const Projects = () => {
           }}
           viewport={{ once: true, amount: 0.5 }}
           className="absolute z-[-1]"
-          src="./pictrue/icon-point.png"
+          src="Rosen-profil/pictrue/icon-point.png"
           alt=""
         />
         <motion.img
@@ -81,7 +81,7 @@ const Projects = () => {
           }}
           viewport={{ once: true, amount: 0.5 }}
           className="w-full"
-          src="./pictrue/icon-projects.png"
+          src="Rosen-profilepictrue/icon-projects.png"
           alt=""
         />
       </div>
