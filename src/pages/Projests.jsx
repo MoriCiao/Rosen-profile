@@ -4,7 +4,7 @@ import { Link, Outlet } from "react-router-dom";
 const projects = [
   {
     id: 1,
-    img: "Rosen-profile/pictrue/MoriCiao.jpg",
+    img: "/Rosen-profile/pictrue/MoriCiao.jpg",
     title: "TodoList",
     descript:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Id, sit?",
@@ -12,7 +12,7 @@ const projects = [
   },
   {
     id: 2,
-    img: "Rosen-profile/pictrue/MoriCiao.jpg",
+    img: "/Rosen-profile/pictrue/MoriCiao.jpg",
     title: "Cart",
     descript:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Id, sit?",
@@ -20,7 +20,7 @@ const projects = [
   },
   {
     id: 3,
-    img: "Rosen-profile/pictrue/MoriCiao.jpg",
+    img: "/Rosen-profile/pictrue/MoriCiao.jpg",
     title: "ImageSearch",
     descript:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Id, sit?",
@@ -28,7 +28,7 @@ const projects = [
   },
   {
     id: 4,
-    img: "Rosen-profile/pictrue/MoriCiao.jpg",
+    img: "/Rosen-profile/pictrue/MoriCiao.jpg",
     title: "FormData",
     descript:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Id, sit?",
@@ -67,7 +67,7 @@ const Projects = () => {
           }}
           viewport={{ once: true, amount: 0.5 }}
           className="absolute z-[-1]"
-          src="Rosen-profil/pictrue/icon-point.png"
+          src="/Rosen-profil/pictrue/icon-point.png"
           alt=""
         />
         <motion.img
@@ -81,7 +81,7 @@ const Projects = () => {
           }}
           viewport={{ once: true, amount: 0.5 }}
           className="w-full"
-          src="Rosen-profilepictrue/icon-projects.png"
+          src="/Rosen-profilepictrue/icon-projects.png"
           alt=""
         />
       </div>
