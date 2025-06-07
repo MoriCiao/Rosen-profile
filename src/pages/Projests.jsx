@@ -4,7 +4,7 @@ import { Link, Outlet } from "react-router-dom";
 const projects = [
   {
     id: 1,
-    img: "./pictrue/MoriCiao.jpg",
+    img: "Rosen-profile/pictrue/MoriCiao.jpg",
     title: "TodoList",
     descript:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Id, sit?",
@@ -12,7 +12,7 @@ const projects = [
   },
   {
     id: 2,
-    img: "./pictrue/MoriCiao.jpg",
+    img: "Rosen-profile/pictrue/MoriCiao.jpg",
     title: "Cart",
     descript:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Id, sit?",
@@ -20,7 +20,7 @@ const projects = [
   },
   {
     id: 3,
-    img: "./pictrue/MoriCiao.jpg",
+    img: "Rosen-profile/pictrue/MoriCiao.jpg",
     title: "ImageSearch",
     descript:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Id, sit?",
@@ -28,7 +28,7 @@ const projects = [
   },
   {
     id: 4,
-    img: "./pictrue/MoriCiao.jpg",
+    img: "Rosen-profile/pictrue/MoriCiao.jpg",
     title: "FormData",
     descript:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Id, sit?",

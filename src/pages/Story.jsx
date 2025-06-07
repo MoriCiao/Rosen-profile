@@ -22,7 +22,7 @@ const Story = () => {
           }}
           viewport={{ once: true, amount: 0.5 }}
           className="absolute z-[-1]"
-          src="./pictrue/icon-point.png"
+          src="Rosen-profile/pictrue/icon-point.png"
           alt="point.png"
         />
         <motion.img
@@ -36,7 +36,7 @@ const Story = () => {
           }}
           viewport={{ once: true, amount: 0.5 }}
           className="object-cover"
-          src="./pictrue/icon-Stroy.png"
+          src="Rosen-profile/pictrue/icon-Stroy.png"
           alt="Stroy.png"
         />
       </div>
