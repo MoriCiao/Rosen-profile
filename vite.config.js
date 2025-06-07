@@ -5,5 +5,5 @@ import react from "@vitejs/plugin-react";
 export default defineConfig({
   base: "/Rosen-profile/",
   plugins: [react()],
-  base: "/rosen-profile/", // ← ⬅⬅⬅ 一定要 base 是根目錄
+  base: "/Rosen-profile/", // ← ⬅⬅⬅ 一定要 base 是根目錄
 });
