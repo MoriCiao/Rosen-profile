@@ -24,7 +24,7 @@ const BgImg = () => {
     >
       <img
         className=" w-full object-cover opacity-[.8] brightness-50"
-        src="./public/pictrue/Bg-img.jpg"
+        src="/pictrue/Bg-img.jpg"
         alt="BgImg"
       />
     </motion.div>
