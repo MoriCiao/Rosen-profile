@@ -1,3 +1,49 @@
-APP h1 {
-  background-color: black;
+:root {
+  --theme-color: rgb(15, 37, 64);
+  --text-color: rgb(105, 212, 255);
+  --text-color-2: rgb(255, 177, 27);
+  --text-family: LXGW WenKai TC;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.APP {
+  font-family: var(--text-family);
+  color: var(--text-color);
+  overflow-y: overlay;
+  scrollbar-width: none;
+  scroll-behavior: smooth;
+}
+
+.Projects {
+  overflow-y: overlay;
+  scrollbar-width: none;
+  scroll-behavior: smooth;
+}
+
+.guided-li:hover .guided-line {
+  box-shadow: 0px 0px 10px rgb(105, 212, 255);
+}
+.guided-li .guided-item .guided-line {
+  border: var(--text-color) 1px solid;
+  border-radius: 5px;
+  transition: all 0.3s ease-in-out;
+}
+.guided-li .guided-item:hover .guided-line {
+  width: 70px;
+}
+
+.HeaderForm form {
+  display: flex;
+  flex-direction: column;
+}
+
+.skillBg {
+  max-height: 90vh;
+  max-width: 50vw;
+  overflow: visible;
 }/*# sourceMappingURL=index.css.map */
