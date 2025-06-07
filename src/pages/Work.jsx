@@ -33,8 +33,8 @@ const Work = () => {
           }}
           viewport={{ once: true, amount: 0.5 }}
           className="absolute z-[-1]"
-          src="/pictrue/icon-point.png"
-          alt=""
+          src="./pictrue/icon-point.png"
+          alt="point.png"
         />
         <motion.img
           initial={{ opacity: 0, scale: 0.8 }}
@@ -47,8 +47,8 @@ const Work = () => {
           }}
           viewport={{ once: true, amount: 0.5 }}
           className="object-cover"
-          src="/pictrue/icon-works.png"
-          alt=""
+          src="./pictrue/icon-works.png"
+          alt="works.png"
         />
       </div>
       <div className="work">

@@ -16,7 +16,7 @@ const Page404 = () => {
         }}
         viewport={{ once: true, amount: 0.5 }}
         className="absolute top-0 right-20 z-[-1]"
-        src="/pictrue/icon-404Error.png"
+        src="./pictrue/icon-404Error.png"
         alt=""
       />
     </motion.div>

@@ -22,8 +22,8 @@ const Story = () => {
           }}
           viewport={{ once: true, amount: 0.5 }}
           className="absolute z-[-1]"
-          src="/pictrue/icon-point.png"
-          alt=""
+          src="./pictrue/icon-point.png"
+          alt="point.png"
         />
         <motion.img
           initial={{ opacity: 0, scale: 0.8 }}
@@ -36,8 +36,8 @@ const Story = () => {
           }}
           viewport={{ once: true, amount: 0.5 }}
           className="object-cover"
-          src="/pictrue/icon-Stroy.png"
-          alt=""
+          src="./pictrue/icon-Stroy.png"
+          alt="Stroy.png"
         />
       </div>
       {/* <h1 className="text-[2rem] mb-2">Story</h1> */}

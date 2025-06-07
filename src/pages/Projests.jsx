@@ -4,7 +4,7 @@ import { Link, Outlet } from "react-router-dom";
 const projects = [
   {
     id: 1,
-    img: "圖片",
+    img: "./pictrue/MoriCiao.jpg",
     title: "TodoList",
     descript:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Id, sit?",
@@ -12,7 +12,7 @@ const projects = [
   },
   {
     id: 2,
-    img: "圖片",
+    img: "./pictrue/MoriCiao.jpg",
     title: "Cart",
     descript:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Id, sit?",
@@ -20,7 +20,7 @@ const projects = [
   },
   {
     id: 3,
-    img: "圖片",
+    img: "./pictrue/MoriCiao.jpg",
     title: "ImageSearch",
     descript:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Id, sit?",
@@ -28,8 +28,8 @@ const projects = [
   },
   {
     id: 4,
-    img: "FormData",
-    title: "專案",
+    img: "./pictrue/MoriCiao.jpg",
+    title: "FormData",
     descript:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Id, sit?",
     link: "/Rosen-profile/projects/FormData",
@@ -67,7 +67,7 @@ const Projects = () => {
           }}
           viewport={{ once: true, amount: 0.5 }}
           className="absolute z-[-1]"
-          src="/pictrue/icon-point.png"
+          src="./pictrue/icon-point.png"
           alt=""
         />
         <motion.img
@@ -81,7 +81,7 @@ const Projects = () => {
           }}
           viewport={{ once: true, amount: 0.5 }}
           className="w-full"
-          src="/pictrue/icon-projects.png"
+          src="./pictrue/icon-projects.png"
           alt=""
         />
       </div>

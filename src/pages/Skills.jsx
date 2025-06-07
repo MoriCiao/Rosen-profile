@@ -6,31 +6,31 @@ const Skills = () => {
   const skillsImg = [
     {
       name: "HTML",
-      img: "icon/HTML.png",
+      img: "./icon/HTML.png",
     },
     {
       name: "CSS",
-      img: "icon/CSS.png",
+      img: "./icon/CSS.png",
     },
     {
       name: "JS",
-      img: "icon/JS.svg",
+      img: "./icon/JS.svg",
     },
     {
       name: "React",
-      img: "icon/React.png",
+      img: "./icon/React.png",
     },
     {
       name: "Github",
-      img: "icon/github.svg",
+      img: "./icon/github.svg",
     },
     {
       name: "Ps",
-      img: "icon/Ps.jpg",
+      img: "./icon/Ps.jpg",
     },
     {
       name: "Ai",
-      img: "icon/Ai_icon.png",
+      img: "./icon/Ai_icon.png",
     },
   ];
 
@@ -54,8 +54,8 @@ const Skills = () => {
           }}
           viewport={{ once: true, amount: 0.5 }}
           className="absolute z-[-1]"
-          src="/pictrue/icon-point.png"
-          alt=""
+          src="./pictrue/icon-point.png"
+          alt="point.png"
         />
         <motion.img
           initial={{ opacity: 0, scale: 0.8 }}
@@ -68,8 +68,8 @@ const Skills = () => {
           }}
           viewport={{ once: true, amount: 0.5 }}
           className=""
-          src="/pictrue/icon-Skills.png"
-          alt=""
+          src="./pictrue/icon-Skills.png"
+          alt="Skills.png"
         />
       </div>
 

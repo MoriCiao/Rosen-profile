@@ -1,6 +1,6 @@
 import React, { useEffect, useRef, useState } from "react";
 import { motion } from "framer-motion";
-import { Routes, Route, Link } from "react-router-dom";
+import { Link } from "react-router-dom";
 
 const HeaderIntro = ({ name }) => {
   return (
