@@ -67,7 +67,7 @@ const Projects = () => {
           }}
           viewport={{ once: true, amount: 0.5 }}
           className="absolute z-[-1]"
-          src="/Rosen-profil/pictrue/icon-point.png"
+          src="/Rosen-profile/pictrue/icon-point.png"
           alt=""
         />
         <motion.img
@@ -81,7 +81,7 @@ const Projects = () => {
           }}
           viewport={{ once: true, amount: 0.5 }}
           className="w-full"
-          src="/Rosen-profilepictrue/icon-projects.png"
+          src="/Rosen-profile/pictrue/icon-projects.png"
           alt=""
         />
       </div>
@@ -104,7 +104,7 @@ const Projects = () => {
                   whileHover={{ scale: 1.1 }}
                   transition={{ duration: 0.3 }}
                   className="object-fit rounded-md"
-                  src="/pictrue/MoriCiao.jpg"
+                  src={p.img}
                   alt=""
                 />
               </div>
