@@ -1,24 +1,25 @@
-import React from "react";
+import React, { useContext } from "react";
 import { easeInOut, motion } from "framer-motion";
+import { AnimateContext } from "../App";
 const Page404 = () => {
+  const { BgAnimate, BgWord, SectionAnimate } = useContext(AnimateContext);
+
   return (
-    <motion.div
-      initial={{ opacity: 0, y: 0 }}
-      whileInView={{ opacity: 1 }}
-      transition={{ duration: 0.5 }}
-    >
-      <motion.img
-        initial={{ opacity: 0, scale: 0.8 }}
-        whileInView={{
-          opacity: 1,
-          scale: 1.1,
-          rotate: 15,
-        }}
-        viewport={{ once: true, amount: 0.5 }}
-        className="absolute top-0 right-20 z-[-1]"
-        src="/Rosen-profile/pictrue/icon-404Error.png"
-        alt=""
-      />
+    <motion.div {...SectionAnimate}>
+      <div className="absolute z-[-1] overflow-hidden w-full h-full top-0 left-[30rem]">
+        <motion.img
+          initial={{ opacity: 0, scale: 0.8 }}
+          whileInView={{
+            opacity: 1,
+            scale: 1.1,
+            rotate: -15,
+          }}
+          viewport={{ once: true, amount: 0.5 }}
+          transition={{ duration: 1 }}
+          src="/Rosen-profile/pictrue/icon-404Error.png"
+          alt=""
+        />
+      </div>
     </motion.div>
   );
 };

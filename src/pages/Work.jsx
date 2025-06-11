@@ -1,6 +1,10 @@
-import { React, Fragment } from "react";
+import { React, Fragment, useContext } from "react";
 import { easeInOut, motion } from "framer-motion";
+import { AnimateContext } from "../App";
+
 const Work = () => {
+  const { BgAnimate, BgWord, SectionAnimate } = useContext(AnimateContext);
+
   console.log("Work render ...");
   const worksList = [
     { id: 1, work: "海龜舊傷助理", duration: "2017/ 02 ~ 2017/ 08" },
@@ -15,37 +19,19 @@ const Work = () => {
 
   return (
     <motion.section
-      whileInView={{ opacity: 1 }}
-      initial={{ opacity: 0, y: 0 }}
-      transition={{ duration: 0.5 }}
+      {...SectionAnimate}
       className="overflow-y-overlay scroll-smooth"
       id="work"
     >
-      <div className="storyBg absolute z-[-1]">
+      <div className="WorkBg absolute z-[-1] overflow-hidden w-full h-full top-0 left-0 ">
         <motion.img
-          initial={{ opacity: 0, scale: 0.8 }}
-          whileInView={{
-            opacity: 0.5,
-            scale: 1.0,
-            rotate: -25,
-            x: [-600],
-            y: [-50],
-          }}
-          viewport={{ once: true, amount: 0.5 }}
+          {...BgAnimate}
           className="absolute z-[-1]"
           src="/Rosen-profile/pictrue/icon-point.png"
           alt="point.png"
         />
         <motion.img
-          initial={{ opacity: 0, scale: 0.8 }}
-          whileInView={{
-            opacity: 0.7,
-            scale: 1.5,
-            rotate: -15,
-            x: [-500],
-            y: [250],
-          }}
-          viewport={{ once: true, amount: 0.5 }}
+          {...BgWord}
           className="object-cover"
           src="/Rosen-profile/pictrue/icon-works.png"
           alt="works.png"
@@ -61,23 +47,23 @@ const Work = () => {
                   color: "rgb(255, 177, 27)",
                   x: "-5px",
                   y: "-5px",
-                  boxShadow: "3px 3px 2px rgb(0,0,0,.3)",
+                  boxShadow: "3px 3px 10px rgb(255,255,255,.3)",
                 }}
                 transition={{ duration: 0.5, ease: easeInOut }}
-                className="text-[1.15rem] rounded-md flex mb-2 max-w-[400px]"
+                className="text-[1.15rem] rounded-md p-2 flex mb-2 max-w-[400px] items-center"
               >
                 <span className="pr-2">
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
                     fill="none"
                     viewBox="0 0 24 24"
-                    stroke-width="1.5"
+                    strokeWidth="1.5"
                     stroke="currentColor"
-                    class="size-6"
+                    className="size-6"
                   >
                     <path
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
                       d="m12.75 15 3-3m0 0-3-3m3 3h-7.5M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z"
                     />
                   </svg>

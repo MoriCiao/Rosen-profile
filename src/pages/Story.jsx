@@ -1,40 +1,25 @@
-import React from "react";
+import React, { useContext } from "react";
 import { easeInOut, motion } from "framer-motion";
+import { AnimateContext } from "../App";
 const Story = () => {
+  const { BgAnimate, BgWord, SectionAnimate } = useContext(AnimateContext);
+
   console.log("Story render ...");
   return (
     <motion.section
-      whileInView={{ opacity: 1 }}
-      initial={{ opacity: 0, y: 0 }}
-      transition={{ duration: 0.5 }}
+      {...SectionAnimate}
       id="story"
       className="story overflow-y-overlay scroll-smooth"
     >
-      <div className="storyBg absolute z-[-1]">
+      <div className="storyBg absolute z-[-1] overflow-hidden w-full h-full top-0 left-0">
         <motion.img
-          initial={{ opacity: 0, scale: 0.8 }}
-          whileInView={{
-            opacity: 0.5,
-            scale: 1.0,
-            rotate: -25,
-            x: [-600],
-            y: [-50],
-          }}
-          viewport={{ once: true, amount: 0.5 }}
+          {...BgAnimate}
           className="absolute z-[-1]"
           src="/Rosen-profile/pictrue/icon-point.png"
           alt="point.png"
         />
         <motion.img
-          initial={{ opacity: 0, scale: 0.8 }}
-          whileInView={{
-            opacity: 0.7,
-            scale: 1.5,
-            rotate: -15,
-            x: [-500],
-            y: [250],
-          }}
-          viewport={{ once: true, amount: 0.5 }}
+          {...BgWord}
           className="object-cover"
           src="/Rosen-profile/pictrue/icon-Stroy.png"
           alt="Stroy.png"

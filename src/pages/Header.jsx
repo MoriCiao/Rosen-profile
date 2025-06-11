@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 
 const HeaderIntro = ({ name }) => {
   return (
-    <div className="">
+    <section className="">
       <h1 className="text-[2rem]">
         Hi{" "}
         <motion.span
@@ -29,7 +29,7 @@ const HeaderIntro = ({ name }) => {
       <p className="py-4">
         目前對於網頁前端開發持續學習中，由於是處於轉行當中的我，對HTML、CSS、JavaScript、React較為熟悉。現代科技一直在進步，個人的技能也需要向未來持續增進。
       </p>
-    </div>
+    </section>
   );
 };
 
@@ -47,7 +47,7 @@ const HeaderGuided = () => {
   ];
 
   return (
-    <div className="text-[1.5rem]">
+    <nav className="text-[1.5rem]">
       <ul>
         {guidedItems.map((item, index) => {
           return (
@@ -69,9 +69,30 @@ const HeaderGuided = () => {
           );
         })}
       </ul>
-    </div>
+    </nav>
   );
 };
+
+const HeaderFormLabel = ({ htmlFor, labeltext }) => {
+  return <label htmlFor={htmlFor}>{labeltext}</label>;
+};
+
+const HeaderFormInput = React.forwardRef(
+  ({ id, name, type, placeholder, onChange, className }, ref) => {
+    return (
+      <input
+        id={id}
+        name={name}
+        type={type}
+        placeholder={placeholder}
+        onChange={onChange}
+        className={className}
+        ref={ref}
+        required
+      />
+    );
+  }
+);
 
 const HeaderForm = ({ inputElement, HandleChangeName }) => {
   return (
@@ -81,28 +102,32 @@ const HeaderForm = ({ inputElement, HandleChangeName }) => {
         method="POST"
         className="w-80 p-0"
       >
-        <label htmlFor="">Name</label>
-        <input
-          className="indent-[2.5%] rounded-md mb-4"
+        <HeaderFormLabel htmlFor="name" labeltext="Name" />
+        <HeaderFormInput
+          id="name"
           name="name"
           type="text"
           placeholder="Your name or Business units"
-          ref={inputElement}
-          // 對應
           onChange={HandleChangeName}
+          className="indent-[2.5%] rounded-md mb-4"
+          ref={inputElement}
         />
-        <label htmlFor="">Email</label>
-        <input
-          className="indent-[2.5%]  rounded-md mb-4"
-          name="email"
+
+        <HeaderFormLabel htmlFor="email" labeltext="Email" />
+        <HeaderFormInput
+          id="email"
+          name="Email"
           type="email"
           placeholder="Email Address"
+          className="indent-[2.5%] rounded-md mb-4"
         />
-        <label htmlFor="">Message</label>
+
+        <HeaderFormLabel htmlFor="message" labeltext="Message" />
+
         <textarea
           className="indent-[2.5%] resize-none  rounded-md mb-4"
           name="message"
-          id=""
+          id="message"
           placeholder="Your Message ..."
           required
         ></textarea>
@@ -141,17 +166,15 @@ const Header = () => {
 
   return (
     <header className="header">
-      <div>
-        <section className="grid grid-rows-3 items-start mt-10">
-          <HeaderIntro name={name} />
-          <HeaderGuided />
+      <section className="grid grid-rows-3 items-start mt-10">
+        <HeaderIntro name={name} />
+        <HeaderGuided />
 
-          <HeaderForm
-            inputElement={inputElement}
-            HandleChangeName={HandleChangeName}
-          />
-        </section>
-      </div>
+        <HeaderForm
+          inputElement={inputElement}
+          HandleChangeName={HandleChangeName}
+        />
+      </section>
     </header>
   );
 };

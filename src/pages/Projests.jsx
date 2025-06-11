@@ -1,6 +1,8 @@
-import { React, Fragment, useState } from "react";
-import { easeInOut, motion } from "framer-motion";
-import { Link, Outlet } from "react-router-dom";
+import { useState, useContext } from "react";
+import { motion } from "framer-motion";
+import { Link } from "react-router-dom";
+import { AnimateContext } from "../App";
+
 const projects = [
   {
     id: 1,
@@ -41,6 +43,8 @@ const Line = () => {
 };
 
 const Projects = () => {
+  const { BgAnimate, BgWord, SectionAnimate } = useContext(AnimateContext);
+
   const [isClick, setIsClick] = useState(false);
   const handleClick = () => {
     console.log("handleClick render ...");
@@ -48,38 +52,17 @@ const Projects = () => {
   };
 
   return (
-    <motion.div
-      whileInView={{ opacity: 1 }}
-      initial={{ opacity: 0, y: 0 }}
-      transition={{ duration: 0.5 }}
-      className="Projects h-[850px]"
-    >
+    <motion.div {...SectionAnimate} className="Projects h-[850px]">
       {/* 這邊要有可以 Routes 導向每個 Projest 然後可以回到首頁 */}
-      <div className="projectBg absolute z-[-1]">
+      <div className="projectBg absolute z-[-1] overflow-hidden w-full h-full top-0 left-0">
         <motion.img
-          initial={{ opacity: 0, scale: 0.8 }}
-          whileInView={{
-            opacity: 0.5,
-            scale: 1.0,
-            rotate: -25,
-            x: [-600],
-            y: [-50],
-          }}
-          viewport={{ once: true, amount: 0.5 }}
+          {...BgAnimate}
           className="absolute z-[-1]"
           src="/Rosen-profile/pictrue/icon-point.png"
           alt=""
         />
         <motion.img
-          initial={{ opacity: 0, scale: 0.8 }}
-          whileInView={{
-            opacity: 0.7,
-            scale: 1.5,
-            rotate: -15,
-            x: [-500],
-            y: [250],
-          }}
-          viewport={{ once: true, amount: 0.5 }}
+          {...BgWord}
           className="w-full"
           src="/Rosen-profile/pictrue/icon-projects.png"
           alt=""
@@ -97,9 +80,9 @@ const Projects = () => {
                 y: -2,
                 boxShadow: "5px 5px 15px black",
               }}
-              className="relative w-full h-auto mb-4 grid grid-cols-3 "
+              className="relative w-full h-auto mb-4 grid grid-cols-3"
             >
-              <div className="w-[200px] p-4 overflow-hidden col-start-1">
+              <div className="w-[12rem] p-4 overflow-hidden col-start-1">
                 <motion.img
                   whileHover={{ scale: 1.1 }}
                   transition={{ duration: 0.3 }}
@@ -126,7 +109,7 @@ const Projects = () => {
                     className="bg-sky-900 px-2 py-1 rounded-md"
                     type="submit"
                   >
-                    Go Somewhere
+                    Visit site
                   </motion.button>
                 </Link>
               </div>
