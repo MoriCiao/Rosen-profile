@@ -11,7 +11,7 @@ const Story = () => {
       id="story"
       className="story overflow-y-overlay scroll-smooth"
     >
-      <div className="storyBg absolute z-[-1] overflow-hidden w-full h-full top-0 left-0">
+      <div className="storyBg fixed z-[-1] xl:top-0 sm:top-48 left-0 overflow-hidden select-none pointer-events-none w-full h-full">
         <motion.img
           {...BgAnimate}
           className="absolute z-[-1]"

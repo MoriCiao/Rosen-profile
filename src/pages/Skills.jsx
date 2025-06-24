@@ -42,7 +42,7 @@ const Skills = () => {
       className="overflow-y-overlay scroll-smooth"
       id="skill"
     >
-      <div className="skillBg absolute z-[-1] overflow-hidden w-full h-full top-0 left-0 ">
+      <div className="skillBg fixed z-[-1] xl:top-0 sm:top-48 left-0  overflow-hidden select-none pointer-events-none w-full h-full">
         <motion.img
           {...BgAnimate}
           className="absolute z-[-1]"
@@ -58,7 +58,7 @@ const Skills = () => {
       </div>
 
       <div className="workskill mt-4">
-        <div className="grid grid-cols-4 gap-16  ">
+        <div className="grid xxl:grid-cols-4 xl:grid-cols-3  sm:grid-cols-3 gap-16  ">
           {skillsImg.map((skill, index) => {
             return (
               <Fragment key={index}>

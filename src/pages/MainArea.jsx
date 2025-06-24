@@ -5,10 +5,10 @@ const MainArea = () => {
   console.log("MainArea render ...");
   return (
     <motion.main
-      whileInView={{ opacity: 1 }}
-      initial={{ opacity: 0, y: 0 }}
-      transition={{ duration: 0.5 }}
-      className="MiaiArea mt-10"
+      // whileInView={{ opacity: 1 }}
+      // initial={{ opacity: 0, y: 0 }}
+      // transition={{ duration: 0.5 }}
+      className="MiaiArea md:pt-5 xl:px-10 md:px-20 border-2 border-red-400"
     >
       {/* 子頁面會在這邊顯示 */}
       <Outlet />

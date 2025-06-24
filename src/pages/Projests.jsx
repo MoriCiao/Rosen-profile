@@ -54,7 +54,7 @@ const Projects = () => {
   return (
     <motion.div {...SectionAnimate} className="Projects h-[850px]">
       {/* 這邊要有可以 Routes 導向每個 Projest 然後可以回到首頁 */}
-      <div className="projectBg absolute z-[-1] overflow-hidden w-full h-full top-0 left-0">
+      <div className="projectBg fixed z-[-1] xl:top-0 sm:top-48 left-0 overflow-hidden select-none pointer-events-none w-full h-full top-0 left-0">
         <motion.img
           {...BgAnimate}
           className="absolute z-[-1]"

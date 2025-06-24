@@ -23,16 +23,16 @@ const Work = () => {
       className="overflow-y-overlay scroll-smooth"
       id="work"
     >
-      <div className="WorkBg absolute z-[-1] overflow-hidden w-full h-full top-0 left-0 ">
+      <div className="WorkBg absolute z-[-1] overflow-hidden select-none pointer-events-none w-full h-full top-0 left-0 ">
         <motion.img
           {...BgAnimate}
-          className="absolute z-[-1]"
+          className="absolute z-[-1] select-none pointer-events-none"
           src="/Rosen-profile/pictrue/icon-point.png"
           alt="point.png"
         />
         <motion.img
           {...BgWord}
-          className="object-cover"
+          className="object-cover select-none pointer-events-none"
           src="/Rosen-profile/pictrue/icon-works.png"
           alt="works.png"
         />

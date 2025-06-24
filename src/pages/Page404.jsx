@@ -6,7 +6,7 @@ const Page404 = () => {
 
   return (
     <motion.div {...SectionAnimate}>
-      <div className="absolute z-[-1] overflow-hidden w-full h-full top-0 left-[30rem]">
+      <div className="absolute z-[-1] overflow-hidden bg-no-select w-full h-full top-0 left-[30rem]">
         <motion.img
           initial={{ opacity: 0, scale: 0.8 }}
           whileInView={{

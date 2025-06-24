@@ -1,7 +1,7 @@
-import React, { useEffect, useRef, useState } from "react";
+import React, { useContext, useEffect, useRef, useState } from "react";
 import { motion } from "framer-motion";
 import { Link } from "react-router-dom";
-
+import { AnimateContext } from "../App";
 const HeaderIntro = ({ name }) => {
   return (
     <section className="">
@@ -34,10 +34,12 @@ const HeaderIntro = ({ name }) => {
 };
 
 const HeaderGuided = () => {
+  const { handleScroll } = useContext(AnimateContext);
+
   const guidedItems = [
     { link: "/Rosen-profile/", name: "#HomePage", span: "首頁" },
     { link: "/Rosen-profile/story", name: "#story", span: "個人經歷" },
-    { link: "/Rosen-profile/work", name: "#work", span: "工作經驗" },
+    // { link: "/Rosen-profile/work", name: "#work", span: "工作經驗" },
     { link: "/Rosen-profile/skills", name: "#skill", span: "技能專長" },
     {
       link: "/Rosen-profile/projects",
@@ -58,8 +60,9 @@ const HeaderGuided = () => {
                 color: "#A5DEE4",
               }}
               transition={{ duration: 0.3 }}
-              className={`guided-li pb-2 w-[15rem]`}
+              className={`guided-li pb-2 w-[15rem] select-none`}
               key={index}
+              onClick={() => handleScroll()}
             >
               <Link to={item.link} className="guided-item flex items-center">
                 <div className="guided-line w-[15px] h-[2px] flex-none mr-2"></div>
@@ -165,8 +168,8 @@ const Header = () => {
   }, []);
 
   return (
-    <header className="header">
-      <section className="grid grid-rows-3 items-start mt-10">
+    <header className="header border-2 border-red-400">
+      <section className="grid grid-rows-3 items-start mt-10 xl:px-10 md:px-20">
         <HeaderIntro name={name} />
         <HeaderGuided />
 
