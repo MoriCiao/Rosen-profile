@@ -40,4 +40,10 @@
 .HeaderForm form {
   display: flex;
   flex-direction: column;
+}
+
+.todo-introduct {
+  overflow-y: overlay;
+  scrollbar-width: none;
+  scroll-behavior: smooth;
 }/*# sourceMappingURL=index.css.map */

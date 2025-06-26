@@ -39,7 +39,7 @@ const Skills = () => {
   return (
     <motion.section
       {...SectionAnimate}
-      className="overflow-y-overlay scroll-smooth"
+      className="overflow-y-overlay scroll-smooth mt-8"
       id="skill"
     >
       <div className="skillBg fixed z-[-1] xl:top-0 sm:top-48 left-0  overflow-hidden select-none pointer-events-none w-full h-full">

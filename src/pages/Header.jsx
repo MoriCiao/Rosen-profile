@@ -3,9 +3,10 @@ import { motion } from "framer-motion";
 import { Link } from "react-router-dom";
 import { AnimateContext } from "../App";
 const HeaderIntro = ({ name }) => {
+  const { textSize } = useContext(AnimateContext);
   return (
-    <section className="">
-      <h1 className="text-[2rem]">
+    <section className="select-none">
+      <h1 className={`${textSize.title_H1}`}>
         Hi{" "}
         <motion.span
           animate={{
@@ -26,7 +27,7 @@ const HeaderIntro = ({ name }) => {
         ， I'm <br />
         <strong>Rosen</strong>
       </h1>
-      <p className="py-4">
+      <p className={`${textSize.text} py-4`}>
         目前對於網頁前端開發持續學習中，由於是處於轉行當中的我，對HTML、CSS、JavaScript、React較為熟悉。現代科技一直在進步，個人的技能也需要向未來持續增進。
       </p>
     </section>
@@ -49,7 +50,7 @@ const HeaderGuided = () => {
   ];
 
   return (
-    <nav className="text-[1.5rem]">
+    <nav className="text-[1.5rem] select-none">
       <ul>
         {guidedItems.map((item, index) => {
           return (
@@ -168,7 +169,7 @@ const Header = () => {
   }, []);
 
   return (
-    <header className="header border-2 border-red-400">
+    <header className="header ">
       <section className="grid grid-rows-3 items-start mt-10 xl:px-10 md:px-20">
         <HeaderIntro name={name} />
         <HeaderGuided />

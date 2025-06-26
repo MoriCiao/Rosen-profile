@@ -68,48 +68,20 @@ function App() {
       transition: { duration: 1 },
     };
 
-    const BgPoint = "/Rosen-profile/pictrue/icon-point.png";
-    const BgImgs = [
-      {
-        id: 0,
-        name: "homepage",
-        imgWord: "/Rosen-profile/pictrue/Bg-img.jpg",
-        imgBg: "",
-      },
-      {
-        id: 1,
-        name: "story",
-        imgWord: "/Rosen-profile/pictrue/icon-Stroy.png",
-        imgBg: BgPoint,
-      },
-      {
-        id: 2,
-        name: "skills",
-        imgWord: "/Rosen-profile/pictrue/icon-Skills.png",
-        imgBg: BgPoint,
-      },
-      {
-        id: 3,
-        name: "projects",
-        imgWord: "/Rosen-profile/pictrue/icon-projects.png",
-        imgBg: BgPoint,
-      },
-      {
-        id: 4,
-        name: "projects",
-        imgWord: "/Rosen-profile/pictrue/icon-404Error.png",
-        imgBg: BgPoint,
-      },
-    ];
-
     const handleScroll = () => {
       console.log("Scroll");
       window.scrollTo({ top: 500, left: 0, behavior: "smooth" });
     };
 
+    const textSize = {
+      title_H1: "text-[2rem]",
+      title_H3: "text-[1.5rem]",
+      text: "text-[1.25rem]",
+    };
+
     return (
       <AnimateContext.Provider
-        value={{ BgAnimate, BgWord, SectionAnimate, handleScroll }}
+        value={{ BgAnimate, BgWord, SectionAnimate, handleScroll, textSize }}
       >
         {children}
       </AnimateContext.Provider>
