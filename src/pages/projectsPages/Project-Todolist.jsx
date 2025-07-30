@@ -1,8 +1,7 @@
 import React, { Fragment, useContext } from "react";
 import GoBackBtn from "../../components/GoBackBtn";
-import { AnimateContext } from "../../App";
+import { AppContext } from "../../components/AppProvider";
 import { motion } from "framer-motion";
-import Line from "../../components/Line";
 
 const descript_one = [
   {
@@ -137,8 +136,28 @@ const VisitBtn = () => {
   );
 };
 
+/*
+✅ TodoList 任務清單
+使用技術：
+JavaScript, HTML, CSS, LocalStorage
+
+簡介：
+TodoList 是一款日常任務管理工具，提供新增、刪除、切換完成狀態與主題風格切換功能。資料儲存於 localStorage，適合練習狀態管理與 UI 操作。
+
+特色功能：
+
+任務新增與切換狀態
+
+主題樣式切換（淺色/深色）
+
+使用者偏好儲存於 localStorage
+
+具備簡潔 UI 介面
+
+*/
+
 const Todolist = () => {
-  const { SectionAnimate, textSize } = useContext(AnimateContext);
+  const { SectionAnimate, textSize } = useContext(AppContext);
   console.log("載入 Todo List 頁面...");
   return (
     <motion.div
@@ -163,7 +182,6 @@ const Todolist = () => {
         </h2>
       </div>
 
-      <Line />
       <div className="mt-2">
         <h3 className={`${textSize.title_H1}`}>{descript_one[0].title}</h3>
         <ul className="my-2">
@@ -190,7 +208,7 @@ const Todolist = () => {
           })}
         </ul>
       </div>
-      <Line />
+
       <div className="mt-2">
         <h3 className={`${textSize.title_H1} mb-2`}>{descript_two[0].title}</h3>
         <ul className="my-2">
@@ -218,7 +236,7 @@ const Todolist = () => {
           })}
         </ul>
       </div>
-      <Line />
+
       <div className="mt-2">
         <div className="relative">
           <h3 className={`${textSize.title_H1} mb-2 `}>

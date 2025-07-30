@@ -1,48 +1,246 @@
+.path-li {
+  position: relative;
+  z-index: 0;
+  border-radius: 0.5rem;
+  border: rgba(255, 255, 255, 0.3) 2px solid;
+  transition: 0.5s;
+}
+.path-li::after {
+  content: "";
+  z-index: -1;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(to bottom right, rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0.2), rgba(216, 213, 213, 0.2), rgba(255, 255, 255, 0.1), rgba(0, 0, 0, 0.5));
+  left: 0;
+  top: 0;
+  border-radius: 0.4rem;
+}
+.path-li::before {
+  content: "";
+  background: linear-gradient(45deg, rgb(6, 47, 102), rgb(11, 5, 94), rgb(55, 81, 136), rgb(23, 23, 88));
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  left: 0;
+  background-size: 600%;
+  width: calc(100% + 10px);
+  height: calc(100% + 10px);
+  filter: blur(8px);
+  border-radius: 0.4rem;
+  animation: glowing 20s linear infinite;
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+}
+.path-li:hover {
+  filter: brightness(1.1);
+  color: rgb(0, 162, 255);
+  transform: translate(-5px, -5px);
+}
+.path-li:hover::before {
+  opacity: 1;
+  transform: translate(-5px, -5px);
+}
+.path-li:active {
+  color: rgb(255, 255, 255);
+}
+.path-li:active::after {
+  background-color: rgb(20, 30, 59);
+}
+@keyframes glowing {
+  0% {
+    background-position: 0, 0;
+  }
+  50% {
+    background-position: 400%, 0;
+  }
+  100% {
+    background-position: 0, 0;
+  }
+}
+
+.HeaderCotact form {
+  background: linear-gradient(to bottom right, rgba(47, 51, 65, 0.5), rgba(38, 53, 59, 0.5), rgba(44, 88, 105, 0.5), rgba(15, 37, 64, 0.5));
+  border: 2px solid rgba(255, 255, 255, 0.2);
+  box-shadow: rgba(255, 255, 255, 0.2) 0 5px 10px, inset 10px 10px 15px rgba(255, 255, 255, 0.3);
+  border-radius: 1.5rem;
+}
+
+.begin span {
+  position: relative;
+  display: inline-block;
+  color: white;
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+  top: 20px;
+  font-size: 8rem;
+  transform: rotateY(10deg) rotateX();
+  text-shadow: 0 1px 0 #ccc, 0 2px 0 #ccc, 0 3px 0 #ccc, 0 6px 0 #ccc, 0 9px 0 #ccc, 0 10px 10px rgba(0, 0, 0, 0.3);
+  animation: animate 0.6s ease infinite alternate;
+}
+.begin h1 span:nth-child(2) {
+  animation-delay: 0.1s;
+}
+.begin h1 span:nth-child(3) {
+  animation-delay: 0.2s;
+}
+.begin h1 span:nth-child(4) {
+  animation-delay: 0.3s;
+}
+.begin h1 span:nth-child(5) {
+  animation-delay: 0.5s;
+}
+.begin h1 span:nth-child(6) {
+  animation-delay: 0.5s;
+}
+
+@keyframes animate {
+  100% {
+    top: -20px;
+    text-shadow: 0 1px 0 #ccc, 0 2px 0 #ccc, 0 3px 0 #ccc, 0 6px 0 #ccc, 0 9px 0 #ccc, 0 60px 30px rgba(0, 0, 0, 0.3);
+  }
+}
+.skill-item {
+  transition: 0.6s;
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.3), 0 3px 2px rgba(0, 0, 0, 0.3), 0 5px 3px rgba(0, 0, 0, 0.3), 0 7px 4px rgba(0, 0, 0, 0.3), 0 10px 5px rgba(0, 0, 0, 0.3);
+}
+.skill-item:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 3px 1px rgba(0, 0, 0, 0.3), 0 5px 2px rgba(0, 0, 0, 0.3), 0 7px 3px rgba(0, 0, 0, 0.3), 0 9px 4px rgba(0, 0, 0, 0.3), 0 15px 20px rgba(0, 0, 0, 0.8);
+}
+.skill-item:hover img {
+  filter: drop-shadow(0 0 5px rgba(255, 255, 255, 0.3));
+}
+
+.container {
+  transition: 0.6s;
+}
+.container .p-item {
+  position: relative;
+  background-color: transparent;
+  transition: 0.6s;
+  transition: height 1s;
+}
+.container .p-link {
+  position: absolute;
+  bottom: 0rem;
+  right: 0rem;
+  width: 10rem;
+  height: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: 0.6s;
+}
+.container .p-link button {
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
+}
+.container:hover {
+  transform: translate(0px, -10px);
+}
+.container:hover .p-item {
+  box-shadow: 0 10px 20px black;
+}
+
+.expand {
+  height: 50rem;
+  border: 2px red solid;
+}
+
+.des_II {
+  padding: 1rem;
+  border-radius: 1.25rem;
+  overflow-y: overlay;
+  scrollbar-width: none;
+  scroll-behavior: smooth;
+}
+.des_II .des-img img {
+  border-radius: 1.25rem;
+}
+.des_II .des_II_link {
+  display: flex;
+  gap: 0.5rem;
+  align-items: center;
+  justify-content: center;
+}
+.des_II .des_II_link a.a-tag {
+  color: rgb(255, 177, 27);
+  position: relative;
+  height: 2rem;
+  width: 8rem;
+  display: block;
+  text-align: center;
+  padding-top: 3px;
+  transition: 0.5s;
+  text-transform: uppercase;
+  transform: 1s;
+  background: linear-gradient(to bottom right, rgba(255, 255, 255, 0.1), rgba(0, 0, 0, 0.3));
+}
+.des_II .des_II_link a.a-tag svg,
+.des_II .des_II_link a.a-tag svg rect {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  fill: none;
+  transition: 0.5s;
+}
+.des_II .des_II_link a.a-tag rect {
+  stroke-width: 2;
+  stroke: rgb(255, 177, 27);
+  stroke-dasharray: 2rem, 8rem;
+  stroke-dashoffset: 0;
+  animation: glowing 8s infinite linear;
+  filter: drop-shadow(0 0 2px rgb(255, 177, 27)) drop-shadow(0 0 7px rgba(255, 177, 27, 0.7)) drop-shadow(0 0 12px rgba(255, 177, 27, 0.4)) drop-shadow(0 0 25px rgb(255, 177, 27));
+}
+.des_II .des_II_link a.a-tag:hover {
+  font-weight: 900;
+  animation: a_hover 1s linear infinite;
+}
+.des_II .des_II_link a.a-tag:hover rect {
+  stroke-dashoffset: 240;
+}
+.des_II .des_II_link a:nth-child(2) {
+  color: rgb(255, 99, 27);
+}
+.des_II .des_II_link a:nth-child(2) rect {
+  stroke-width: 2;
+  stroke: rgb(255, 99, 27);
+  stroke-dasharray: 2rem, 8rem;
+  stroke-dashoffset: 0;
+  animation: glowing 8s infinite linear;
+  filter: drop-shadow(0 0 2px rgb(255, 99, 27)) drop-shadow(0 0 7px rgba(255, 99, 27, 0.7)) drop-shadow(0 0 12px rgba(255, 99, 27, 0.4)) drop-shadow(0 0 25px rgb(255, 99, 27));
+}
+
+@keyframes glowing {
+  0% {
+    stroke-dashoffset: 480;
+  }
+  100% {
+    stroke-dashoffset: 0;
+  }
+}
+@keyframes a_hover {
+  0%, 100% {
+    font-size: 1.1rem;
+  }
+  50% {
+    font-size: 0.9rem;
+  }
+}
 :root {
   --theme-color: rgb(15, 37, 64);
   --text-color: rgb(105, 212, 255);
   --text-color-2: rgb(255, 177, 27);
-  --text-family: LXGW WenKai TC;
-}
-
-* {
-  padding: 0;
-  margin: 0;
-  box-sizing: border-box;
 }
 
 .APP {
-  font-family: var(--text-family);
   color: var(--text-color);
   overflow-y: overlay;
   scrollbar-width: none;
   scroll-behavior: smooth;
 }
-
-.Projects {
-  overflow-y: overlay;
-  scrollbar-width: none;
-  scroll-behavior: smooth;
-}
-
-.guided-li:hover .guided-line {
-  box-shadow: 0px 0px 10px rgb(105, 212, 255);
-}
-.guided-li .guided-item .guided-line {
-  border: var(--text-color) 1px solid;
-  border-radius: 5px;
-  transition: all 0.3s ease-in-out;
-}
-.guided-li .guided-item:hover .guided-line {
-  width: 70px;
-}
-
-.HeaderForm form {
-  display: flex;
-  flex-direction: column;
-}
-
-.todo-introduct {
+.APP main {
   overflow-y: overlay;
   scrollbar-width: none;
   scroll-behavior: smooth;

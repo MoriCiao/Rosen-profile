@@ -1,8 +1,8 @@
 import React, { useContext } from "react";
 import { easeInOut, motion } from "framer-motion";
-import { AnimateContext } from "../App";
+import { AppContext } from "../components/AppProvider";
 const Page404 = () => {
-  const { BgAnimate, BgWord, SectionAnimate } = useContext(AnimateContext);
+  const { SectionAnimate } = useContext(AppContext);
 
   return (
     <motion.div {...SectionAnimate}>

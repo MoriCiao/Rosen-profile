@@ -1,0 +1,24 @@
+過去在零售業做部門擔當，處理各自部門的大小事，做久了發現公司發展緩慢，甚至退步。
+      契機 覺得在面試時可以有自己個人網站及作品網站很酷，而且從HTML 學到 React
+      中會學到很多新技能，感受到自我成長的重要性。
+      轉職後希望成為可以獨立開發的前端工程師與他人合作完成專案
+      {/*  */}
+      學習路線- 過去是購買線上課程，在休假或空閒時學習 目前接觸
+      HTML、CSS、JavaScript、React、Tailwind、Redux
+      {/*  */}
+      學習平台 Udemy Youtube ChatGPT 目前給自己規劃是每天平均 6
+      小時在前端開發上，遇到困難時會先嘗試自己解惑或是詢問GPT，GPT提供方向而我會再嘗試加入自我的想法
+      {/*  */}
+      目前實際做出的專案有 TodoList、SearchImage、DataForm、BuyFlow(電商)
+      作品皆有上傳至Github及佈署至GitHub Pages 技術成長及突破
+      {/*  */}
+      CSS -
+      剛接觸時只會一個CSS檔案，現在學會運用很多個SCSS整合到一個SCSS檔案裡，管理CSS非常方便以容易整理及撰寫。後面有接觸Bootstrap
+      、 TailwindCSS以及 Frame Motion，個人偏向 TailwindCSS 和Frame Motion
+      的使用，也學會許多新技術。
+      {/*  */}
+      JavaScript & React-
+      剛開始接觸時不知道何謂框架，許多Hook不瞭解如何使用，從useState變換,
+      useEffect依賴,Props傳遞等，再來useContext建立、Provider運用、useReducer邏輯，最後學到Redux全域使用
+      {/*  */}
+      未來學習主題- TypeScript、Next.js、動畫進階、進階 JS
