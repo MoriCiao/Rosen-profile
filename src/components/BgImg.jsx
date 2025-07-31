@@ -31,15 +31,22 @@ const BgImg = () => {
         z-[-1] select-none pointer-events-none bg-gradient-to-bl from-slate-900 via-slate-900 to-slate-900"
     >
       {pathname === "/Rosen-profile/" ? (
-        <motion.img
-          key={"homepage"}
-          initial={{ opacity: 1, scale: 1.1 }}
-          animate={{ opacity: 0.6, scale: 1 }}
-          transition={{ duration: 0.5 }}
-          className="absolute top-0 left-0  md:w-full sm:h-auto md:w-auto sm:h-full sm:object-top object-cover brightness-60 "
-          src={img.homepage[1]}
-          alt="homepage"
-        />
+        <>
+          <motion.img
+            key={"homepage"}
+            initial={{ opacity: 1, scale: 1.1 }}
+            animate={{ opacity: 0.6, scale: 1 }}
+            transition={{ duration: 0.5 }}
+            className="absolute top-0 left-0  md:w-full sm:h-auto md:w-auto sm:h-full sm:object-top object-cover brightness-60"
+            src={img.homepage[1]}
+            alt="homepage"
+          />
+          <div className="svg-content ">
+            <svg>
+              <circle cx="375" cy="300" r="200"></circle>
+            </svg>
+          </div>
+        </>
       ) : pathname === "/Rosen-profile/story" ? (
         <AnimatePresence>
           <motion.img

@@ -32,7 +32,8 @@ const Begin = () => {
             hover:-translate-y-2
             hover:shadow-2xl
             hover:drop-shadow-[0_0_12px_rgba(255,255,255,0.6)] 
-            transition duration-300"
+            transition duration-300
+            cursor-pointer"
         onClick={() => setCloseView(true)}
       >
         Enter

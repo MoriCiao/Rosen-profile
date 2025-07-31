@@ -2,6 +2,8 @@
 @import '_begin.scss';
 @import '_skill.scss';
 @import '_project.scss';
+@import '_story.scss';
+
 
 :root {
     --theme-color: rgb(15, 37, 64);
@@ -29,3 +31,48 @@
 
 
 
+.svg-content{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+
+
+    
+
+    svg{
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        fill: none;
+        
+        circle{
+            position: absolute;
+            top: 0;
+            left: 0;
+            stroke: rgb(105, 212, 255);
+            stroke-width:10;
+            animation:  glowing_bf 6s ease-in infinite;
+        }
+    }
+}
+@keyframes glowing_bf{
+    0%,100%{
+        
+        opacity: 1;
+        filter:blur(30px) brightness(1.1)
+         drop-shadow(0 0 50px rgb(42, 116, 255)) drop-shadow(0 0 100px rgba(105, 212, 255, 1)) drop-shadow(0 0 150px rgba(105, 212, 255, 1))
+        
+
+    }
+    50%{
+        
+        opacity: 0.75;
+        filter:blur(30px) brightness(1.1)
+         drop-shadow(0 0 10px rgb(42, 116, 255)) drop-shadow(0 0 30px rgba(105, 212, 255, 1))
+
+    }
+}

@@ -6,7 +6,7 @@ const HeaderIntro = ({ name }) => {
   const { textSize } = useContext(AppContext);
   return (
     <section className="select-none ">
-      <h1 className={`text-[3rem]`}>
+      <h1 className={`title-h1 text-[3rem] tracking-widest`}>
         Hi
         <motion.span
           animate={{
@@ -22,9 +22,9 @@ const HeaderIntro = ({ name }) => {
           transition={{ duration: 6, repeat: Infinity, repeatType: "loop" }}
           className="useState-area px-4"
         >
-          {name || "Stranger"}
+          Tourist
         </motion.span>
-        ， I'm <br />
+        , I'm <br />
         <strong className="text-[5rem]">Rosen</strong>
       </h1>
     </section>

@@ -18,13 +18,13 @@ const HeaderGuided = () => {
 
   return (
     <nav className="select-none w-full">
-      <ul className="flex justify-between px-4">
+      <ul className="flex justify-between px-4 gap-4">
         {guidedItems &&
           guidedItems.map((i, index) => {
             return (
               <li
                 key={index}
-                className="path-li w-35 h-10 text-center flex items-center"
+                className="path-li w-35 h-10 text-center flex flex-col items-center"
               >
                 <Link
                   className="text-[1.5rem] font-bold block w-full h-full cursor-pointer tracking-widest"
@@ -32,6 +32,7 @@ const HeaderGuided = () => {
                 >
                   {i.text}
                 </Link>
+                <hr className="opacity-50" />
               </li>
             );
           })}

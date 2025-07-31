@@ -15,7 +15,7 @@ function App() {
   return (
     <section className="APP relative z-[10] grid xl:grid-cols-2 md:grid-cols-1 md:gap-8 sm:gap-5 xl:px-40 md:px-10 sm:px-10 w-full h-screen ">
       <AppProvider>
-        {/* <Begin /> */}
+        <Begin />
         <BgImg />
         <header className="header flex flex-col gap-8 items-start justify-between py-4 h-[90%]  mt-10 xl:px-10 md:px-20">
           <Header />
