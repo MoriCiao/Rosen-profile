@@ -20,59 +20,59 @@
     overflow-y: overlay;
     scrollbar-width: none;
     scroll-behavior: smooth;
-    main{
-        overflow-y: overlay;
-        scrollbar-width: none;
-        scroll-behavior: smooth;
-        
-    }
+    
    
 }
 
 
-
-.svg-content{
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100vw;
-    height: 100vh;
-
-
+.bg{
     
+    filter: blur(2px);
+}
 
-    svg{
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-        fill: none;
-        
-        circle{
-            position: absolute;
+@media (min-width:1536px) {
+    .svg-content {
+            position: relative;
             top: 0;
             left: 0;
-            stroke: rgb(105, 212, 255);
-            stroke-width:10;
-            animation:  glowing_bf 6s ease-in infinite;
+            width: 100vw;
+            height: 100vh;
+    
+            svg {
+                position: relative;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                fill: none;
+    
+                circle {
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    stroke: rgb(105, 212, 255);
+                    stroke-width: 10;
+                    animation: glowing_bf 10s ease-in infinite;
+                }
+            }
         }
-    }
 }
+
 @keyframes glowing_bf{
     0%,100%{
-        
+        r: 150;
         opacity: 1;
-        filter:blur(30px) brightness(1.1)
-         drop-shadow(0 0 50px rgb(42, 116, 255)) drop-shadow(0 0 100px rgba(105, 212, 255, 1)) drop-shadow(0 0 150px rgba(105, 212, 255, 1))
+        filter:blur(20px) brightness(0.3)
+        drop-shadow(0 0 30px rgb(42, 116, 255));
+        
         
 
     }
     50%{
-        
-        opacity: 0.75;
-        filter:blur(30px) brightness(1.1)
-         drop-shadow(0 0 10px rgb(42, 116, 255)) drop-shadow(0 0 30px rgba(105, 212, 255, 1))
+        r: 175;
+        opacity: 1;
+        filter:blur(30px) brightness(0.3)
+        drop-shadow(0 0 15px rgba(105, 212, 255, 1))
 
     }
 }

@@ -40,17 +40,20 @@ const Skills = () => {
       className="workskill mt-4 overflow-y-overlay scroll-smooth mt-8"
       id="skill"
     >
-      <div className="grid xxl:grid-cols-4 xl:grid-cols-3  sm:grid-cols-3 gap-16  ">
+      <div className="grid xxl:grid-cols-4 xl:grid-cols-4 sm:grid-cols-3 gap-16  ">
         {skillsImg.map((skill, index) => {
           return (
             <Fragment key={index}>
-              <div className="skill-item w-[180px] h-[180px] border border-white/50 rounded-2xl p-4 backdrop-blur-sm bg-gradient-to-br from-black/10 via-white/20 to-black/10">
+              <div className="skill-item relative  w-[180px] h-[180px] border border-white/50 rounded-2xl p-8 backdrop-blur-sm bg-gradient-to-br from-black/10 via-white/20 to-black/10 flex items-center justify-center">
+                <div className="absolute bottom-0 text-xl  text-center font-bold ">
+                  <span>{skill.name}</span>
+                </div>
                 <motion.img
                   whileHover={{
                     scale: 1.05,
                   }}
                   transition={{ duration: 0.3, ease: easeInOut }}
-                  className="w-full h-full object-cover"
+                  className="w-full h-full "
                   src={skill.img}
                   alt={skill.name}
                 />

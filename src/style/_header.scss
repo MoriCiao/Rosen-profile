@@ -1,95 +1,21 @@
-// .path-li{
-//     position: relative;
-//     z-index: 0;
-//     border-radius: 0.5rem;
-//     border: rgba(255,255,255,.3) 2px solid;
-//     transition: 0.5s;
-   
-//     &::after{
-//         content: '';
-//         z-index: -1;
-//         position: absolute;
-//         width: 100%;
-//         height: 100%;
-//         background:linear-gradient(to bottom right, 
-//         rgba(255, 255, 255,0.3),
-//         rgba(255, 255, 255, 0.2),
-//         rgba(216, 213, 213, 0.2),
-//         rgba(255, 255, 255, 0.1),
-//         rgba(0, 0, 0, 0.5));
-//         left: 0;
-//         top: 0;
-//         border-radius: 0.4rem;
-//     }
-//     &::before{
-//         content: "";
-//         background: linear-gradient(45deg, 
-//         rgb(6, 47, 102),
-//         rgb(11, 5, 94),
-//         rgb(55, 81, 136),
-//         rgb(23, 23, 88));
-//         position: absolute;
-//         z-index: -1;
-//         top: 0;
-//         left: 0;
-//         background-size: 600%;
-//         width: calc(100% + 10px);
-//         height: calc(100% + 10px);
-//         filter: blur(8px);
-//         border-radius: 0.4rem;
-//         animation: glowing 20s linear infinite;
-//         opacity: 0;
-//         transition: opacity .3s ease-in-out;
-        
-//     }
-//     &:hover{
-//         filter: brightness(1.1);
-//         color: rgb(0, 162, 255);
-//         transform: translate( -5px ,-5px);
-        
-//     }
-//     &:hover::before{
-//         opacity: 1;
-//         transform: translate(-5px, -5px);
-//     }
-//     &:active{
-//         color: rgb(255,255,255);
-//         &::after{background-color: rgb(20, 30, 59);}
-//     }
-//     @keyframes glowing {
-//         0%{
-//             background-position: 0,0;
-//         }
-//        50% {
-//             background-position: 400%, 0;
-//         }
-
-//         100% {
-//             background-position: 0, 0;
-//         }
-        
-//     }
-// }
+header{
+    box-shadow: 4px 4px 20px rgba(0, 0, 0);
+}
 
 .title-h1{
     font-family: sans-serif;
     text-shadow: 
-    0 1px 0 black,
-    0 2px 0 black,
-    3px 3px 5px black,
-    3px 4px 5px black,
-    3px 5px 5px black;
+    
+    1px 1px 2px rgba(255, 255, 255,1),
+
 }
 
 
 .path-li{
     backdrop-filter: blur(1px) brightne(1.1);
     background: rgba(15, 37, 64,0.5);
-    box-shadow: 
-    inset 2px 2px 3px rgba(255,255,255,0.5),
-    1px 1px 0 rgba(15, 37, 64,0.7),
-    3px 3px 0 rgba(15, 37, 64,0.7),
-    5px 5px 1px rgba(15, 37, 64,0.7),;
+    
+    
     transition: 0.6s;
     hr{
         transition: all 0.5s ease;
@@ -99,23 +25,21 @@
     a{  
         transform: translateY(0.1rem);
         opacity: 0.8;
-        -webkit-box-reflect: below -0.5rem linear-gradient(to bottom,
-        transparent, transparent);
+        
         transition: all 0.6s ease ;
     }
     &:hover{  
         transform: translateY(-0.3rem);
         background: rgba(15, 37, 64, 0.8);
         hr{
-            transform: translateY(rem);
+            transform: translateY(0.2rem);
             width: 80%;
            
         }
         a{
             opacity: 1;
-            -webkit-box-reflect: below -0.5rem linear-gradient(to bottom,
-            transparent, rgba(105, 212, 255, 0.5));
-            text-shadow:0 0 10px rgba(53, 133, 254,0.5);
+            text-shadow:0 0 10px rgba(53, 133, 254,1);
+            filter: brightness(1.1);
             
         }
     }
@@ -124,28 +48,20 @@
 
 
 
+
 .HeaderCotact{
     button{
-    
+            scale: 1.0;
+            transition: 0.5s;
         &:hover{
-            animation: btn 2s linear infinite ;
+            scale: 1.1;
         }
     }
  .email-text{
     transition: 0.5s;
-    transform: translateX(-300px)
+    transform: translateX(300px)
  }
  .e-active{
     transform: translateX(0px)
  }
- @keyframes btn {
-    0%,100%{
-        scale: 1.0;
-    }
-    50%{
-        scale: 1.1;
-        
-    }
- }
- 
 }

@@ -8,20 +8,27 @@ import AppRoute from "./routes/AppRoute";
 import AppProvider from "./components/AppProvider";
 import Begin from "./components/Begin";
 import MainArea from "./pages/MainArea";
+import HeaderGuided from "./components/HeadeGuided";
+import { useState } from "react";
 
 function App() {
   // useContext 將部分FN提供給 childern
-
+  const [isToggle, setIsToggle] = useState(false);
   return (
-    <section className="APP relative z-[10] grid xl:grid-cols-2 md:grid-cols-1 md:gap-8 sm:gap-5 xl:px-40 md:px-10 sm:px-10 w-full h-screen ">
+    <section className="APP relative z-[10] grid xl:grid-cols-12  w-full h-screen ">
       <AppProvider>
         <Begin />
         <BgImg />
-        <header className="header flex flex-col gap-8 items-start justify-between py-4 h-[90%]  mt-10 xl:px-10 md:px-20">
-          <Header />
+        <header
+          className={`header ${
+            isToggle
+              ? "md:translate-x-0 sm:translate-x-0"
+              : "md:-translate-x-80 sm:-translate-x-40"
+          } fixed z-1 py-20 top-0 left-0 flex flex-col gap-8 items-center justify-between h-full bg-slate-900/70 transition duration-1000`}
+        >
+          <HeaderGuided isToggle={isToggle} setIsToggle={setIsToggle} />
         </header>
-
-        <main className="flex flex-col gap-8 items-center justify-between py-4 h-[90%] w-full mt-10 xl:px-10 md:px-20 ">
+        <main className="flex flex-col col-start-4 col-span-8 gap-8 items-center justify-between py-4 h-[90%] w-full mt-10 xl:px-10 sm:px-20  ">
           <AppRoute />
         </main>
       </AppProvider>

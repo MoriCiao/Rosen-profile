@@ -24,19 +24,9 @@
         height: 100%;
         fill: none;
         rect{
-            stroke-width: 6;
-            stroke: rgb(255, 208, 122);
-            stroke-dasharray: 98.75rem 42.5rem ;
-            stroke-linecap: round;
-            filter: 
-            drop-shadow(rgba(252, 181, 49, 0.4) 0 0 5px)
-            drop-shadow(rgba(252, 181, 49, 0.8) 0 0 15px)
-            drop-shadow(rgba(252, 181, 49, 1) 0 0 50px)
-            blur(2px)
-            ;
+            stroke-width: 4;
+            stroke: rgba(255, 255, 255,.1);
             
-            animation: glowing 6s linear infinite;
-            // 680 1385
         }
     }
     
@@ -50,19 +40,18 @@
             border: 1px rgba(255,255,255,0.1) solid;
             font-size: 1.125rem;
             margin: 1rem 0.5rem;
-            padding: 1rem 1rem 0.5rem 1rem ;
+            padding: 2rem 4rem;
             border-radius: 0;
             background: linear-gradient(to bottom right ,
             rgba(0, 0, 0, .2), 
             rgba(138, 138, 138, 0.1),
-            rgba(230, 230, 230, 0.1),
-            rgba(138, 138, 138, 0.1),
+
             rgba(0,0,0,.3)  );
             transition: 0.5s;
             &:hover{
                 transform: translateY(-0.5rem);
                 strong{
-                    animation: text-glowing 2s linear infinite;
+                    text-shadow: 0 0 5px rgba(255, 177, 27,0.5);
                 }
             }
         }
@@ -70,23 +59,3 @@
     
 }
 
-
-@keyframes glowing{
-    0%{
-        stroke-dashoffset: 2240;
-        
-    }
-    100% {
-        stroke-dashoffset: 0;
-    }
-}
-
-
-@keyframes text-glowing{
-    0%,100%{
-        text-shadow:0 0 5px rgb(255, 177, 27);
-    }
-    50%{
-        text-shadow: 0 0 15px rgb(255, 177, 27);
-    }
-}

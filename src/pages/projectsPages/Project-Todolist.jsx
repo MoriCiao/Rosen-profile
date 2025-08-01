@@ -136,29 +136,9 @@ const VisitBtn = () => {
   );
 };
 
-/*
-✅ TodoList 任務清單
-使用技術：
-JavaScript, HTML, CSS, LocalStorage
-
-簡介：
-TodoList 是一款日常任務管理工具，提供新增、刪除、切換完成狀態與主題風格切換功能。資料儲存於 localStorage，適合練習狀態管理與 UI 操作。
-
-特色功能：
-
-任務新增與切換狀態
-
-主題樣式切換（淺色/深色）
-
-使用者偏好儲存於 localStorage
-
-具備簡潔 UI 介面
-
-*/
-
 const Todolist = () => {
   const { SectionAnimate, textSize } = useContext(AppContext);
-  console.log("載入 Todo List 頁面...");
+
   return (
     <motion.div
       {...SectionAnimate}

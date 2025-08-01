@@ -31,14 +31,14 @@ const projects = [
     ),
     descript_II: (
       <>
-        <div className="des_II_content ">
+        <div className="des_II_content w-full">
           <h3 className={h3_style}>運用技術：</h3>
           <p className={content_style}>
             React, Redux, TailwindCSS, JavaScript, LocalStorage, HTML/CSS
           </p>
           <Hr />
         </div>
-        <div className="des_II_content ">
+        <div className="des_II_content w-full">
           <h3 className={h3_style}>專案簡介：</h3>
           <ul className={`flex flex-col gap-4`}>
             <li className={content_style}>
@@ -54,7 +54,7 @@ const projects = [
 
           <Hr />
         </div>
-        <div className="des_II_content ">
+        <div className="des_II_content w-full">
           <h3 className={h3_style}>技術學習重點：</h3>
           <ul className={`flex flex-col gap-4`}>
             <li className={content_style}>
@@ -78,9 +78,9 @@ const projects = [
           </ul>
           <Hr />
         </div>
-        <div className="des_II_content ">
+        <div className="des_II_content">
           <h3 className={h3_style}>專案圖片</h3>
-          <div className="des-img grid grid-cols-1 gap-4">
+          <div className="des-img grid grid-cols-1 items-center justify-center w-full gap-4">
             <img src="/Rosen-profile/buyflow/HomePage.png" alt="HomePage.png" />
             <img
               src="/Rosen-profile/buyflow/LoginPage.png"
@@ -301,7 +301,7 @@ const projects = [
         </div>
         <div className="des_II_content ">
           <h3 className={h3_style}>專案圖片</h3>
-          <div className="des-img grid grid-cols-1 gap-4">
+          <div className="des-img flex flex-col items-center justify-center gap-4">
             <img
               src="/Rosen-profile/imagesearch/imagesearch-1.png"
               alt="magesearch-1.png"
@@ -318,8 +318,8 @@ const projects = [
         </div>
       </>
     ),
-    gitLink: "https://github.com/MoriCiao/project-DataForm.git",
-    webLink: "https://moriciao.github.io/project-DataForm/",
+    gitLink: "https://github.com/MoriCiao/project-search.git",
+    webLink: "https://moriciao.github.io/project-searchImage/",
     isToggle: false,
   },
   {
@@ -394,7 +394,7 @@ const projects = [
           </ul>
           <Hr />
         </div>
-        <div className="des_II_content ">
+        <div className="des_II_content flex flex-col items-center justify-center">
           <h3 className={h3_style}>專案圖片</h3>
           <div className="des-img grid grid-cols-1 gap-4 items-center justify-center">
             <img
@@ -415,23 +415,21 @@ const projects = [
             <img
               src="/Rosen-profile/datafrom/dataform-4.png"
               alt=""
-              className="w-full"
+              className="w-[50%]"
             />
           </div>
         </div>
       </>
     ),
-    gitLink: "https://github.com/MoriCiao/project-search.git",
-    webLink: "#",
+    gitLink: "https://github.com/MoriCiao/project-DataForm.git",
+    webLink: "https://moriciao.github.io/project-DataForm/",
     isToggle: false,
   },
 ];
 
 const Projects = () => {
   const { SectionAnimate } = useContext(AppContext);
-  const initState = {
-    isToggle: false,
-  };
+  const initState = {};
 
   function stateReducer(state, action) {
     switch (action.type) {
@@ -442,6 +440,21 @@ const Projects = () => {
 
         return { ...state };
       }
+      case "IS_TOGGLE_FALSE": {
+        const item = action.payload;
+
+        item.isToggle = false;
+
+        return { ...state };
+      }
+      case "IS_TOGGLE_TRUE": {
+        const item = action.payload;
+
+        item.isToggle = true;
+
+        return { ...state };
+      }
+
       default:
         return state;
     }
@@ -457,22 +470,50 @@ const Projects = () => {
       {projects &&
         projects.map((p) => {
           return (
-            <div key={p.id} className={`container`}>
+            <div key={p.id} className={`container relative`}>
+              <div
+                className="absolute top-0 right-2 w-10 h-10 z-1 cursor-pointer -rotate-90 scale-120"
+                onClick={() =>
+                  dispatch({ type: "IS_TOGGLE_FALSE", payload: p })
+                }
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  class="feather feather-log-in"
+                >
+                  <path d="M15 3h4a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2h-4"></path>
+                  <polyline points="10 17 15 12 10 7"></polyline>
+                  <line x1="15" y1="12" x2="3" y2="12"></line>
+                </svg>
+              </div>
               <div
                 className={`p-item p-4 flex flex-col gap-2 cursor-pointer backdrop-blur-sm bg-gradient-to-br from-slate-900/50 via-slate-700/50 to-slate-900/50 rounded-xl border-white/50 border transtion duration-1000 ${
-                  p.isToggle ? "h-180" : "h-50"
+                  p.isToggle ? "h-500" : "h-50"
                 }`}
+                onClick={() => dispatch({ type: "IS_TOGGLE_TRUE", payload: p })}
               >
                 {/* 專案小圖示、簡介 */}
-                <div className="grid grid-cols-4 gap-12">
-                  <div className="rounded-md w-[10rem] h-[10rem] p-2 overflow-hidden flex items-center justify-center hover:scale-115 transition duration-500">
-                    <div className="img-svg w-full h-full flex items-center justify-center">
+                <div className="grid md:grid-cols-5 sm:grid-cols-4 gap-4">
+                  <div className="rounded-md w-[10rem] h-[10rem] p-2 overflow-hidden flex items-center justify-center m-auto hover:scale-115 transition duration-500">
+                    <div className="img-svg w-full h-full flex sm:pr-4 items-center justify-center">
                       {p.img}
                     </div>
                   </div>
-                  <div className="col-start-2 col-span-3 flex flex-col gap-2 tracking-widest  select-none">
-                    <h3 className="text-2xl font-bold">{p.title}</h3>
-                    <p className="text-xl font-[600]">{p.descript}</p>
+                  <div className="col-start-2 md:col-span-4 sm:col-span-3 flex flex-col gap-2 tracking-widest  select-none">
+                    <h3 className="text-2xl font-bold md:mt-4 sm:mt-2">
+                      {p.title}
+                    </h3>
+                    <p className="text-xl font-[500] md:mt-4 sm:mt-0">
+                      {p.descript}
+                    </p>
                   </div>
                 </div>
                 {/* 專案介紹 */}
@@ -510,14 +551,14 @@ const Projects = () => {
 
                   {p.descript_II}
                 </div>
-
-                <button
-                  className="p-link rounded-br-xl rounded-tl-xl border-l-2 border-t-1 border-white/50 bg-gradient-to-br from-slate-500/50 to-slate-900/50 select-none hover:font-bold text-center select-none cursor-pointer tracking-widest"
-                  onClick={() => dispatch({ type: "IS_TOGGLE", payload: p })}
-                >
-                  {p.isToggle ? "LESS..." : "MORE..."}
-                </button>
               </div>
+
+              <button
+                className="p-link rounded-br-xl rounded-tl-xl border-l-2 border-t-1 border-white/50 bg-gradient-to-br from-slate-500/50 to-slate-900/50 select-none hover:font-bold text-center select-none cursor-pointer tracking-widest"
+                onClick={() => dispatch({ type: "IS_TOGGLE", payload: p })}
+              >
+                {p.isToggle ? "LESS..." : "MORE..."}
+              </button>
             </div>
           );
         })}

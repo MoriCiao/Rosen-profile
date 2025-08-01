@@ -2,12 +2,14 @@
     transition: 0.6s;
     .p-item{
         position: relative;
+        z-index: 0;
         background-color: transparent;
         transition: 0.6s;
         transition: height 1s;
     }
     .p-link{
         position: absolute;
+        z-index: 1;
         bottom: 0rem;
         right: 0rem;
         width: 10rem;
@@ -35,14 +37,25 @@
     border: 2px red solid;
 }
 .des_II{
-    padding: 1rem;
+    margin: 1rem 2rem;
+    padding: 2rem 4rem;
     border-radius: 1.25rem;
-    overflow-y: overlay;
+    overflow-y:overlay ;
     scrollbar-width: none;
-    scroll-behavior: smooth;
+    @media (max-width:1023px) {
+        margin: 1rem 1rem;
+        padding: 1rem 1rem;
+    }
+
+    @media (max-width:768px) {
+        margin: 0.5rem 1rem;
+        padding: 1rem 2rem;
+    }
     .des-img{
         img{
             border-radius: 1.25rem;
+            margin: auto;
+            object-fit: fill;
         }
     }
     .des_II_link{
@@ -50,9 +63,7 @@
         gap: 0.5rem;
         align-items: center;
         justify-content: center;
-        
-        a.a-tag{
-            color: rgb(255, 177, 27);
+        a{
             position: relative;
             height: 2rem;
             width: 8rem;
@@ -62,58 +73,58 @@
             transition: 0.5s;
             text-transform: uppercase;
             transform: 1s;
-            background:  linear-gradient(to bottom right,
-            rgba(255,255,255,.1),
-            rgba(0, 0, 0, 0.3)),;
-            animation: glowingText_I 4s infinite linear;
-
-            svg,
-                svg rect {
-                    position: absolute;
-                    top: 0;
-                    left: 0;
-                    width: 100%;
-                    height: 100%;
-                    fill: none;
-                    transition: 0.5s;
-                }
+            background: linear-gradient(to bottom right,
+                    rgba(255, 255, 255, .1),
+                    rgba(0, 0, 0, 0.3)), ;
+            &:hover {
+                    font-weight: 900;
+                    font-size: 1.1rem;
             
-                rect {
-                    stroke-width: 2;
-                    stroke: rgb(255, 177, 27);
-                    stroke-dasharray: 2rem, 8rem;
-                    stroke-dashoffset:0;
-                    animation: glowing 8s infinite linear;
-                    filter: 
-                    drop-shadow(0 0 2px rgba(255, 177, 27,1))
-                    drop-shadow(0 0 7px rgba(255, 177, 27, 0.7))
-                    drop-shadow(0 0 12px rgba(255, 177, 27,0.4))
-                    drop-shadow(0 0 25px rgba(255, 177, 27, 1))
-                    ;
-                }
-                &:hover{
-                    font-size: 900;
-                    animation: a_hover 2s linear infinite;
-                    rect{
+                    rect {
                         stroke-dashoffset: 240;
                     }
                 }
+                        svg,
+                        svg rect {
+                            position: absolute;
+                            top: 0;
+                            left: 0;
+                            width: 100%;
+                            height: 100%;
+                            fill: none;
+                            transition: 0.5s;
+                        }
+            
+                        rect {
+                            stroke-width: 2;
+                            stroke: rgb(255, 177, 27);
+                            stroke-dasharray: 2rem, 8rem;
+                            stroke-dashoffset: 0;
+                            animation: glowing 12s infinite linear;
+                            filter:
+                                brightness(1.2) drop-shadow(0 0 5px rgba(255, 177, 27, 1)) drop-shadow(0 0 25px rgba(255, 177, 27, 1));
+                        }
+        }
+        a:nth-child(1){
+            color: rgb(255, 177, 27);
+
+            
+                
         }
         a:nth-child(2) {
             color:rgb(255, 99, 27);
-            animation: glowingText_II 4s infinite linear;
+            // animation: glowingText_II 10s infinite linear;
 
             rect {
                     stroke-width: 2;
                     stroke: rgb(255, 99, 27);
                     stroke-dasharray: 2rem, 8rem;
                     stroke-dashoffset: 0;
-                    animation: glowing 8s infinite linear;
+                    animation: glowing 12s infinite linear;
                     filter:
-                        drop-shadow(0 0 2px rgba(255,99,27,1))
-                        drop-shadow(0 0 7px rgba(255,99,27, 0.7)) 
-                        drop-shadow(0 0 12px rgba(255,99,27, 0.4)) 
-                        drop-shadow(0 0 25px rgba(255,99,27, 1));
+                    brightness(1.2)
+                    drop-shadow(0 0 5px rgba(255, 99, 27, 1))
+                    drop-shadow(0 0 25px rgba(255,99,27, 1));
                 }
         }
         
@@ -121,44 +132,14 @@
     }
 }
 
-@keyframes glowingText_I {
-    0%,
-    100% {
-        text-shadow:
-            0 0 5px rgb(255, 218, 151),
-            0 0 10px rgba(255, 213, 136, 0.8),
-            0 0 20px rgba(255, 208, 119, 0.6),;
-    }
-
-    50% {
-        text-shadow:
-            0 0 5px rgba(255, 177, 27,0.7),
-            0 0 10px rgba(255, 177, 27,0.5),
-            0 0 20px rgba(255, 177, 27,0.3),;
-    }
-}
-
-@keyframes glowingText_II {
-    0%,100%{
-        text-shadow:
-        0 0 5px rgb(255, 191, 162),
-        0 0 10px rgba(255, 183, 150, 0.8),
-        0 0 20px rgba(255, 186, 154, 0.6) ;
-    }
-    50%{
-        text-shadow:
-        0 0 5px rgba(255, 99, 27, 0.7),
-        0 0 10px rgba(255, 99, 27, 0.5),
-        0 0 20px rgba(255, 99, 27, 0.3);
-    }
-}
-
 @keyframes glowing{
     0%{
        stroke-dashoffset: 480;
+    
     }
     100% {
         stroke-dashoffset: 0;
+        
     }
 }
 @keyframes a_hover{
@@ -198,6 +179,5 @@
     filter: 
     drop-shadow(0 0 2px rgba(47, 113, 255,0.2))
     drop-shadow(0 0 5px rgba(47, 113, 255,0.5))
-    drop-shadow(0 0 10px rgba(47, 113, 255,0.8))
     drop-shadow(0 0 15px rgba(47, 113, 255,1));
 }

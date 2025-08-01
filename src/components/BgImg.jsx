@@ -27,10 +27,26 @@ const BgImg = () => {
       initial={{ opacity: 1, scale: 1.2 }}
       whileInView={{ opacity: 1, scale: 1 }}
       transition={{ duration: 0.5 }}
-      className="fixed top-0 left-0 w-full h-screen
-        z-[-1] select-none pointer-events-none bg-gradient-to-bl from-slate-900 via-slate-900 to-slate-900"
+      className="bg fixed top-0 left-0 w-full h-screen
+        z-[-1] select-none pointer-events-none bg-gradient-to-bl from-slate-900 via-slate-900 to-slate-900 "
     >
-      {pathname === "/Rosen-profile/" ? (
+      <>
+        <motion.img
+          key={"homepage"}
+          initial={{ opacity: 0.6, scale: 1.1 }}
+          animate={{ opacity: 1, scale: 1 }}
+          transition={{ duration: 0.5 }}
+          className="absolute top-0 left-0 md:w-full sm:h-auto md:w-auto sm:h-full sm:object-top object-cover brightness-30"
+          src={img.homepage[1]}
+          alt="homepage"
+        />
+        <div className="svg-content ">
+          <svg>
+            <circle cx="340" cy="280" r="200"></circle>
+          </svg>
+        </div>
+      </>
+      {/* {pathname === "/Rosen-profile/" ? (
         <>
           <motion.img
             key={"homepage"}
@@ -98,7 +114,7 @@ const BgImg = () => {
             alt="projects"
           />
         </AnimatePresence>
-      ) : null}
+      ) : null} */}
     </motion.div>
   );
 };

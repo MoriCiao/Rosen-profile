@@ -1,8 +1,11 @@
 import React, { useContext } from "react";
 import { AppContext } from "./AppProvider";
 import { motion, AnimatePresence } from "framer-motion";
+import { useNavigate } from "react-router-dom";
 const Begin = () => {
   const { closeView, setCloseView } = useContext(AppContext);
+
+  const navigate = useNavigate();
   return (
     <section
       className={`begin w-[100vw] h-[100vh] absolute z-1000 top-0 left-0 bg-gradient-to-br from-sky-700 via-blue-900 to-sky-900 flex items-center justify-center overflow-hidden select-none tracking-widest ${
@@ -34,7 +37,10 @@ const Begin = () => {
             hover:drop-shadow-[0_0_12px_rgba(255,255,255,0.6)] 
             transition duration-300
             cursor-pointer"
-        onClick={() => setCloseView(true)}
+        onClick={() => {
+          setCloseView(true);
+          navigate("/Rosen-profile/homepage");
+        }}
       >
         Enter
       </button>

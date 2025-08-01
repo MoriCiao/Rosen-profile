@@ -1,13 +1,16 @@
+header {
+  box-shadow: 4px 4px 20px rgb(0, 0, 0);
+}
+
 .title-h1 {
   font-family: sans-serif;
-  text-shadow: 0 1px 0 black, 0 2px 0 black, 3px 3px 5px black, 3px 4px 5px black, 3px 5px 5px black;
+  text-shadow: 1px 1px 2px rgb(255, 255, 255);
 }
 
 .path-li {
   -webkit-backdrop-filter: blur(1px) brightne(1.1);
           backdrop-filter: blur(1px) brightne(1.1);
   background: rgba(15, 37, 64, 0.5);
-  box-shadow: inset 2px 2px 3px rgba(255, 255, 255, 0.5), 1px 1px 0 rgba(15, 37, 64, 0.7), 3px 3px 0 rgba(15, 37, 64, 0.7), 5px 5px 1px rgba(15, 37, 64, 0.7);
   transition: 0.6s;
 }
 .path-li hr {
@@ -18,7 +21,6 @@
 .path-li a {
   transform: translateY(0.1rem);
   opacity: 0.8;
-  -webkit-box-reflect: below -0.5rem linear-gradient(to bottom, transparent, transparent);
   transition: all 0.6s ease;
 }
 .path-li:hover {
@@ -26,32 +28,28 @@
   background: rgba(15, 37, 64, 0.8);
 }
 .path-li:hover hr {
-  transform: translateY(rem);
+  transform: translateY(0.2rem);
   width: 80%;
 }
 .path-li:hover a {
   opacity: 1;
-  -webkit-box-reflect: below -0.5rem linear-gradient(to bottom, transparent, rgba(105, 212, 255, 0.5));
-  text-shadow: 0 0 10px rgba(53, 133, 254, 0.5);
+  text-shadow: 0 0 10px rgb(53, 133, 254);
+  filter: brightness(1.1);
 }
 
+.HeaderCotact button {
+  scale: 1;
+  transition: 0.5s;
+}
 .HeaderCotact button:hover {
-  animation: btn 2s linear infinite;
+  scale: 1.1;
 }
 .HeaderCotact .email-text {
   transition: 0.5s;
-  transform: translateX(-300px);
+  transform: translateX(300px);
 }
 .HeaderCotact .e-active {
   transform: translateX(0px);
-}
-@keyframes btn {
-  0%, 100% {
-    scale: 1;
-  }
-  50% {
-    scale: 1.1;
-  }
 }
 
 .begin span {
@@ -63,7 +61,7 @@
   font-size: 8rem;
   transform: rotateY(10deg) rotateX();
   text-shadow: 0 1px 0 #ccc, 0 2px 0 #ccc, 0 3px 0 #ccc, 0 6px 0 #ccc, 0 9px 0 #ccc, 0 10px 10px rgba(0, 0, 0, 0.3);
-  animation: animate 0.6s ease infinite alternate;
+  animation: animate 0.8s ease infinite alternate;
 }
 .begin h1 span:nth-child(2) {
   animation-delay: 0.1s;
@@ -89,11 +87,27 @@
 }
 .skill-item {
   transition: 0.6s;
-  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.3), 0 3px 2px rgba(0, 0, 0, 0.3), 0 5px 3px rgba(0, 0, 0, 0.3), 0 7px 4px rgba(0, 0, 0, 0.3), 0 10px 5px rgba(0, 0, 0, 0.3);
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.3), 0 10px 5px rgba(0, 0, 0, 0.3);
+}
+.skill-item div {
+  padding: 0.5rem 0;
+  width: 8rem;
+  height: 2rem;
+  bottom: -2rem;
+  overflow: hidden;
+}
+.skill-item div span {
+  color: white;
+  display: block;
+  transform: translateY(-2rem);
+  transition: 0.6s;
 }
 .skill-item:hover {
   transform: translateY(-10px);
-  box-shadow: 0 3px 1px rgba(0, 0, 0, 0.3), 0 5px 2px rgba(0, 0, 0, 0.3), 0 7px 3px rgba(0, 0, 0, 0.3), 0 9px 4px rgba(0, 0, 0, 0.3), 0 15px 20px rgba(0, 0, 0, 0.8);
+  box-shadow: 0 3px 1px rgba(0, 0, 0, 0.3), 0 15px 20px rgba(0, 0, 0, 0.8);
+}
+.skill-item:hover span {
+  transform: translateY(0rem);
 }
 .skill-item:hover img {
   filter: drop-shadow(0 0 5px rgba(255, 255, 255, 0.3));
@@ -104,12 +118,14 @@
 }
 .container .p-item {
   position: relative;
+  z-index: 0;
   background-color: transparent;
   transition: 0.6s;
   transition: height 1s;
 }
 .container .p-link {
   position: absolute;
+  z-index: 1;
   bottom: 0rem;
   right: 0rem;
   width: 10rem;
@@ -135,14 +151,29 @@
 }
 
 .des_II {
-  padding: 1rem;
+  margin: 1rem 2rem;
+  padding: 2rem 4rem;
   border-radius: 1.25rem;
   overflow-y: overlay;
   scrollbar-width: none;
-  scroll-behavior: smooth;
+}
+@media (max-width: 1023px) {
+  .des_II {
+    margin: 1rem 1rem;
+    padding: 1rem 1rem;
+  }
+}
+@media (max-width: 768px) {
+  .des_II {
+    margin: 0.5rem 1rem;
+    padding: 1rem 2rem;
+  }
 }
 .des_II .des-img img {
   border-radius: 1.25rem;
+  margin: auto;
+  -o-object-fit: fill;
+     object-fit: fill;
 }
 .des_II .des_II_link {
   display: flex;
@@ -150,8 +181,7 @@
   align-items: center;
   justify-content: center;
 }
-.des_II .des_II_link a.a-tag {
-  color: rgb(255, 177, 27);
+.des_II .des_II_link a {
   position: relative;
   height: 2rem;
   width: 8rem;
@@ -162,10 +192,16 @@
   text-transform: uppercase;
   transform: 1s;
   background: linear-gradient(to bottom right, rgba(255, 255, 255, 0.1), rgba(0, 0, 0, 0.3));
-  animation: glowingText_I 4s infinite linear;
 }
-.des_II .des_II_link a.a-tag svg,
-.des_II .des_II_link a.a-tag svg rect {
+.des_II .des_II_link a:hover {
+  font-weight: 900;
+  font-size: 1.1rem;
+}
+.des_II .des_II_link a:hover rect {
+  stroke-dashoffset: 240;
+}
+.des_II .des_II_link a svg,
+.des_II .des_II_link a svg rect {
   position: absolute;
   top: 0;
   left: 0;
@@ -174,50 +210,29 @@
   fill: none;
   transition: 0.5s;
 }
-.des_II .des_II_link a.a-tag rect {
+.des_II .des_II_link a rect {
   stroke-width: 2;
   stroke: rgb(255, 177, 27);
   stroke-dasharray: 2rem, 8rem;
   stroke-dashoffset: 0;
-  animation: glowing 8s infinite linear;
-  filter: drop-shadow(0 0 2px rgb(255, 177, 27)) drop-shadow(0 0 7px rgba(255, 177, 27, 0.7)) drop-shadow(0 0 12px rgba(255, 177, 27, 0.4)) drop-shadow(0 0 25px rgb(255, 177, 27));
+  animation: glowing 12s infinite linear;
+  filter: brightness(1.2) drop-shadow(0 0 5px rgb(255, 177, 27)) drop-shadow(0 0 25px rgb(255, 177, 27));
 }
-.des_II .des_II_link a.a-tag:hover {
-  font-size: 900;
-  animation: a_hover 2s linear infinite;
-}
-.des_II .des_II_link a.a-tag:hover rect {
-  stroke-dashoffset: 240;
+.des_II .des_II_link a:nth-child(1) {
+  color: rgb(255, 177, 27);
 }
 .des_II .des_II_link a:nth-child(2) {
   color: rgb(255, 99, 27);
-  animation: glowingText_II 4s infinite linear;
 }
 .des_II .des_II_link a:nth-child(2) rect {
   stroke-width: 2;
   stroke: rgb(255, 99, 27);
   stroke-dasharray: 2rem, 8rem;
   stroke-dashoffset: 0;
-  animation: glowing 8s infinite linear;
-  filter: drop-shadow(0 0 2px rgb(255, 99, 27)) drop-shadow(0 0 7px rgba(255, 99, 27, 0.7)) drop-shadow(0 0 12px rgba(255, 99, 27, 0.4)) drop-shadow(0 0 25px rgb(255, 99, 27));
+  animation: glowing 12s infinite linear;
+  filter: brightness(1.2) drop-shadow(0 0 5px rgb(255, 99, 27)) drop-shadow(0 0 25px rgb(255, 99, 27));
 }
 
-@keyframes glowingText_I {
-  0%, 100% {
-    text-shadow: 0 0 5px rgb(255, 218, 151), 0 0 10px rgba(255, 213, 136, 0.8), 0 0 20px rgba(255, 208, 119, 0.6);
-  }
-  50% {
-    text-shadow: 0 0 5px rgba(255, 177, 27, 0.7), 0 0 10px rgba(255, 177, 27, 0.5), 0 0 20px rgba(255, 177, 27, 0.3);
-  }
-}
-@keyframes glowingText_II {
-  0%, 100% {
-    text-shadow: 0 0 5px rgb(255, 191, 162), 0 0 10px rgba(255, 183, 150, 0.8), 0 0 20px rgba(255, 186, 154, 0.6);
-  }
-  50% {
-    text-shadow: 0 0 5px rgba(255, 99, 27, 0.7), 0 0 10px rgba(255, 99, 27, 0.5), 0 0 20px rgba(255, 99, 27, 0.3);
-  }
-}
 @keyframes glowing {
   0% {
     stroke-dashoffset: 480;
@@ -257,7 +272,7 @@
   stroke-width: 2;
   stroke: rgb(102, 151, 255);
   transform: translateX(-10px);
-  filter: drop-shadow(0 0 2px rgba(47, 113, 255, 0.2)) drop-shadow(0 0 5px rgba(47, 113, 255, 0.5)) drop-shadow(0 0 10px rgba(47, 113, 255, 0.8)) drop-shadow(0 0 15px rgb(47, 113, 255));
+  filter: drop-shadow(0 0 2px rgba(47, 113, 255, 0.2)) drop-shadow(0 0 5px rgba(47, 113, 255, 0.5)) drop-shadow(0 0 15px rgb(47, 113, 255));
 }
 
 .story {
@@ -285,12 +300,8 @@
   fill: none;
 }
 .story svg rect, .story rect rect {
-  stroke-width: 6;
-  stroke: rgb(255, 208, 122);
-  stroke-dasharray: 98.75rem 42.5rem;
-  stroke-linecap: round;
-  filter: drop-shadow(rgba(252, 181, 49, 0.4) 0 0 5px) drop-shadow(rgba(252, 181, 49, 0.8) 0 0 15px) drop-shadow(rgb(252, 181, 49) 0 0 50px) blur(2px);
-  animation: glowing 6s linear infinite;
+  stroke-width: 4;
+  stroke: rgba(255, 255, 255, 0.1);
 }
 .story .story-container {
   border: 0.1rem rgb(105, 212, 255) solid;
@@ -303,34 +314,18 @@
   border: 1px rgba(255, 255, 255, 0.1) solid;
   font-size: 1.125rem;
   margin: 1rem 0.5rem;
-  padding: 1rem 1rem 0.5rem 1rem;
+  padding: 2rem 4rem;
   border-radius: 0;
-  background: linear-gradient(to bottom right, rgba(0, 0, 0, 0.2), rgba(138, 138, 138, 0.1), rgba(230, 230, 230, 0.1), rgba(138, 138, 138, 0.1), rgba(0, 0, 0, 0.3));
+  background: linear-gradient(to bottom right, rgba(0, 0, 0, 0.2), rgba(138, 138, 138, 0.1), rgba(0, 0, 0, 0.3));
   transition: 0.5s;
 }
 .story .story-container .story-item:hover {
   transform: translateY(-0.5rem);
 }
 .story .story-container .story-item:hover strong {
-  animation: text-glowing 2s linear infinite;
+  text-shadow: 0 0 5px rgba(255, 177, 27, 0.5);
 }
 
-@keyframes glowing {
-  0% {
-    stroke-dashoffset: 2240;
-  }
-  100% {
-    stroke-dashoffset: 0;
-  }
-}
-@keyframes text-glowing {
-  0%, 100% {
-    text-shadow: 0 0 5px rgb(255, 177, 27);
-  }
-  50% {
-    text-shadow: 0 0 15px rgb(255, 177, 27);
-  }
-}
 :root {
   --theme-color: rgb(15, 37, 64);
   --text-color: rgb(105, 212, 255);
@@ -343,43 +338,45 @@
   scrollbar-width: none;
   scroll-behavior: smooth;
 }
-.APP main {
-  overflow-y: overlay;
-  scrollbar-width: none;
-  scroll-behavior: smooth;
+
+.bg {
+  filter: blur(2px);
 }
 
-.svg-content {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100vw;
-  height: 100vh;
+@media (min-width: 1536px) {
+  .svg-content {
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+  }
+  .svg-content svg {
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    fill: none;
+  }
+  .svg-content svg circle {
+    position: absolute;
+    top: 0;
+    left: 0;
+    stroke: rgb(105, 212, 255);
+    stroke-width: 10;
+    animation: glowing_bf 10s ease-in infinite;
+  }
 }
-.svg-content svg {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  fill: none;
-}
-.svg-content svg circle {
-  position: absolute;
-  top: 0;
-  left: 0;
-  stroke: rgb(105, 212, 255);
-  stroke-width: 10;
-  animation: glowing_bf 6s ease-in infinite;
-}
-
 @keyframes glowing_bf {
   0%, 100% {
+    r: 150;
     opacity: 1;
-    filter: blur(30px) brightness(1.1) drop-shadow(0 0 50px rgb(42, 116, 255)) drop-shadow(0 0 100px rgb(105, 212, 255)) drop-shadow(0 0 150px rgb(105, 212, 255));
+    filter: blur(20px) brightness(0.3) drop-shadow(0 0 30px rgb(42, 116, 255));
   }
   50% {
-    opacity: 0.75;
-    filter: blur(30px) brightness(1.1) drop-shadow(0 0 10px rgb(42, 116, 255)) drop-shadow(0 0 30px rgb(105, 212, 255));
+    r: 175;
+    opacity: 1;
+    filter: blur(30px) brightness(0.3) drop-shadow(0 0 15px rgb(105, 212, 255));
   }
 }/*# sourceMappingURL=index.css.map */

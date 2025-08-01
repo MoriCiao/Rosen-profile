@@ -10,14 +10,16 @@ import BuyFlow from "../pages/projectsPages/Project-BuyFlow";
 import FormData from "../pages/projectsPages/Project-FormData";
 import MainArea from "../pages/MainArea";
 import ProjectsLayout from "../components/ProjectsLayout";
+import Header from "../pages/Header";
 const AppRoute = () => {
   return (
-    <section className="app_route w-full">
+    <section className="app_route w-full h-full">
       <Routes>
         <Route path="/Rosen-profile" element={<MainArea />} />
+        <Route path="/Rosen-profile/homepage" element={<Header />} />
+
         <Route path="/Rosen-profile/story" element={<Story />} />
         <Route path="/Rosen-profile/skills" element={<Skills />} />
-
         <Route path="/Rosen-profile/projects/" element={<Projects />} />
         <Route path="/Rosen-profile/projects/buyflow" element={<BuyFlow />} />
         <Route path="/Rosen-profile/projects/todolist" element={<Todolist />} />
@@ -26,7 +28,6 @@ const AppRoute = () => {
           element={<ImageSearch />}
         />
         <Route path="/Rosen-profile/projects/dataform" element={<FormData />} />
-
         <Route path="*" element={<Page404 />} />
       </Routes>
     </section>

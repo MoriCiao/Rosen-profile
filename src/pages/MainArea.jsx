@@ -2,9 +2,8 @@ import { easeInOut, motion } from "framer-motion";
 import { Outlet } from "react-router-dom";
 
 const MainArea = () => {
-  console.log("MainArea render ...");
   return (
-    <main className="Layout">
+    <main className="Layout w-full h-full">
       {/* 子頁面會在這邊顯示 */}
       <Outlet />
     </main>

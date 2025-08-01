@@ -1,4 +1,4 @@
-import React, { useRef, useState } from "react";
+import React, { useContext, useRef, useState } from "react";
 import { motion } from "framer-motion";
 import { AppContext } from "../components/AppProvider";
 
@@ -7,18 +7,20 @@ import HeaderGuided from "../components/HeadeGuided";
 import HeaderContact from "../components/HeaderCotact";
 
 const Header = () => {
+  const { SectionAnimate } = useContext(AppContext);
   return (
-    <section className="w-full flex flex-col gap-8 h-full relative">
+    <motion.section
+      {...SectionAnimate}
+      className="w-full flex flex-col h-full relative "
+    >
       <div>
         <HeaderIntro />
       </div>
-      <div className="py-8">
-        <HeaderGuided />
-      </div>
-      <div className="absolute bottom-0 left-0">
+
+      <div className="absolute bottom-0 right-0">
         <HeaderContact />
       </div>
-    </section>
+    </motion.section>
   );
 };
 
