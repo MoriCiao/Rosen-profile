@@ -40,11 +40,11 @@ const Skills = () => {
       className="workskill mt-4 overflow-y-overlay scroll-smooth mt-8"
       id="skill"
     >
-      <div className="grid  xl:grid-cols-4 sm:grid-cols-3 grid-cols-2 gap-4 sm:pb-0 pb-10 items-center justify-center sm:gap-16  ">
+      <div className="grid  xl:grid-cols-4 sm:grid-cols-3 grid-cols-2 gap-2 sm:pb-0 pb-10 items-center justify-center sm:gap-16  ">
         {skillsImg.map((skill, index) => {
           return (
             <Fragment key={index}>
-              <div className="skill-item relative  w-[180px] h-[180px] border border-white/50 rounded-2xl p-8 backdrop-blur-sm bg-gradient-to-br from-black/10 via-white/20 to-black/10 flex flex-col items-center justify-center m-auto">
+              <div className="skill-item relative sm:w-[180px] sm:h-[180px]  w-[120px] border border-white/50 rounded-2xl sm:p-8 p-6 backdrop-blur-sm bg-gradient-to-br from-black/10 via-white/20 to-black/10 flex flex-col items-center justify-center m-auto">
                 <div className="absolute bottom-0 text-xl  text-center font-bold ">
                   <span className="tracking-widest">{skill.name}</span>
                 </div>

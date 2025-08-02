@@ -2,9 +2,12 @@ import { useState, useContext, useReducer } from "react";
 import { easeInOut, motion, AnimatePresence } from "framer-motion";
 import { AppContext } from "../components/AppProvider";
 
-const Hr = () => <hr className="w-full opacity-50  mt-4" />;
-const h3_style = "md:text-2xl  font-bold pb-4 ";
-const content_style = "md:text-xl  flex gap-2 before:content-['📌']";
+const Hr = () => <hr className="w-full opacity-50  mt-4 mb-2" />;
+const h3_style = "md:text-2xl sm:text-xl text-[1rem] font-bold pb-4 ";
+const content_style =
+  "md:text-xl sm-text-lg flex gap-2 text-[0.8rem] before:content-['📌']";
+
+const desII_style = "des_II_content w-full";
 
 const projects = [
   {
@@ -12,11 +15,9 @@ const projects = [
     img: (
       <svg
         xmlns="http://www.w3.org/2000/svg"
-        width="24"
-        height="24"
         viewBox="0 0 24 24"
         fill="none"
-        className="feather feather-shopping-cart"
+        className="svg-item feather feather-shopping-cart"
       >
         <circle cx="9" cy="21" r="1"></circle>
         <circle cx="20" cy="21" r="1"></circle>
@@ -144,7 +145,7 @@ const projects = [
         height="24"
         viewBox="0 0 24 24"
         fill="none"
-        className="feather feather-check-square"
+        className="svg-item feather feather-check-square"
       >
         <polyline points="9 11 12 14 22 4"></polyline>
         <path d="M21 12v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11"></path>
@@ -251,12 +252,10 @@ const projects = [
     img: (
       <svg
         xmlns="http://www.w3.org/2000/svg"
-        width="24"
-        height="24"
         viewBox="0 0 24 24"
         fill="none"
         stroke="currentColor"
-        className="feather feather-camera"
+        className="svg-item feather feather-camera"
       >
         <path d="M23 19a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h4l2-3h6l2 3h4a2 2 0 0 1 2 2z"></path>
         <circle cx="12" cy="13" r="4"></circle>
@@ -350,11 +349,9 @@ const projects = [
     img: (
       <svg
         xmlns="http://www.w3.org/2000/svg"
-        width="24"
-        height="24"
         viewBox="0 0 24 24"
         fill="none"
-        className="feather feather-database"
+        className="svg-item feather feather-database"
       >
         <ellipse cx="12" cy="5" rx="9" ry="3"></ellipse>
         <path d="M21 12c0 1.66-4 3-9 3s-9-1.34-9-3"></path>
@@ -498,6 +495,7 @@ const Projects = () => {
         projects.map((p) => {
           return (
             <div key={p.id} className={`container relative w-full`}>
+              {/* 闔上按鈕 */}
               <div
                 className="absolute top-0 right-2 w-10 h-10 z-1 cursor-pointer -rotate-90 scale-120"
                 onClick={() =>
@@ -521,20 +519,22 @@ const Projects = () => {
                   <line x1="15" y1="12" x2="3" y2="12"></line>
                 </svg>
               </div>
+
+              {/* 內容本文 */}
               <div
                 className={`p-item p-4 flex flex-col gap-2 cursor-pointer backdrop-blur-sm bg-gradient-to-br from-slate-900/50 via-slate-700/50 to-slate-900/50 rounded-xl border-white/50 border transtion duration-1000 ${
-                  p.isToggle ? "h-300" : "h-50"
+                  p.isToggle ? "sm:h-300 h-250" : "sm:h-50 h-80"
                 }`}
                 onClick={() => dispatch({ type: "IS_TOGGLE_TRUE", payload: p })}
               >
                 {/* 專案小圖示、簡介 */}
-                <div className="grid md:grid-cols-5 sm:grid-cols-4 gap-4">
-                  <div className="rounded-md w-[10rem] h-[10rem] p-2 overflow-hidden flex items-center justify-center m-auto hover:scale-115 transition duration-500">
-                    <div className="img-svg w-full h-full flex sm:pr-4 items-center justify-center">
+                <div className="grid md:grid-cols-5 sm:grid-cols-4  grid-cols-1 sm:gap-4 gap-0 items-center">
+                  <div className="rounded-md sm:w-[10rem] sm:h-[10rem] w-[8rem] h-[8rem] p-2 overflow-hidden flex items-center justify-center m-auto hover:scale-115 transition duration-500">
+                    <div className="img-svg w-full h-full flex sm:pr-4 items-center sm:justify-center justify-start">
                       {p.img}
                     </div>
                   </div>
-                  <div className="project-info col-start-2 md:col-span-4 sm:col-span-3 flex flex-col gap-2 tracking-widest  select-none">
+                  <div className="project-info col-start-1 md:col-span-4 sm:col-span-3 col-span-2 flex flex-col gap-2 tracking-widest  select-none">
                     <h3 className="sm:text-2xl font-bold md:mt-4 sm:mt-2">
                       {p.title}
                     </h3>
@@ -549,8 +549,8 @@ const Projects = () => {
                     p.isToggle ? "opacity-100" : "opacity-0"
                   } relative transtion duration-1000 col-span-4 flex flex-col gap-4 items-start justify-start tracking-wide bg-gradient-to-br from-white/20 via-white/10 to-black/10`}
                 >
-                  <div className=" absolute top-0 right-0 p-4 flex gap-4">
-                    <div className="des_II_link">
+                  <div className=" absolute sm:top-0 sm:right-0 sm:-translate-x-0 sm:w-auto w-full -right-1/2 -translate-x-1/2 p-4 sm:flex gap-4">
+                    <div className="des_II_link flex sm:flex-row flex-col">
                       <a
                         href={p?.gitLink || null}
                         target="_blank"
@@ -575,8 +575,7 @@ const Projects = () => {
                       </a>
                     </div>
                   </div>
-
-                  {p.descript_II}
+                  <div className="sm:mt-0 mt-28 w-full ">{p.descript_II}</div>
                 </div>
               </div>
 

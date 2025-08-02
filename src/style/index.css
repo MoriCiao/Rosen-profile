@@ -61,6 +61,7 @@ header {
 
 .begin {
   transition: 0.6s;
+  display: none;
 }
 .begin h1 {
   scale: 1.5;
@@ -173,18 +174,6 @@ header {
   overflow-y: overlay;
   scrollbar-width: none;
 }
-@media (max-width: 1023px) {
-  .des_II {
-    margin: 1rem 1rem;
-    padding: 1rem 2rem;
-  }
-}
-@media (max-width: 768px) {
-  .des_II {
-    margin: 0.5rem 1rem;
-    padding: 1rem 2rem;
-  }
-}
 .des_II .des-img {
   gap: 2rem;
 }
@@ -285,6 +274,22 @@ header {
     inset: 0 0 0 0;
   }
 }
+.img-svg {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.img-svg .svg-item {
+  margin: auto;
+  position: absolute;
+  top: 0;
+  left: 0;
+  transform: translate();
+  width: 100%;
+  height: 100%;
+}
+
 .feather {
   scale: 0.8;
   width: 75%;
@@ -349,6 +354,12 @@ header {
   text-shadow: 0 0 5px rgba(255, 177, 27, 0.5);
 }
 
+@media (max-width: 1023px) {
+  .des_II {
+    margin: 1rem 1rem;
+    padding: 1rem 2rem;
+  }
+}
 @media (max-width: 768px) {
   .begin h1 {
     scale: 1.2;
@@ -365,7 +376,6 @@ header {
     height: 100vh;
   }
   .bg img.homepage-bg {
-    border: 2px rgb(38, 160, 97) solid;
     width: 100%;
     -o-object-fit: cover;
        object-fit: cover;
@@ -383,7 +393,7 @@ header {
     font-size: 1.2rem;
   }
   .story .story-container .story-item p, .story .story-container .story-item li {
-    font-size: 0.2rem;
+    font-size: 1rem;
   }
   .workskill {
     padding: 0 2rem;
@@ -400,6 +410,10 @@ header {
   .projects .project-info p {
     font-size: 1rem;
   }
+  .projects .des_II {
+    margin: 0.5rem 1rem;
+    padding: 0 1rem 2rem 1rem;
+  }
   .projects .des_II h3 {
     font-size: 1.25rem;
   }
@@ -408,6 +422,34 @@ header {
   }
   .projects .des-img img {
     max-width: 100%;
+  }
+}
+@media (max-width: 480px) {
+  main {
+    padding-top: 1rem;
+  }
+  .email-text {
+    position: absolute;
+    top: 100%;
+    right: 1.5rem;
+    transform: translateX(-50%);
+    font-size: 1.5rem;
+  }
+  .story .project-info h3 {
+    font-size: 1rem;
+  }
+  .story .project-info p {
+    font-size: 1rem;
+  }
+  .p-item {
+    padding: 0.2rem 0.2rem;
+  }
+  .p-item .project-info {
+    padding: 0.2rem 0.5rem;
+  }
+  .des_II {
+    margin: 0.5rem 0.2rem;
+    padding: 0rem;
   }
 }
 :root {

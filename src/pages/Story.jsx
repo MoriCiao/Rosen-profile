@@ -14,7 +14,7 @@ const Story = () => {
     <motion.section
       {...SectionAnimate}
       id="story"
-      className="story overflow-y-overlay scroll-smooth mt-8 tracking-widest p-4 backdrop-blur-sm"
+      className="story overflow-y-overlay scroll-smooth my-4 tracking-widest p-4 backdrop-blur-sm"
     >
       <svg>
         <rect></rect>

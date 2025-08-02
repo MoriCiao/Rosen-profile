@@ -1,4 +1,10 @@
+@media (max-width:1023px) {
+    .des_II {
 
+        margin: 1rem 1rem;
+        padding: 1rem 2rem;
+    }
+}
 @media (max-width :768px) {
     // 起始畫面
     .begin {
@@ -23,7 +29,6 @@
         
       
         img.homepage-bg{
-            border: 2px rgb(38, 160, 97) solid;
             width: 100%;
             object-fit: cover;
         }
@@ -44,7 +49,7 @@
                 }
                 p,li{
 
-                    font-size: 0.2rem;
+                    font-size: 1rem;
                 }
             }
         }
@@ -71,6 +76,8 @@
         }
         
         .des_II{
+            margin: 0.5rem 1rem;
+            padding: 0 1rem 2rem 1rem;
             h3{
                 font-size:1.25rem;
        
@@ -80,8 +87,6 @@
             }
         }
         .des-img {
-
-        
             img {
 
                 max-width: 100%;
@@ -91,3 +96,47 @@
     }
     
 }
+
+@media (max-width :480px){
+    main{
+        padding-top: 1rem;
+    }
+    .email-text{
+        position: absolute;
+        top: 100%;
+        right: 1.5rem;
+        transform: translateX(-50%);
+        font-size: 1.5rem;
+        
+    }
+
+    .story{
+        .project-info {
+            h3 {
+                font-size: 1rem;
+            }
+    
+            p {
+                font-size: 1rem;
+            }
+        }
+    }
+    .p-item{
+        padding: 0.2rem 0.2rem ;
+        .project-info{
+            padding: 0.2rem 0.5rem;
+            
+        }
+    }
+    .des_II{
+        
+        margin: 0.5rem  0.2rem;
+        padding: 0rem;
+        
+    }
+    
+}
+
+
+
+    

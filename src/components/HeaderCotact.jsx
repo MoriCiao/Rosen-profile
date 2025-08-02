@@ -9,13 +9,13 @@ const HeaderContact = () => {
   };
 
   return (
-    <div className="HeaderCotact flex  w-fullitems-center justify-end relative bottom-0 ">
+    <div className="HeaderCotact flex gap-4 w-full items-center justify-end relative bottom-0">
       {/* <div className="flex gap-8 w-full justify-end"> */}
-      <div className="flex items-center overflow-hidden">
+      <div className="flex items-center overflow-hidden ">
         <p
           className={`email-text ${
             email ? "e-active " : ""
-          } items-center text-xl font-bold tracking-wide`}
+          } items-center sm:text-xl font-bold tracking-wide`}
         >
           Rosen.moriciao@gmail.com
         </p>

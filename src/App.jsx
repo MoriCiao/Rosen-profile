@@ -30,7 +30,7 @@ function App() {
         <main
           className={`col-start-4 col-span-8 ${
             !isToggle ? "xl:-translate-x-40" : ""
-          } flex flex-col  gap-8 items-center justify-between py-4 h-[90%] w-full mt-10 md:px-10  transition duration-800`}
+          } flex flex-col gap-8 items-center justify-between py-4 h-[90%] w-full sm:mt-10 mt-0 md:px-10  transition duration-800`}
         >
           <AppRoute />
         </main>
