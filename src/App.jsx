@@ -1,13 +1,8 @@
 import "./style/index.css";
-
-import { animate, motion } from "framer-motion";
-import { Routes, Route, Outlet } from "react-router-dom";
-import Header from "./pages/Header";
 import BgImg from "./components/BgImg";
 import AppRoute from "./routes/AppRoute";
 import AppProvider from "./components/AppProvider";
 import Begin from "./components/Begin";
-import MainArea from "./pages/MainArea";
 import HeaderGuided from "./components/HeadeGuided";
 import { useState } from "react";
 
