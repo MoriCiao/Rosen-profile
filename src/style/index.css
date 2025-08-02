@@ -37,6 +37,11 @@ header {
   filter: brightness(1.1);
 }
 
+.at-present {
+  background: rgb(38, 65, 97);
+  color: rgb(255, 177, 27);
+}
+
 .HeaderCotact button {
   scale: 1;
   transition: 0.5s;
@@ -52,6 +57,12 @@ header {
   transform: translateX(0px);
 }
 
+.begin {
+  transition: 0.6s;
+}
+.begin h1 {
+  scale: 1.5;
+}
 .begin span {
   position: relative;
   display: inline-block;
@@ -59,7 +70,7 @@ header {
   font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
   top: 20px;
   font-size: 8rem;
-  transform: rotateY(10deg) rotateX();
+  transform: rotateY(10deg);
   text-shadow: 0 1px 0 #ccc, 0 2px 0 #ccc, 0 3px 0 #ccc, 0 6px 0 #ccc, 0 9px 0 #ccc, 0 10px 10px rgba(0, 0, 0, 0.3);
   animation: animate 0.8s ease infinite alternate;
 }
@@ -77,6 +88,9 @@ header {
 }
 .begin h1 span:nth-child(6) {
   animation-delay: 0.5s;
+}
+.begin button {
+  bottom: 4rem;
 }
 
 @keyframes animate {
@@ -160,7 +174,7 @@ header {
 @media (max-width: 1023px) {
   .des_II {
     margin: 1rem 1rem;
-    padding: 1rem 1rem;
+    padding: 1rem 2rem;
   }
 }
 @media (max-width: 768px) {
@@ -170,10 +184,11 @@ header {
   }
 }
 .des_II .des-img img {
-  border-radius: 1.25rem;
+  border-radius: 1rem;
   margin: auto;
   -o-object-fit: fill;
      object-fit: fill;
+  max-width: 80%;
 }
 .des_II .des_II_link {
   display: flex;
@@ -319,6 +334,9 @@ header {
   background: linear-gradient(to bottom right, rgba(0, 0, 0, 0.2), rgba(138, 138, 138, 0.1), rgba(0, 0, 0, 0.3));
   transition: 0.5s;
 }
+.story .story-container .story-item h2 {
+  font-size: 1.5rem;
+}
 .story .story-container .story-item:hover {
   transform: translateY(-0.5rem);
 }
@@ -326,6 +344,67 @@ header {
   text-shadow: 0 0 5px rgba(255, 177, 27, 0.5);
 }
 
+@media (max-width: 768px) {
+  .begin {
+    display: none;
+  }
+  .begin h1 {
+    scale: 1.2;
+  }
+  .begin span {
+    font-size: 6rem;
+  }
+  .begin button {
+    bottom: 4rem;
+    scale: 0.8;
+  }
+  .bg {
+    width: 100vw;
+    height: 100vh;
+  }
+  .bg img.homepage-bg {
+    border: 2px rgb(38, 160, 97) solid;
+    width: 100%;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+  .header-info {
+    padding: 0 2rem;
+  }
+  .story {
+    margin: 0rem 2rem;
+  }
+  .story .story-container .story-item {
+    padding: 1rem;
+  }
+  .story .story-container .story-item h2 {
+    font-size: 1.2rem;
+  }
+  .story .story-container .story-item p, .story .story-container .story-item li {
+    font-size: 0.2rem;
+  }
+  .workskill {
+    padding: 0 2rem;
+  }
+  .workskill .skill-item {
+    scale: 0.8;
+  }
+  .projects {
+    padding: 0 2rem;
+  }
+  .projects .project-info h3 {
+    font-size: 1.25rem;
+  }
+  .projects .project-info p {
+    font-size: 1rem;
+  }
+  .projects .des_II h3 {
+    font-size: 1.25rem;
+  }
+  .projects .des_II p, .projects .des_II li {
+    font-size: 1rem;
+  }
+}
 :root {
   --theme-color: rgb(15, 37, 64);
   --text-color: rgb(105, 212, 255);

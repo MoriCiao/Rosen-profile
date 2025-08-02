@@ -14,16 +14,25 @@ const HeaderGuided = ({ isToggle, setIsToggle }) => {
     },
   ];
 
+  const [click, setClick] = useState("");
+
+  const handleClick = (i) => {
+    setIsToggle(false);
+    setClick(i.text);
+  };
+
   return (
-    <nav className="nav relative select-none md:w-80 sm:w-40 h-full z-1">
+    <nav className="nav relative select-none md:w-80 sm:w-40 w-30 h-full z-1">
       <div
-        className={`guided-btn absolute -right-12 w-10 h-10 flex items-center justify-center`}
+        className={`guided-btn absolute -right-12 sm:w-10 h-10 flex items-center justify-center`}
       >
         <button
-          className={`relative w-full h-full cursor-pointer scale-125 transition duration-1000 ${
+          className={`relative w-10 h-full cursor-pointer scale-125 transition duration-1000  ${
             isToggle ? "rotate-y-180" : ""
           } `}
-          onClick={() => setIsToggle((prev) => !prev)}
+          onClick={() => {
+            setIsToggle((prev) => !prev);
+          }}
         >
           <svg
             xmlns="http://www.w3.org/2000/svg"
@@ -49,11 +58,14 @@ const HeaderGuided = ({ isToggle, setIsToggle }) => {
             return (
               <li
                 key={index}
-                className="path-li w-full md:max-h-20 sm:max-h-30 text-center flex flex-col items-center py-4"
+                className={`path-li ${
+                  click === i.text ? "at-present" : ""
+                } w-full md:max-h-20 sm:max-h-30 text-center flex flex-col items-center py-4`}
               >
                 <Link
-                  className="md:text-[1.5rem] sm:text-[1.1rem] font-bold block w-full h-full cursor-pointer tracking-widest"
+                  className={` md:text-[1.5rem] sm:text-[1.1rem] font-bold block w-full h-full cursor-pointer tracking-widest`}
                   to={i.link}
+                  onClick={() => handleClick(i)}
                 >
                   {i.text}
                 </Link>

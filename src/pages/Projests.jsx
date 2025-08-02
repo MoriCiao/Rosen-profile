@@ -3,8 +3,8 @@ import { easeInOut, motion, AnimatePresence } from "framer-motion";
 import { AppContext } from "../components/AppProvider";
 
 const Hr = () => <hr className="w-full opacity-50  mt-4" />;
-const h3_style = "text-2xl font-bold pb-4 ";
-const content_style = "text-xl flex gap-2 before:content-['📌']";
+const h3_style = "md:text-2xl  font-bold pb-4 ";
+const content_style = "md:text-xl  flex gap-2 before:content-['📌']";
 
 const projects = [
   {
@@ -81,39 +81,51 @@ const projects = [
         <div className="des_II_content">
           <h3 className={h3_style}>專案圖片</h3>
           <div className="des-img grid grid-cols-1 items-center justify-center w-full gap-4">
-            <img src="/Rosen-profile/buyflow/HomePage.png" alt="HomePage.png" />
+            <img
+              src="/Rosen-profile/buyflow/HomePage.png"
+              alt="HomePage.png"
+              loading="lazy"
+            />
             <img
               src="/Rosen-profile/buyflow/LoginPage.png"
               alt="LoginPage.png"
+              loading="lazy"
             />
             <img
               src="/Rosen-profile/buyflow/MenberProfile.png"
               alt="MenberProfile.png"
+              loading="lazy"
             />
             <img
               src="/Rosen-profile/buyflow/OrderTrackingPage.png"
               alt="OrderTrackingPage.png"
+              loading="lazy"
             />
             <img
               src="/Rosen-profile/buyflow/ProductsPage.png"
               alt="ProductsPage.png"
+              loading="lazy"
             />
             <img
               src="/Rosen-profile/buyflow/ProductDetailPage.png"
               alt="ProductDetailPage.png"
+              loading="lazy"
             />
             <img
               src="/Rosen-profile/buyflow/CheckoutPage-1.png"
               alt="CheckoutPage-1.png"
+              loading="lazy"
             />
             <img
               src="/Rosen-profile/buyflow/CheckoutPage-2.png"
               alt="CheckoutPage-2.png"
+              loading="lazy"
             />
 
             <img
               src="/Rosen-profile/buyflow/Dashboard-3_OrderList.png"
               alt="Dashboard-3_OrderList.png"
+              loading="lazy"
             />
           </div>
         </div>
@@ -189,34 +201,42 @@ const projects = [
             <img
               src="/Rosen-profile/todoPicture/homepage-dark.png"
               alt="homepage-dark.png"
+              loading="lazy"
             />
             <img
               src="/Rosen-profile/todoPicture/homepage-light.png"
               alt="homepage-light.png"
+              loading="lazy"
             />
             <img
               src="/Rosen-profile/todoPicture/newtodo-dark.png"
               alt="homepage-dark.png"
+              loading="lazy"
             />
             <img
               src="/Rosen-profile/todoPicture/newtodo-light.png"
               alt="homepage-light.png"
+              loading="lazy"
             />
             <img
               src="/Rosen-profile/todoPicture/setting-dark.png"
               alt="homepage-dark.png"
+              loading="lazy"
             />
             <img
               src="/Rosen-profile/todoPicture/setting-light.png"
               alt="homepage-light.png"
+              loading="lazy"
             />
             <img
               src="/Rosen-profile/todoPicture/allTasks-dark.png"
               alt="homepage-dark.png"
+              loading="lazy"
             />
             <img
               src="/Rosen-profile/todoPicture/allTasks-light.png"
               alt="homepage-light.png"
+              loading="lazy"
             />
           </div>
         </div>
@@ -305,14 +325,17 @@ const projects = [
             <img
               src="/Rosen-profile/imagesearch/imagesearch-1.png"
               alt="magesearch-1.png"
+              loading="lazy"
             />
             <img
               src="/Rosen-profile/imagesearch/imagesearch-2.png"
               alt="magesearch-2.png"
+              loading="lazy"
             />
             <img
               src="/Rosen-profile/imagesearch/imagesearch-3.png"
               alt="magesearch-3.png"
+              loading="lazy"
             />
           </div>
         </div>
@@ -396,26 +419,30 @@ const projects = [
         </div>
         <div className="des_II_content flex flex-col items-center justify-center">
           <h3 className={h3_style}>專案圖片</h3>
-          <div className="des-img grid grid-cols-1 gap-4 items-center justify-center">
+          <div className="des-img flex flex-col gap-20 items-center justify-center">
             <img
               src="/Rosen-profile/datafrom/dataform-1.png"
               alt=""
-              className="w-full"
+              className=""
+              loading="lazy"
             />
             <img
               src="/Rosen-profile/datafrom/dataform-2.png"
               alt=""
-              className="w-full"
+              className=""
+              loading="lazy"
             />
             <img
               src="/Rosen-profile/datafrom/dataform-3.png"
               alt=""
-              className="w-full"
+              className=""
+              loading="lazy"
             />
             <img
               src="/Rosen-profile/datafrom/dataform-4.png"
               alt=""
-              className="w-[50%]"
+              className=""
+              loading="lazy"
             />
           </div>
         </div>
@@ -507,11 +534,11 @@ const Projects = () => {
                       {p.img}
                     </div>
                   </div>
-                  <div className="col-start-2 md:col-span-4 sm:col-span-3 flex flex-col gap-2 tracking-widest  select-none">
-                    <h3 className="text-2xl font-bold md:mt-4 sm:mt-2">
+                  <div className="project-info col-start-2 md:col-span-4 sm:col-span-3 flex flex-col gap-2 tracking-widest  select-none">
+                    <h3 className="sm:text-2xl font-bold md:mt-4 sm:mt-2">
                       {p.title}
                     </h3>
-                    <p className="text-xl font-[500] md:mt-4 sm:mt-0">
+                    <p className="sm:text-xl font-[500] md:mt-4 sm:mt-0">
                       {p.descript}
                     </p>
                   </div>

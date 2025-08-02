@@ -1,0 +1,85 @@
+
+@media (max-width :768px) {
+    // 起始畫面
+    .begin {
+        display: none;
+        h1 {
+            scale: 1.2;
+        }
+    
+        span {
+            font-size: 6rem;
+        }
+    
+    
+        button {
+            bottom: 4rem;
+            scale: 0.8;
+        }
+    }
+
+    .bg{
+        width: 100vw;
+        height: 100vh;
+        
+      
+        img.homepage-bg{
+            border: 2px rgb(38, 160, 97) solid;
+            width: 100%;
+            object-fit: cover;
+        }
+    }
+    
+    .header-info{
+        padding: 0 2rem;
+    }
+    .story{
+        margin: 0rem 2rem;
+        .story-container{
+            
+            .story-item{
+                
+                padding:  1rem;
+                h2{
+                    font-size: 1.2rem;
+                }
+                p,li{
+
+                    font-size: 0.2rem;
+                }
+            }
+        }
+    }
+    .workskill{
+        
+        padding: 0 2rem;
+        
+        .skill-item{
+            scale: 0.8;
+        }
+    }
+
+    .projects{
+    
+        padding: 0 2rem;
+        .project-info{
+            h3{
+                font-size: 1.25rem;
+            }
+            p{
+                font-size: 1rem;
+            }
+        }
+        
+        .des_II{
+            h3{
+                font-size:1.25rem;
+       
+            }
+            p,li{
+                font-size: 1rem;
+            }
+        }
+    }
+    
+}

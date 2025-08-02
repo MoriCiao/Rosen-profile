@@ -14,21 +14,23 @@ import { useState } from "react";
 function App() {
   // useContext 將部分FN提供給 childern
   const [isToggle, setIsToggle] = useState(false);
+
   return (
-    <section className="APP relative z-[10] grid xl:grid-cols-12  w-full h-screen ">
+    <section className="APP relative z-[10] xl:grid xl:grid-cols-12 flex  w-full h-screen ">
       <AppProvider>
         <Begin />
+
         <BgImg />
         <header
-          className={`header ${
+          className={`header  ${
             isToggle
-              ? "md:translate-x-0 sm:translate-x-0"
-              : "md:-translate-x-80 sm:-translate-x-40"
-          } fixed z-1 py-20 top-0 left-0 flex flex-col gap-8 items-center justify-between h-full bg-slate-900/70 transition duration-1000`}
+              ? "translate-x-0"
+              : "md:-translate-x-80 sm:-translate-x-40 -translate-x-30"
+          } fixed z-1 py-20 top-0 left-0 flex flex-col gap-8 items-center justify-between  h-full bg-slate-900/70 transition duration-1000`}
         >
           <HeaderGuided isToggle={isToggle} setIsToggle={setIsToggle} />
         </header>
-        <main className="flex flex-col col-start-4 col-span-8 gap-8 items-center justify-between py-4 h-[90%] w-full mt-10 xl:px-10 sm:px-20  ">
+        <main className="flex flex-col col-start-4 col-span-8 gap-8 items-center justify-between py-4 h-[90%] w-full mt-10 md:px-10  transition duration-500">
           <AppRoute />
         </main>
       </AppProvider>

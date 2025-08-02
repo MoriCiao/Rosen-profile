@@ -44,7 +44,7 @@
     scrollbar-width: none;
     @media (max-width:1023px) {
         margin: 1rem 1rem;
-        padding: 1rem 1rem;
+        padding: 1rem 2rem;
     }
 
     @media (max-width:768px) {
@@ -52,10 +52,12 @@
         padding: 1rem 2rem;
     }
     .des-img{
+    
         img{
-            border-radius: 1.25rem;
+            border-radius: 1rem;
             margin: auto;
             object-fit: fill;
+            max-width: 80% ;
         }
     }
     .des_II_link{

@@ -11,7 +11,7 @@ const Header = () => {
   return (
     <motion.section
       {...SectionAnimate}
-      className="w-full flex flex-col h-full relative "
+      className="header-info w-full flex flex-col h-full relative "
     >
       <div>
         <HeaderIntro />

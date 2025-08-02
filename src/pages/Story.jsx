@@ -21,7 +21,7 @@ const Story = () => {
       </svg>
       <div className="story-container">
         <div className="story-item ">
-          <h2 className="text-3xl font-bold mb-4">前端轉職旅程</h2>
+          <h2 className="md:text-3xl font-bold mb-4">前端轉職旅程</h2>
           <p className="mb-4">
             過去在零售業擔任部門擔當，處理部門內各種大小事。但隨著時間推移，發現公司發展趨緩甚至退步，這讓我開始思考未來的方向。
           </p>
