@@ -14,7 +14,7 @@ const HeaderGuided = ({ isToggle, setIsToggle }) => {
     },
   ];
 
-  const [click, setClick] = useState("");
+  const [click, setClick] = useState("Homepage");
 
   const handleClick = (i) => {
     setIsToggle(false);

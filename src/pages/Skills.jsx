@@ -23,11 +23,11 @@ const skillsImg = [
     img: "/Rosen-profile/icon/github.svg",
   },
   {
-    name: "Ps",
+    name: "Photoshop",
     img: "/Rosen-profile/icon/Ps.jpg",
   },
   {
-    name: "Ai",
+    name: "illustrator",
     img: "/Rosen-profile/icon/Ai_icon.png",
   },
 ];
@@ -40,7 +40,7 @@ const Skills = () => {
       className="workskill mt-4 overflow-y-overlay scroll-smooth mt-8"
       id="skill"
     >
-      <div className="grid xxl:grid-cols-4 xl:grid-cols-4 sm:grid-cols-3 grid-cols-2 gap-4 items-center justify-center  sm:gap-16  ">
+      <div className="grid  xl:grid-cols-4 sm:grid-cols-3 grid-cols-2 gap-4 sm:pb-0 pb-10 items-center justify-center sm:gap-16  ">
         {skillsImg.map((skill, index) => {
           return (
             <Fragment key={index}>

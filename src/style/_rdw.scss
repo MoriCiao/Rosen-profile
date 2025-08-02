@@ -2,7 +2,6 @@
 @media (max-width :768px) {
     // 起始畫面
     .begin {
-        display: none;
         h1 {
             scale: 1.2;
         }
@@ -78,6 +77,15 @@
             }
             p,li{
                 font-size: 1rem;
+            }
+        }
+        .des-img {
+
+        
+            img {
+
+                max-width: 100%;
+        
             }
         }
     }

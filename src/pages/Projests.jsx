@@ -419,7 +419,7 @@ const projects = [
         </div>
         <div className="des_II_content flex flex-col items-center justify-center">
           <h3 className={h3_style}>專案圖片</h3>
-          <div className="des-img flex flex-col gap-20 items-center justify-center">
+          <div className="des-img flex flex-col items-center justify-center">
             <img
               src="/Rosen-profile/datafrom/dataform-1.png"
               alt=""
@@ -491,13 +491,13 @@ const Projects = () => {
   return (
     <motion.div
       {...SectionAnimate}
-      className="projects mt-8 w-full flex flex-col gap-8"
+      className="projects mt-8 w-full flex flex-col items-center gap-8"
     >
       {/* 這邊要有可以 Routes 導向每個 Projest 然後可以回到首頁 */}
       {projects &&
         projects.map((p) => {
           return (
-            <div key={p.id} className={`container relative`}>
+            <div key={p.id} className={`container relative w-full`}>
               <div
                 className="absolute top-0 right-2 w-10 h-10 z-1 cursor-pointer -rotate-90 scale-120"
                 onClick={() =>
@@ -523,7 +523,7 @@ const Projects = () => {
               </div>
               <div
                 className={`p-item p-4 flex flex-col gap-2 cursor-pointer backdrop-blur-sm bg-gradient-to-br from-slate-900/50 via-slate-700/50 to-slate-900/50 rounded-xl border-white/50 border transtion duration-1000 ${
-                  p.isToggle ? "h-500" : "h-50"
+                  p.isToggle ? "h-full" : "h-50"
                 }`}
                 onClick={() => dispatch({ type: "IS_TOGGLE_TRUE", payload: p })}
               >

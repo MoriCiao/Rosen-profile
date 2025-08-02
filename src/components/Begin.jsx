@@ -1,6 +1,5 @@
 import React, { useContext } from "react";
 import { AppContext } from "./AppProvider";
-import { motion, AnimatePresence } from "framer-motion";
 import { useNavigate } from "react-router-dom";
 const Begin = () => {
   const { closeView, setCloseView } = useContext(AppContext);

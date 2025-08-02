@@ -52,12 +52,13 @@
         padding: 1rem 2rem;
     }
     .des-img{
-    
+        gap: 2rem;
         img{
             border-radius: 1rem;
             margin: auto;
             object-fit: fill;
             max-width: 80% ;
+            
         }
     }
     .des_II_link{
