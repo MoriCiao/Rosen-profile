@@ -52,9 +52,11 @@ header {
 .HeaderCotact .email-text {
   transition: 0.5s;
   transform: translateX(300px);
+  opacity: 0;
 }
 .HeaderCotact .e-active {
   transform: translateX(0px);
+  opacity: 1;
 }
 
 .begin {

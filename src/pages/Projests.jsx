@@ -82,49 +82,49 @@ const projects = [
           <h3 className={h3_style}>專案圖片</h3>
           <div className="des-img grid grid-cols-1 items-center justify-center w-full gap-4">
             <img
-              src="/Rosen-profile/buyflow/HomePage.png"
-              alt="HomePage.png"
+              src="/Rosen-profile/buyflow/HomePage.webp"
+              alt="HomePage.webp"
               loading="lazy"
             />
             <img
-              src="/Rosen-profile/buyflow/LoginPage.png"
-              alt="LoginPage.png"
+              src="/Rosen-profile/buyflow/LoginPage.webp"
+              alt="LoginPage.webp"
               loading="lazy"
             />
             <img
-              src="/Rosen-profile/buyflow/MenberProfile.png"
-              alt="MenberProfile.png"
+              src="/Rosen-profile/buyflow/MenberProfile.webp"
+              alt="MenberProfile.webp"
               loading="lazy"
             />
             <img
-              src="/Rosen-profile/buyflow/OrderTrackingPage.png"
-              alt="OrderTrackingPage.png"
+              src="/Rosen-profile/buyflow/OrderTrackingPage.webp"
+              alt="OrderTrackingPage.webp"
               loading="lazy"
             />
             <img
-              src="/Rosen-profile/buyflow/ProductsPage.png"
-              alt="ProductsPage.png"
+              src="/Rosen-profile/buyflow/ProductsPage.webp"
+              alt="ProductsPage.webp"
               loading="lazy"
             />
             <img
-              src="/Rosen-profile/buyflow/ProductDetailPage.png"
-              alt="ProductDetailPage.png"
+              src="/Rosen-profile/buyflow/ProductDetailPage.webp"
+              alt="ProductDetailPage.webp"
               loading="lazy"
             />
             <img
-              src="/Rosen-profile/buyflow/CheckoutPage-1.png"
-              alt="CheckoutPage-1.png"
+              src="/Rosen-profile/buyflow/CheckoutPage-1.webp"
+              alt="CheckoutPage-1.webp"
               loading="lazy"
             />
             <img
-              src="/Rosen-profile/buyflow/CheckoutPage-2.png"
-              alt="CheckoutPage-2.png"
+              src="/Rosen-profile/buyflow/CheckoutPage-2.webp"
+              alt="CheckoutPage-2.webp"
               loading="lazy"
             />
 
             <img
-              src="/Rosen-profile/buyflow/Dashboard-3_OrderList.png"
-              alt="Dashboard-3_OrderList.png"
+              src="/Rosen-profile/buyflow/Dashboard-3_OrderList.webp"
+              alt="Dashboard-3_OrderList.webp"
               loading="lazy"
             />
           </div>
@@ -144,7 +144,7 @@ const projects = [
         height="24"
         viewBox="0 0 24 24"
         fill="none"
-        class="feather feather-check-square"
+        className="feather feather-check-square"
       >
         <polyline points="9 11 12 14 22 4"></polyline>
         <path d="M21 12v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11"></path>
@@ -199,43 +199,43 @@ const projects = [
           <h3 className={h3_style}>專案圖片</h3>
           <div className="des-img grid grid-cols-2 gap-4">
             <img
-              src="/Rosen-profile/todoPicture/homepage-dark.png"
-              alt="homepage-dark.png"
+              src="/Rosen-profile/todoPicture/homepage-dark.webp"
+              alt="homepage-dark.webp"
               loading="lazy"
             />
             <img
-              src="/Rosen-profile/todoPicture/homepage-light.png"
-              alt="homepage-light.png"
+              src="/Rosen-profile/todoPicture/homepage-light.webp"
+              alt="homepage-light.webp"
               loading="lazy"
             />
             <img
-              src="/Rosen-profile/todoPicture/newtodo-dark.png"
-              alt="homepage-dark.png"
+              src="/Rosen-profile/todoPicture/newtodo-dark.webp"
+              alt="homepage-dark.webp"
               loading="lazy"
             />
             <img
-              src="/Rosen-profile/todoPicture/newtodo-light.png"
-              alt="homepage-light.png"
+              src="/Rosen-profile/todoPicture/newtodo-light.webp"
+              alt="homepage-light.webp"
               loading="lazy"
             />
             <img
-              src="/Rosen-profile/todoPicture/setting-dark.png"
-              alt="homepage-dark.png"
+              src="/Rosen-profile/todoPicture/setting-dark.webp"
+              alt="homepage-dark.webp"
               loading="lazy"
             />
             <img
-              src="/Rosen-profile/todoPicture/setting-light.png"
-              alt="homepage-light.png"
+              src="/Rosen-profile/todoPicture/setting-light.webp"
+              alt="homepage-light.webp"
               loading="lazy"
             />
             <img
-              src="/Rosen-profile/todoPicture/allTasks-dark.png"
-              alt="homepage-dark.png"
+              src="/Rosen-profile/todoPicture/allTasks-dark.webp"
+              alt="homepage-dark.webp"
               loading="lazy"
             />
             <img
-              src="/Rosen-profile/todoPicture/allTasks-light.png"
-              alt="homepage-light.png"
+              src="/Rosen-profile/todoPicture/allTasks-light.webp"
+              alt="homepage-light.webp"
               loading="lazy"
             />
           </div>
@@ -323,18 +323,18 @@ const projects = [
           <h3 className={h3_style}>專案圖片</h3>
           <div className="des-img flex flex-col items-center justify-center gap-4">
             <img
-              src="/Rosen-profile/imagesearch/imagesearch-1.png"
-              alt="magesearch-1.png"
+              src="/Rosen-profile/imagesearch/imagesearch-1.webp"
+              alt="magesearch-1.webp"
               loading="lazy"
             />
             <img
-              src="/Rosen-profile/imagesearch/imagesearch-2.png"
-              alt="magesearch-2.png"
+              src="/Rosen-profile/imagesearch/imagesearch-2.webp"
+              alt="magesearch-2.webp"
               loading="lazy"
             />
             <img
-              src="/Rosen-profile/imagesearch/imagesearch-3.png"
-              alt="magesearch-3.png"
+              src="/Rosen-profile/imagesearch/imagesearch-3.webp"
+              alt="magesearch-3.webp"
               loading="lazy"
             />
           </div>
@@ -421,25 +421,25 @@ const projects = [
           <h3 className={h3_style}>專案圖片</h3>
           <div className="des-img flex flex-col items-center justify-center">
             <img
-              src="/Rosen-profile/datafrom/dataform-1.png"
+              src="/Rosen-profile/datafrom/dataform-1.webp"
               alt=""
               className=""
               loading="lazy"
             />
             <img
-              src="/Rosen-profile/datafrom/dataform-2.png"
+              src="/Rosen-profile/datafrom/dataform-2.webp"
               alt=""
               className=""
               loading="lazy"
             />
             <img
-              src="/Rosen-profile/datafrom/dataform-3.png"
+              src="/Rosen-profile/datafrom/dataform-3.webp"
               alt=""
               className=""
               loading="lazy"
             />
             <img
-              src="/Rosen-profile/datafrom/dataform-4.png"
+              src="/Rosen-profile/datafrom/dataform-4.webp"
               alt=""
               className=""
               loading="lazy"
@@ -489,7 +489,7 @@ const Projects = () => {
   const [state, dispatch] = useReducer(stateReducer, initState);
 
   return (
-    <motion.div
+    <motion.section
       {...SectionAnimate}
       className="projects mt-8 w-full flex flex-col items-center gap-8"
     >
@@ -511,10 +511,10 @@ const Projects = () => {
                   viewBox="0 0 24 24"
                   fill="none"
                   stroke="currentColor"
-                  stroke-width="2"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  class="feather feather-log-in"
+                  strokeWidth="2"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  className="feather feather-log-in"
                 >
                   <path d="M15 3h4a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2h-4"></path>
                   <polyline points="10 17 15 12 10 7"></polyline>
@@ -523,7 +523,7 @@ const Projects = () => {
               </div>
               <div
                 className={`p-item p-4 flex flex-col gap-2 cursor-pointer backdrop-blur-sm bg-gradient-to-br from-slate-900/50 via-slate-700/50 to-slate-900/50 rounded-xl border-white/50 border transtion duration-1000 ${
-                  p.isToggle ? "h-full" : "h-50"
+                  p.isToggle ? "h-300" : "h-50"
                 }`}
                 onClick={() => dispatch({ type: "IS_TOGGLE_TRUE", payload: p })}
               >
@@ -589,7 +589,7 @@ const Projects = () => {
             </div>
           );
         })}
-    </motion.div>
+    </motion.section>
   );
 };
 

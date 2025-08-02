@@ -4,11 +4,11 @@ import { AppContext } from "../components/AppProvider";
 const skillsImg = [
   {
     name: "HTML",
-    img: "/Rosen-profile/icon/HTML.png",
+    img: "/Rosen-profile/icon/HTML.webp",
   },
   {
     name: "CSS",
-    img: "/Rosen-profile/icon/CSS.png",
+    img: "/Rosen-profile/icon/CSS.webp",
   },
   {
     name: "JS",
@@ -16,7 +16,7 @@ const skillsImg = [
   },
   {
     name: "React",
-    img: "/Rosen-profile/icon/React.png",
+    img: "/Rosen-profile/icon/React.webp",
   },
   {
     name: "Github",
@@ -24,11 +24,11 @@ const skillsImg = [
   },
   {
     name: "Photoshop",
-    img: "/Rosen-profile/icon/Ps.jpg",
+    img: "/Rosen-profile/icon/Ps.webp",
   },
   {
     name: "illustrator",
-    img: "/Rosen-profile/icon/Ai_icon.png",
+    img: "/Rosen-profile/icon/Ai_icon.webp",
   },
 ];
 const Skills = () => {
@@ -56,6 +56,7 @@ const Skills = () => {
                   className="w-full h-full "
                   src={skill.img}
                   alt={skill.name}
+                  loading="lazy"
                 />
               </div>
             </Fragment>

@@ -13,7 +13,7 @@ const Header = () => {
       {...SectionAnimate}
       className="header-info w-full flex flex-col h-full relative "
     >
-      <div>
+      <div className="header-intro">
         <HeaderIntro />
       </div>
 

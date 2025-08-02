@@ -62,9 +62,11 @@ header{
     }
  .email-text{
     transition: 0.5s;
-    transform: translateX(300px)
+    transform: translateX(300px);
+    opacity: 0;
  }
  .e-active{
-    transform: translateX(0px)
+    transform: translateX(0px);
+    opacity: 1;
  }
 }

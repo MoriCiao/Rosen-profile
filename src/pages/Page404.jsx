@@ -6,13 +6,13 @@ const Page404 = () => {
 
   return (
     <motion.div {...SectionAnimate}>
-      <div className="absolute z-[-1] overflow-hidden bg-no-select w-full h-full top-0 left-[30rem]">
+      <div className="page404 w-full h-full overflow-hidden bg-no-select w-200 h-full">
         <motion.img
+          className="w-[80%] rotate-20 translate-x-40"
           initial={{ opacity: 0, scale: 0.8 }}
           whileInView={{
             opacity: 1,
             scale: 1.1,
-            rotate: -15,
           }}
           viewport={{ once: true, amount: 0.5 }}
           transition={{ duration: 1 }}
