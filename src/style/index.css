@@ -61,7 +61,6 @@ header {
 
 .begin {
   transition: 0.6s;
-  display: none;
 }
 .begin h1 {
   scale: 1.5;
@@ -428,12 +427,15 @@ header {
   main {
     padding-top: 1rem;
   }
+  .begin h1 {
+    scale: 1;
+  }
   .email-text {
     position: absolute;
     top: 100%;
     right: 1.5rem;
     transform: translateX(-50%);
-    font-size: 1.5rem;
+    font-size: 1rem;
   }
   .story .project-info h3 {
     font-size: 1rem;
