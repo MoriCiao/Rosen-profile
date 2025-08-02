@@ -16,8 +16,8 @@ const Page404 = () => {
           }}
           viewport={{ once: true, amount: 0.5 }}
           transition={{ duration: 1 }}
-          src="/Rosen-profile/pictrue/icon-404Error.png"
-          alt=""
+          src="/Rosen-profile/pictrue/icon-404Error.webp"
+          alt="404Error"
         />
       </div>
     </motion.div>

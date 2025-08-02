@@ -1,7 +1,7 @@
 import { animate, motion, AnimatePresence } from "framer-motion";
 
 const img = {
-  homepage: ["", "/Rosen-profile/pictrue/Bg-img.jpg"],
+  homepage: ["", "/Rosen-profile/pictrue/Bg-img.webp"],
 };
 
 const BgImg = () => {
@@ -21,13 +21,8 @@ const BgImg = () => {
         className="homepage-bg absolute sm:w-full h-full  sm:object-top sm:object-cover top-0 left-0 brightness-30"
         src={img.homepage[1]}
         alt="homepage"
-        loading="lazy"
+        loading="eager"
       />
-      <div className="svg-content ">
-        <svg>
-          <circle cx="340" cy="280" r="200"></circle>
-        </svg>
-      </div>
     </motion.div>
   );
 };

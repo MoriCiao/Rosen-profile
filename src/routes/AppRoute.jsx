@@ -4,7 +4,6 @@ import Story from "../pages/Story";
 import Skills from "../pages/Skills";
 import Projects from "../pages/Projests";
 import Page404 from "../pages/Page404";
-
 import MainArea from "../pages/MainArea";
 import Header from "../pages/Header";
 const AppRoute = () => {
@@ -13,7 +12,6 @@ const AppRoute = () => {
       <Routes>
         <Route path="/" element={<MainArea />} />
         <Route path="/homepage" element={<Header />} />
-
         <Route path="/story" element={<Story />} />
         <Route path="/skills" element={<Skills />} />
         <Route path="/projects/" element={<Projects />} />
