@@ -3,12 +3,12 @@ import { AppContext } from "./AppProvider";
 import { useContext, useState } from "react";
 const HeaderGuided = ({ isToggle, setIsToggle }) => {
   const guidedItems = [
-    { link: "/Rosen-profile/homepage", name: "#HomePage", text: "Homepage" },
-    { link: "/Rosen-profile/story", name: "#story", text: "Learning Journey" },
+    { link: "/homepage", name: "#HomePage", text: "Homepage" },
+    { link: "/story", name: "#story", text: "Learning Journey" },
 
-    { link: "/Rosen-profile/skills", name: "#skill", text: "Skills" },
+    { link: "/skills", name: "#skill", text: "Skills" },
     {
-      link: "/Rosen-profile/projects",
+      link: "/projects",
       name: "#projects",
       text: "Projects",
     },

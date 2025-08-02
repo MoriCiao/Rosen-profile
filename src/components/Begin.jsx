@@ -38,7 +38,7 @@ const Begin = () => {
             cursor-pointer"
             onClick={() => {
               setCloseView(true);
-              navigate("/Rosen-profile/homepage");
+              navigate("/homepage");
             }}
           >
             Enter

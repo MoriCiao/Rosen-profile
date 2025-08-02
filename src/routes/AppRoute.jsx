@@ -11,12 +11,12 @@ const AppRoute = () => {
   return (
     <section className="app_route w-full h-full">
       <Routes>
-        <Route path="/Rosen-profile" element={<MainArea />} />
-        <Route path="/Rosen-profile/homepage" element={<Header />} />
+        <Route path="/" element={<MainArea />} />
+        <Route path="/homepage" element={<Header />} />
 
-        <Route path="/Rosen-profile/story" element={<Story />} />
-        <Route path="/Rosen-profile/skills" element={<Skills />} />
-        <Route path="/Rosen-profile/projects/" element={<Projects />} />
+        <Route path="/story" element={<Story />} />
+        <Route path="/skills" element={<Skills />} />
+        <Route path="/projects/" element={<Projects />} />
         <Route path="*" element={<Page404 />} />
       </Routes>
     </section>
