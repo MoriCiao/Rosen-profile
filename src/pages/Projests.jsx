@@ -252,13 +252,13 @@ const projects = [
     img: (
       <svg
         xmlns="http://www.w3.org/2000/svg"
+        width="24"
         viewBox="0 0 24 24"
         fill="none"
-        stroke="currentColor"
-        className="svg-item feather feather-camera"
+        className="svg-item feather feather-search"
       >
-        <path d="M23 19a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h4l2-3h6l2 3h4a2 2 0 0 1 2 2z"></path>
-        <circle cx="12" cy="13" r="4"></circle>
+        <circle cx="11" cy="11" r="8"></circle>
+        <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
       </svg>
     ),
     title: "ImageSearch",
@@ -447,6 +447,86 @@ const projects = [
     ),
     gitLink: "https://github.com/MoriCiao/project-DataForm.git",
     webLink: "https://moriciao.github.io/project-DataForm/",
+    isToggle: false,
+  },
+  {
+    id: 5,
+    img: (
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        viewBox="0 0 24 24"
+        fill="none"
+        stroke="currentColor"
+        className="svg-item feather feather-camera"
+      >
+        <path d="M23 19a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h4l2-3h6l2 3h4a2 2 0 0 1 2 2z"></path>
+        <circle cx="12" cy="13" r="4"></circle>
+      </svg>
+    ),
+    title: "Photography",
+    descript: (
+      <>此專案是以攝影教學為主題的形象網站，採用 React + TailwindCSS 開發。</>
+    ),
+    descript_II: (
+      <>
+        <div className="des_II_content ">
+          <h3 className={h3_style}>運用技術：</h3>
+          <p className={content_style}>
+            React, TailwindCSS, JavaScript, HTML/CSS
+          </p>
+          <Hr />
+        </div>
+        <div className="des_II_content ">
+          <h3 className={h3_style}>專案簡介：</h3>
+          <ul className="text-xl flex flex-col gap-4">
+            <li className={content_style}>
+              內容涵蓋攝影基礎知識，包括曝光三元素、白平衡、對焦模式、拍攝模式及焦段與鏡頭視角等
+            </li>
+            <li className={content_style}>具備 RWD 響應式設計</li>
+          </ul>
+
+          <Hr />
+        </div>
+        <div className="des_II_content ">
+          <h3 className={h3_style}>技術學習重點：</h3>
+          <ul className="text-xl flex flex-col gap-4">
+            <li className={content_style}>
+              善用 props 與 children 傳遞內容，提升可重用性。
+            </li>
+            <li className={content_style}>RWD 響應式設計。</li>
+            <li className={content_style}>
+              SCSS 區塊化管理樣式，讓主題頁獨立維護。
+            </li>
+          </ul>
+          <Hr />
+        </div>
+        <div className="des_II_content flex flex-col items-center justify-center">
+          <h3 className={h3_style}>專案圖片</h3>
+          <div className="des-img flex flex-col items-center justify-center">
+            <img
+              src="/Rosen-profile/photography/photography-1.webp"
+              alt=""
+              className=""
+              loading="lazy"
+            />
+            <img
+              src="/Rosen-profile/photography/photography-2.webp"
+              alt=""
+              className=""
+              loading="lazy"
+            />
+            <img
+              src="/Rosen-profile/photography/photography-3.webp"
+              alt=""
+              className=""
+              loading="lazy"
+            />
+          </div>
+        </div>
+      </>
+    ),
+    gitLink: "https://github.com/MoriCiao/project-photography.git",
+    webLink: "https://moriciao.github.io/project-photography/",
     isToggle: false,
   },
 ];

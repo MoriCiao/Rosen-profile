@@ -42,7 +42,7 @@ const Story = () => {
           <h3 className={h3_style}>學習方式與內容</h3>
           <ul className="list-disc list-inside mb-4 space-y-1">
             <li>學習方式：透過 Udemy、YouTube 與 ChatGPT 自學</li>
-            <li>每日投入時間：約 6 小時專注於前端開發</li>
+            <li>每日投入時間：約 4-5 小時專注於前端開發</li>
             <li>
               問題解決方式：先自行 <strong>思考與實作</strong>，再詢問 ChatGPT
               協助釐清方向
