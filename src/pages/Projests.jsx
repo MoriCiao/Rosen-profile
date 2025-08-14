@@ -568,7 +568,7 @@ const Projects = () => {
   return (
     <motion.section
       {...SectionAnimate}
-      className="projects mt-8 w-full flex flex-col items-center gap-8"
+      className="projects mt-8 w-full flex flex-col items-center gap-8 "
     >
       {/* 這邊要有可以 Routes 導向每個 Projest 然後可以回到首頁 */}
       {projects &&

@@ -4,10 +4,6 @@ import React, { useState } from "react";
 const HeaderContact = () => {
   const [email, setEmail] = useState("");
 
-  const handleEmail = () => {
-    setEmail(prev);
-  };
-
   return (
     <div className="HeaderCotact flex gap-4 w-full items-center justify-end relative bottom-0">
       {/* <div className="flex gap-8 w-full justify-end"> */}
