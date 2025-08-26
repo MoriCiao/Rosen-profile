@@ -261,16 +261,18 @@ const projects = [
         <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
       </svg>
     ),
-    title: "ImageSearch",
+    title: "Fetch API",
     descript: (
       <>
-        這是一個基於 API
-        的圖片搜尋工具，使用者可輸入關鍵字，立即取得相關圖片並顯示在畫面上。
+        <span className="text-red-500">施工中... </span>
+        嘗試優化及重構專案
       </>
     ),
     descript_II: (
       <>
-        <div className="des_II_content ">
+        <h3 className={h3_style}>網頁持續調整中...</h3>
+
+        {/* <div className="des_II_content ">
           <h3 className={h3_style}>運用技術：</h3>
           <p className={content_style}>
             React, TailwindCSS, JavaScript, HTML/CSS
@@ -337,11 +339,11 @@ const projects = [
               loading="lazy"
             />
           </div>
-        </div>
+        </div> */}
       </>
     ),
-    gitLink: "https://github.com/MoriCiao/project-search.git",
-    webLink: "https://moriciao.github.io/project-searchImage/",
+    gitLink: "https://github.com/MoriCiao/project-FetchApi",
+    webLink: "https://moriciao.github.io/project-FetchApi/",
     isToggle: false,
   },
   {

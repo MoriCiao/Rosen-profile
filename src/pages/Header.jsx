@@ -21,13 +21,13 @@ const Header = () => {
   return (
     <motion.section
       {...SectionAnimate}
-      className="header-info w-full flex flex-col md:h-auto h-full "
+      className="header-info w-full h-full flex flex-col "
     >
       <div className="header-intro">
         <HeaderIntro />
       </div>
 
-      <div className="contact absolute lg:bottom-0 -bottom-4 right-0 ">
+      <div className="contact absolute lg:bottom-0 -bottom-4 right-0">
         <HeaderContact />
       </div>
     </motion.section>

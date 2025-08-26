@@ -29,7 +29,7 @@ const HeaderIntro = () => {
           <br /> 接觸更廣闊的新知識
         </h3>
 
-        <table className=" table-auto max-w-120 lg:text-[1.25rem]  border-transparent group-hover:border-1 text-center group-hover:border-[#69d4ffff]/10 rounded-xl group-hover:bg-gradient-to-br group-hover:from-white/10 group-hover:via-black/10 group-hover:to-white/20 group-hover:backdrop-blur-sm transition duration-500">
+        <table className=" table-auto max-w-120 lg:text-[1.25rem]  border-transparent group-hover:border-1 text-center group-hover:border-[#69d4ffff]/10 rounded- group-hover:bg-gradient-to-br group-hover:from-white/10 group-hover:via-black/10 group-hover:to-white/20 group-hover:backdrop-blur-sm transition duration-500">
           <tr className="border-b border-[#69d4ffff]/20  max-w-50">
             <th className="px-2 py-2">技術運用：</th>
             <td className="px-2 py-2">HTML、CSS、JS、React、Github</td>

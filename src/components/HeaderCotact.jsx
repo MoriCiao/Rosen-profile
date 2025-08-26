@@ -6,7 +6,6 @@ const HeaderContact = () => {
 
   return (
     <div className="HeaderCotact flex gap-4 w-full items-center justify-end relative bottom-0">
-      {/* <div className="flex gap-8 w-full justify-end"> */}
       <div className="flex items-center overflow-hidden ">
         <p
           className={`email-text ${
