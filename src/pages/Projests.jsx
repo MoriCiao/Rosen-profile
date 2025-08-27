@@ -264,18 +264,17 @@ const projects = [
     title: "Fetch API",
     descript: (
       <>
-        <span className="text-red-500">施工中... </span>
-        嘗試優化及重構專案
+        Search Image 功能需要 Pexels API Key 才能進行圖片搜尋與下載。
+        <br />
+        Other API 則提供兩個免 API Key 的資料來源，可直接使用。
       </>
     ),
     descript_II: (
       <>
-        <h3 className={h3_style}>網頁持續調整中...</h3>
-
-        {/* <div className="des_II_content ">
+        <div className="des_II_content ">
           <h3 className={h3_style}>運用技術：</h3>
           <p className={content_style}>
-            React, TailwindCSS, JavaScript, HTML/CSS
+            React, TypeScript, JavaScript, TailwindCSS, HTML/CSS
           </p>
           <Hr />
         </div>
@@ -283,39 +282,35 @@ const projects = [
           <h3 className={h3_style}>專案簡介：</h3>
           <ul className="text-xl flex flex-col gap-4">
             <li className={content_style}>
-              ImageSearch 使用 Pexels 提供的 API 金鑰串接圖片資料，並透過
-              useReducer 管理收藏圖片（Favorites）的狀態與儲存邏輯。
+              Search Image 有圖片搜尋、加入收藏、圖片下載等功能。
+            </li>
+            <li className={content_style}>
+              Other API 整合兩個免 API Key 的開放資料，使用者可依需求自由切換。
             </li>
             <li className={content_style}>
               使用 Tailwind CSS 進行畫面排版與樣式設計。
             </li>
-            <li className={content_style}>
-              透過 framer-motion 製作動畫效果，增強互動性與視覺體驗。
-            </li>
           </ul>
-
           <Hr />
         </div>
         <div className="des_II_content ">
           <h3 className={h3_style}>技術學習重點：</h3>
           <ol className="text-xl flex flex-col gap-4">
             <li className={content_style}>
-              處理 API 非同步請求，實現圖片搜尋功能。
+              熟悉 API 非同步請求與資料渲染，將即時資訊呈現在網頁上。
             </li>
             <li className={content_style}>
-              練習 useState 狀態管理與 Props 資料傳遞。
+              使用 useState 管理狀態，並透過 Props
+              傳遞資料，提升元件間的可重用性。
             </li>
             <li className={content_style}>
-              應用 useReducer 管理較複雜的狀態變化。
+              引入 Redux 進行狀態管理，為專案未來擴充提供彈性。
             </li>
             <li className={content_style}>
-              以 Tailwind CSS 練習網格系統與排版布局。
+              運用 TailwindCSS 的 Grid 與 Flex 佈局，強化 RWD 響應式設計能力。
             </li>
             <li className={content_style}>
-              使用 framer-motion 製作元件動畫與過渡效果。
-            </li>
-            <li className={content_style}>
-              搜尋過程中顯示 Loading 動畫畫面，提升使用者體驗。
+              搜尋及下載過程中顯示 Loading、Download 遮罩，提升使用者體驗。
             </li>
           </ol>
           <Hr />
@@ -324,22 +319,27 @@ const projects = [
           <h3 className={h3_style}>專案圖片</h3>
           <div className="des-img flex flex-col items-center justify-center gap-4">
             <img
-              src="/Rosen-profile/imagesearch/imagesearch-1.webp"
-              alt="magesearch-1.webp"
+              src="/Rosen-profile/fetchApi/fetchApi-1.webp"
+              alt="fetchApi-1.webp"
               loading="lazy"
             />
             <img
-              src="/Rosen-profile/imagesearch/imagesearch-2.webp"
-              alt="magesearch-2.webp"
+              src="/Rosen-profile/fetchApi/fetchApi-2.webp"
+              alt="fetchApi-2.webp"
               loading="lazy"
             />
             <img
-              src="/Rosen-profile/imagesearch/imagesearch-3.webp"
-              alt="magesearch-3.webp"
+              src="/Rosen-profile/fetchApi/fetchApi-3.webp"
+              alt="fetchApi-3.webp"
+              loading="lazy"
+            />
+            <img
+              src="/Rosen-profile/fetchApi/fetchApi-4.webp"
+              alt="fetchApi-4.webp"
               loading="lazy"
             />
           </div>
-        </div> */}
+        </div>
       </>
     ),
     gitLink: "https://github.com/MoriCiao/project-FetchApi",

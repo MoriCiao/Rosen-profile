@@ -60,7 +60,7 @@ const Story = () => {
               <strong>TodoList</strong>{" "}
             </li>
             <li>
-              <strong>SearchImage</strong>{" "}
+              <strong>Fetch API</strong>{" "}
             </li>
             <li>
               <strong>DataForm</strong>{" "}
