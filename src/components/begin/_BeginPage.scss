@@ -15,7 +15,7 @@
         
         &.third{
             box-shadow:
-                    0 0 500px rgb(29, 49, 151),
+                    0 0 200px rgb(29, 49, 151),
                     inset -2px 5px 100px rgb(29, 49, 151),
                     inset 0px -10px 30px 10px rgba(255, 255, 255, 0.5),
                     0px 10px 50px 20px black;
@@ -60,7 +60,7 @@
     .beginPage {     
         .secondary {
             box-shadow:
-                0 0 500px rgb(29, 49, 151),
+                0 0 200px rgb(29, 49, 151),
                 inset -2px -5px 200px rgb(29, 49, 151),
                 inset -10px 10px 30px rgba(255, 255, 255, 0.5);
             filter: drop-shadow(0 0 200px rgb(42, 56, 124))
