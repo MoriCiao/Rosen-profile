@@ -5,6 +5,7 @@ import AppProvider from "./components/AppProvider";
 import Begin from "./components/Begin";
 import HeaderGuided from "./components/HeadeGuided";
 import { useState } from "react";
+import BeginPage from "./components/begin/beginPage";
 
 function App() {
   // useContext 將部分FN提供給 childern
@@ -15,7 +16,8 @@ function App() {
       className={`APP relative z-[10] xl:grid xl:grid-cols-12 flex  w-full h-screen `}
     >
       <AppProvider>
-        <Begin />
+        <BeginPage />
+        {/* <Begin /> */}
 
         <BgImg />
         <header
