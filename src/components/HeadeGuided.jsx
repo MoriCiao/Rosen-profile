@@ -22,12 +22,12 @@ const HeaderGuided = ({ isToggle, setIsToggle }) => {
   };
 
   return (
-    <nav className="nav relative select-none md:w-80 sm:w-40 w-30 h-full z-1">
+    <nav className="nav relative z-1 h-full w-30 select-none sm:w-40 md:w-80">
       <div
-        className={`guided-btn absolute -right-12 sm:w-10 h-10 flex items-center justify-center`}
+        className={`guided-btn absolute -right-12 flex h-10 items-center justify-center sm:w-10`}
       >
         <button
-          className={`relative w-10 h-full cursor-pointer scale-125 transition duration-1000  ${
+          className={`relative h-full w-10 scale-125 cursor-pointer transition duration-1000 ${
             isToggle ? "rotate-y-180" : ""
           } `}
           onClick={() => {
@@ -42,7 +42,7 @@ const HeaderGuided = ({ isToggle, setIsToggle }) => {
             strokeWidth="2"
             strokeLinecap="round"
             strokeLinejoin="round"
-            className="w-[2rem] h-[2rem] absolute top-0 -right-1 feather feather-log-in "
+            className="feather feather-log-in absolute top-0 -right-1 h-[2rem] w-[2rem]"
           >
             <path d="M15 3h4a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2h-4"></path>
             <polyline points="10 17 15 12 10 7"></polyline>
@@ -52,7 +52,7 @@ const HeaderGuided = ({ isToggle, setIsToggle }) => {
       </div>
 
       {/* NAV---- */}
-      <ul className="flex flex-col justify-center items-center gap-10">
+      <ul className="flex flex-col items-center justify-center gap-10">
         {guidedItems &&
           guidedItems.map((i, index) => {
             return (
@@ -60,10 +60,10 @@ const HeaderGuided = ({ isToggle, setIsToggle }) => {
                 key={index}
                 className={`path-li ${
                   click === i.text ? "at-present" : ""
-                } w-full md:max-h-20 sm:max-h-30 text-center flex flex-col items-center py-4`}
+                } flex w-full flex-col items-center py-4 text-center sm:max-h-30 md:max-h-20`}
               >
                 <Link
-                  className={` md:text-[1.5rem] sm:text-[1.1rem] font-bold block w-full h-full cursor-pointer tracking-widest`}
+                  className={`block h-full w-full cursor-pointer font-bold tracking-widest sm:text-[1.1rem] md:text-[1.5rem]`}
                   to={i.link}
                   onClick={() => handleClick(i)}
                 >

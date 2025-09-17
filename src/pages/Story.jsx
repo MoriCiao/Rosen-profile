@@ -3,7 +3,7 @@ import { easeInOut, motion } from "framer-motion";
 import { AppContext } from "../components/AppProvider";
 
 const Hr = () => {
-  return <hr className="opacity-50 w-full my-2" />;
+  return <hr className="my-2 w-full opacity-50" />;
 };
 
 const Story = () => {
@@ -14,14 +14,14 @@ const Story = () => {
     <motion.section
       {...SectionAnimate}
       id="story"
-      className="story overflow-y-overlay scroll-smooth my-4 tracking-widest p-4 backdrop-blur-sm"
+      className="story overflow-y-overlay my-4 scroll-smooth p-4 tracking-widest backdrop-blur-sm"
     >
       <svg>
         <rect></rect>
       </svg>
       <div className="story-container">
-        <div className="story-item ">
-          <h2 className="md:text-3xl font-bold mb-4">前端轉職旅程</h2>
+        <div className="story-item">
+          <h2 className="mb-4 font-bold md:text-3xl">前端轉職旅程</h2>
           <p className="mb-4">
             過去在零售業擔任部門擔當，處理部門內各種大小事。但隨著時間推移，發現公司發展趨緩甚至退步，這讓我開始思考未來的方向。
           </p>
@@ -40,7 +40,7 @@ const Story = () => {
 
         <div className="story-item">
           <h3 className={h3_style}>學習方式與內容</h3>
-          <ul className="list-disc list-inside mb-4 space-y-1">
+          <ul className="mb-4 list-inside list-disc space-y-1">
             <li>學習方式：透過 Udemy、YouTube 與 ChatGPT 自學</li>
             <li>每日投入時間：約 4-5 小時專注於前端開發</li>
             <li>
@@ -55,7 +55,7 @@ const Story = () => {
         <div className="story-item">
           <h3 className={h3_style}>實作經驗</h3>
           <p className="mb-2">目前完成的專案包含：</p>
-          <ul className="list-disc list-inside mb-4 space-y-1">
+          <ul className="mb-4 list-inside list-disc space-y-1">
             <li>
               <strong>TodoList</strong>{" "}
             </li>
@@ -77,7 +77,7 @@ const Story = () => {
 
         <div className="story-item">
           <h3 className={h3_style}>技術突破與心得</h3>
-          <ul className="list-disc list-inside mb-4 space-y-2">
+          <ul className="mb-4 list-inside list-disc space-y-2">
             <li>
               <strong>CSS：</strong>從最初只能寫單一 CSS 檔，到後來能整合 SCSS
               檔案管理樣式，也學會 Bootstrap、Tailwind CSS、Framer
@@ -96,7 +96,7 @@ const Story = () => {
 
         <div className="story-item">
           <h3 className={h3_style}>未來學習計畫</h3>
-          <ul className="list-disc list-inside space-y-1">
+          <ul className="list-inside list-disc space-y-1">
             <li>TypeScript</li>
             <li>Next.js</li>
             <li>動畫進階（SVG / Framer Motion）</li>

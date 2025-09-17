@@ -1,147 +1,128 @@
-@media (max-width:1023px) {
-    .des_II {
-
-        margin: 1rem 1rem;
-        padding: 1rem 2rem;
-    }
+@media (max-width: 1023px) {
+  .des_II {
+    margin: 1rem 1rem;
+    padding: 1rem 2rem;
+  }
 }
-@media (max-width :768px) {
-    // 起始畫面
-    .begin {
-        h1 {
-            scale: 1.2;
-        }
-    
-        span {
-            font-size: 6rem;
-        }
-    
-    
-        button {
-            bottom: 4rem;
-            scale: 0.8;
-        }
+@media (max-width: 768px) {
+  // 起始畫面
+  .begin {
+    h1 {
+      scale: 1.2;
     }
 
-    .bg{
-        width: 100vw;
-        height: 100vh;
-        
-      
-        img.homepage-bg{
-            width: 100%;
-            object-fit: cover;
-        }
-    }
-    
-    .header-info{
-        padding: 0 2rem;
-    }
-    .story{
-        margin: 0rem 2rem;
-        .story-container{
-            
-            .story-item{
-                
-                padding:  1rem;
-                h2{
-                    font-size: 1.2rem;
-                }
-                p,li{
-
-                    font-size: 1rem;
-                }
-            }
-        }
-    }
-    .workskill{
-        
-        padding: 0 2rem;
-        
-        .skill-item{
-            scale: 0.8;
-        }
+    span {
+      font-size: 6rem;
     }
 
-    .projects{
-    
-        padding: 0 2rem;
-        .project-info{
-            h3{
-                font-size: 1.25rem;
-            }
-            p{
-                font-size: 1rem;
-            }
-        }
-        
-        .des_II{
-            margin: 0.5rem 1rem;
-            padding: 0 1rem 2rem 1rem;
-            h3{
-                font-size:1.25rem;
-       
-            }
-            p,li{
-                font-size: 1rem;
-            }
-        }
-        .des-img {
-            img {
+    button {
+      bottom: 4rem;
+      scale: 0.8;
+    }
+  }
 
-                max-width: 100%;
-        
-            }
-        }
-    }
-    
-}
+  .bg {
+    width: 100vw;
+    height: 100vh;
 
-@media (max-width :480px){
-    main{
-        padding-top: 1rem;
+    img.homepage-bg {
+      width: 100%;
+      object-fit: cover;
     }
-    .begin{
-        h1{
-            scale: 1;
+  }
+
+  .header-info {
+    padding: 0 2rem;
+  }
+  .story {
+    margin: 0rem 2rem;
+    .story-container {
+      .story-item {
+        padding: 1rem;
+        h2 {
+          font-size: 1.2rem;
         }
+        p,
+        li {
+          font-size: 1rem;
+        }
+      }
     }
-    .email-text{
-        position: absolute;
-        top: 100%;
-        right: 1.5rem;
-        transform: translateX(-50%);
+  }
+  .workskill {
+    padding: 0 2rem;
+
+    .skill-item {
+      scale: 0.8;
+    }
+  }
+
+  .projects {
+    padding: 0 2rem;
+    .project-info {
+      h3 {
+        font-size: 1.25rem;
+      }
+      p {
         font-size: 1rem;
-        
+      }
     }
 
-    .story{
-        .project-info {
-            h3 {
-                font-size: 1rem;
-            }
-    
-            p {
-                font-size: 1rem;
-            }
-        }
+    .des_II {
+      margin: 0.5rem 1rem;
+      padding: 0 1rem 2rem 1rem;
+      h3 {
+        font-size: 1.25rem;
+      }
+      p,
+      li {
+        font-size: 1rem;
+      }
     }
-    .p-item{
-        padding: 0.2rem 0.2rem ;
-        .project-info{
-            padding: 0.2rem 0.5rem;
-            
-        }
+    .des-img {
+      img {
+        max-width: 100%;
+      }
     }
-    .des_II{
-        
-        margin: 0.5rem  0.2rem;
-        padding: 0rem;
-        
-    }
-    
+  }
 }
 
+@media (max-width: 480px) {
+  main {
+    padding-top: 1rem;
+  }
+  .begin {
+    h1 {
+      scale: 1;
+    }
+  }
+  .email-text {
+    position: absolute;
+    top: 100%;
+    right: 1.5rem;
+    transform: translateX(-50%);
+    font-size: 1rem;
+  }
 
+  .story {
+    .project-info {
+      h3 {
+        font-size: 1rem;
+      }
 
-    
+      p {
+        font-size: 1rem;
+      }
+    }
+  }
+  .p-item {
+    padding: 0.2rem 0.2rem;
+    .project-info {
+      padding: 0.2rem 0.5rem;
+    }
+  }
+  .des_II {
+    margin: 0.5rem 0.2rem;
+    padding: 0rem;
+  }
+}

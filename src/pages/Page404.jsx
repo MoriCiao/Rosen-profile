@@ -6,9 +6,9 @@ const Page404 = () => {
 
   return (
     <motion.div {...SectionAnimate}>
-      <div className="page404 w-full h-full overflow-hidden bg-no-select w-200 h-full">
+      <div className="page404 bg-no-select h-full w-200 w-full overflow-hidden">
         <motion.img
-          className="w-[80%] rotate-20 translate-x-40"
+          className="w-[80%] translate-x-40 rotate-20"
           initial={{ opacity: 0, scale: 0.8 }}
           whileInView={{
             opacity: 1,

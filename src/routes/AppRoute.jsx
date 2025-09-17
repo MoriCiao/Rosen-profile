@@ -8,7 +8,7 @@ import MainArea from "../pages/MainArea";
 import Header from "../pages/Header";
 const AppRoute = () => {
   return (
-    <section className="app_route w-full h-full  relative">
+    <section className="app_route relative h-full w-full">
       <Routes>
         <Route path="/" element={<MainArea />} />
         <Route path="/homepage" element={<Header />} />

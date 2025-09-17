@@ -1,51 +1,38 @@
-@import '_header.scss';
-@import '_begin.scss';
-@import '_skill.scss';
-@import '_project.scss';
-@import '_story.scss';
+@import "_header.scss";
+@import "_begin.scss";
+@import "_skill.scss";
+@import "_project.scss";
+@import "_story.scss";
 @import "_rdw.scss";
 
-
 :root {
-    --theme-color: rgb(15, 37, 64);
-    --text-color: rgb(105, 212, 255);
-    --text-color-2: rgb(255, 177, 27);
-    
+  --theme-color: rgb(15, 37, 64);
+  --text-color: rgb(105, 212, 255);
+  --text-color-2: rgb(255, 177, 27);
 }
 
-
-
-.APP{
-    
-    color: var(--text-color);
-    overflow-y: overlay;
-    scrollbar-width: none;
-    scroll-behavior: smooth;
-    
-   
+.APP {
+  color: var(--text-color);
+  overflow-y: overlay;
+  scrollbar-width: none;
+  scroll-behavior: smooth;
 }
 
-
-.bg{
-    
-    filter: blur(2px);
+.bg {
+  filter: blur(2px);
 }
 
-@keyframes glowing_bf{
-    0%,100%{
-        r: 150;
-        opacity: 1;
-        filter:blur(20px) brightness(0.3)
-        drop-shadow(0 0 30px rgb(42, 116, 255));
-        
-        
-
-    }
-    50%{
-        r: 175;
-        opacity: 1;
-        filter:blur(30px) brightness(0.3)
-        drop-shadow(0 0 15px rgba(105, 212, 255, 1))
-
-    }
+@keyframes glowing_bf {
+  0%,
+  100% {
+    r: 150;
+    opacity: 1;
+    filter: blur(20px) brightness(0.3) drop-shadow(0 0 30px rgb(42, 116, 255));
+  }
+  50% {
+    r: 175;
+    opacity: 1;
+    filter: blur(30px) brightness(0.3)
+      drop-shadow(0 0 15px rgba(105, 212, 255, 1));
+  }
 }

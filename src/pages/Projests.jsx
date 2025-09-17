@@ -2,7 +2,7 @@ import { useState, useContext, useReducer } from "react";
 import { easeInOut, motion, AnimatePresence } from "framer-motion";
 import { AppContext } from "../components/AppProvider";
 
-const Hr = () => <hr className="w-full opacity-50  mt-4 mb-2" />;
+const Hr = () => <hr className="mt-4 mb-2 w-full opacity-50" />;
 const h3_style = "md:text-2xl sm:text-xl text-[1rem] font-bold pb-4 ";
 const content_style =
   "md:text-xl sm-text-lg flex gap-2 text-[0.8rem] before:content-['📌']";
@@ -79,7 +79,7 @@ const projects = [
         </div>
         <div className="des_II_content">
           <h3 className={h3_style}>專案圖片</h3>
-          <div className="des-img grid grid-cols-1 items-center justify-center w-full gap-4">
+          <div className="des-img grid w-full grid-cols-1 items-center justify-center gap-4">
             <img
               src="/Rosen-profile/buyflow/HomePage.webp"
               alt="HomePage.webp"
@@ -157,16 +157,16 @@ const projects = [
     ),
     descript_II: (
       <>
-        <div className="des_II_content ">
+        <div className="des_II_content">
           <h3 className={h3_style}>運用技術：</h3>
           <p className={content_style}>
             React, JavaScript, HTML, CSS, LocalStorage
           </p>
           <Hr />
         </div>
-        <div className="des_II_content ">
+        <div className="des_II_content">
           <h3 className={h3_style}>專案簡介：</h3>
-          <ul className="text-xl flex flex-col gap-4">
+          <ul className="flex flex-col gap-4 text-xl">
             <li className={content_style}>
               TodoList 使用 useReducer 狀態管理， 以及透過 useContext{" "}
               共享資料與主題切換等功能。 使用 Framer Motion 強化畫面的互動性。
@@ -180,9 +180,9 @@ const projects = [
           </ul>
           <Hr />
         </div>
-        <div className="des_II_content ">
+        <div className="des_II_content">
           <h3 className={h3_style}>技術學習重點：</h3>
-          <ul className="text-xl flex flex-col gap-4">
+          <ul className="flex flex-col gap-4 text-xl">
             <li className={content_style}>
               使用 React useReducer 操作任務狀態（新增、刪除、切換完成）
             </li>
@@ -194,7 +194,7 @@ const projects = [
           </ul>
           <Hr />
         </div>
-        <div className="des_II_content ">
+        <div className="des_II_content">
           <h3 className={h3_style}>專案圖片</h3>
           <div className="des-img grid grid-cols-2 gap-4">
             <img
@@ -269,16 +269,16 @@ const projects = [
     ),
     descript_II: (
       <>
-        <div className="des_II_content ">
+        <div className="des_II_content">
           <h3 className={h3_style}>運用技術：</h3>
           <p className={content_style}>
             React, TypeScript, JavaScript, TailwindCSS, HTML/CSS
           </p>
           <Hr />
         </div>
-        <div className="des_II_content ">
+        <div className="des_II_content">
           <h3 className={h3_style}>專案簡介：</h3>
-          <ul className="text-xl flex flex-col gap-4">
+          <ul className="flex flex-col gap-4 text-xl">
             <li className={content_style}>
               Search Image 有圖片搜尋、加入收藏、圖片下載等功能。
             </li>
@@ -291,9 +291,9 @@ const projects = [
           </ul>
           <Hr />
         </div>
-        <div className="des_II_content ">
+        <div className="des_II_content">
           <h3 className={h3_style}>技術學習重點：</h3>
-          <ol className="text-xl flex flex-col gap-4">
+          <ol className="flex flex-col gap-4 text-xl">
             <li className={content_style}>
               熟悉 API 非同步請求與資料渲染，將即時資訊呈現在網頁上。
             </li>
@@ -313,7 +313,7 @@ const projects = [
           </ol>
           <Hr />
         </div>
-        <div className="des_II_content ">
+        <div className="des_II_content">
           <h3 className={h3_style}>專案圖片</h3>
           <div className="des-img flex flex-col items-center justify-center gap-4">
             <img
@@ -364,16 +364,16 @@ const projects = [
     ),
     descript_II: (
       <>
-        <div className="des_II_content ">
+        <div className="des_II_content">
           <h3 className={h3_style}>運用技術：</h3>
           <p className={content_style}>
             React, TailwindCSS, JavaScript, LocalStorage, HTML/CSS
           </p>
           <Hr />
         </div>
-        <div className="des_II_content ">
+        <div className="des_II_content">
           <h3 className={h3_style}>專案簡介：</h3>
-          <ul className="text-xl flex flex-col gap-4">
+          <ul className="flex flex-col gap-4 text-xl">
             <li className={content_style}>
               可透過關鍵字、日期範圍或快速篩選選項進行資料搜尋。
             </li>
@@ -393,9 +393,9 @@ const projects = [
 
           <Hr />
         </div>
-        <div className="des_II_content ">
+        <div className="des_II_content">
           <h3 className={h3_style}>技術學習重點：</h3>
-          <ul className="text-xl flex flex-col gap-4">
+          <ul className="flex flex-col gap-4 text-xl">
             <li className={content_style}>
               實作基本表單操作：input 處理與資料驗證。
             </li>
@@ -469,16 +469,16 @@ const projects = [
     ),
     descript_II: (
       <>
-        <div className="des_II_content ">
+        <div className="des_II_content">
           <h3 className={h3_style}>運用技術：</h3>
           <p className={content_style}>
             React, TailwindCSS, JavaScript, HTML/CSS
           </p>
           <Hr />
         </div>
-        <div className="des_II_content ">
+        <div className="des_II_content">
           <h3 className={h3_style}>專案簡介：</h3>
-          <ul className="text-xl flex flex-col gap-4">
+          <ul className="flex flex-col gap-4 text-xl">
             <li className={content_style}>
               內容涵蓋攝影基礎知識，包括曝光三元素、白平衡、對焦模式、拍攝模式及焦段與鏡頭視角等
             </li>
@@ -487,9 +487,9 @@ const projects = [
 
           <Hr />
         </div>
-        <div className="des_II_content ">
+        <div className="des_II_content">
           <h3 className={h3_style}>技術學習重點：</h3>
-          <ul className="text-xl flex flex-col gap-4">
+          <ul className="flex flex-col gap-4 text-xl">
             <li className={content_style}>
               善用 props 與 children 傳遞內容，提升可重用性。
             </li>
@@ -568,16 +568,16 @@ const Projects = () => {
   return (
     <motion.section
       {...SectionAnimate}
-      className="projects mt-8 w-full flex flex-col items-center gap-8 "
+      className="projects mt-8 flex w-full flex-col items-center gap-8"
     >
       {/* 這邊要有可以 Routes 導向每個 Projest 然後可以回到首頁 */}
       {projects &&
         projects.map((p) => {
           return (
-            <div key={p.id} className={`container relative w-full`}>
+            <div key={p.id} className={`relative container w-full`}>
               {/* 闔上按鈕 */}
               <div
-                className="absolute top-0 right-2 w-10 h-10 z-1 cursor-pointer -rotate-90 scale-120"
+                className="absolute top-0 right-2 z-1 h-10 w-10 scale-120 -rotate-90 cursor-pointer"
                 onClick={() =>
                   dispatch({ type: "IS_TOGGLE_FALSE", payload: p })
                 }
@@ -602,23 +602,23 @@ const Projects = () => {
 
               {/* 內容本文 */}
               <div
-                className={`p-item p-4 flex flex-col gap-2 cursor-pointer backdrop-blur-sm bg-gradient-to-br from-slate-900/50 via-slate-700/50 to-slate-900/50 rounded-xl border-white/50 border transtion duration-1000 ${
-                  p.isToggle ? "sm:h-300 h-250" : "sm:h-50 h-80"
+                className={`p-item transtion flex cursor-pointer flex-col gap-2 rounded-xl border border-white/50 bg-gradient-to-br from-slate-900/50 via-slate-700/50 to-slate-900/50 p-4 backdrop-blur-sm duration-1000 ${
+                  p.isToggle ? "h-250 sm:h-300" : "h-80 sm:h-50"
                 }`}
                 onClick={() => dispatch({ type: "IS_TOGGLE_TRUE", payload: p })}
               >
                 {/* 專案小圖示、簡介 */}
-                <div className="grid md:grid-cols-5 sm:grid-cols-4  grid-cols-1 sm:gap-4 gap-0 items-center">
-                  <div className="rounded-md sm:w-[10rem] sm:h-[10rem] w-[8rem] h-[8rem] p-2 overflow-hidden flex items-center justify-center m-auto hover:scale-115 transition duration-500">
-                    <div className="img-svg w-full h-full flex sm:pr-4 items-center sm:justify-center justify-start">
+                <div className="grid grid-cols-1 items-center gap-0 sm:grid-cols-4 sm:gap-4 md:grid-cols-5">
+                  <div className="m-auto flex h-[8rem] w-[8rem] items-center justify-center overflow-hidden rounded-md p-2 transition duration-500 hover:scale-115 sm:h-[10rem] sm:w-[10rem]">
+                    <div className="img-svg flex h-full w-full items-center justify-start sm:justify-center sm:pr-4">
                       {p.img}
                     </div>
                   </div>
-                  <div className="project-info col-start-1 md:col-span-4 sm:col-span-3 col-span-2 flex flex-col gap-2 tracking-widest  select-none">
-                    <h3 className="sm:text-2xl font-bold md:mt-4 sm:mt-2">
+                  <div className="project-info col-span-2 col-start-1 flex flex-col gap-2 tracking-widest select-none sm:col-span-3 md:col-span-4">
+                    <h3 className="font-bold sm:mt-2 sm:text-2xl md:mt-4">
                       {p.title}
                     </h3>
-                    <p className="sm:text-xl font-[500] md:mt-4 sm:mt-0">
+                    <p className="font-[500] sm:mt-0 sm:text-xl md:mt-4">
                       {p.descript}
                     </p>
                   </div>
@@ -627,15 +627,15 @@ const Projects = () => {
                 <div
                   className={`des_II ${
                     p.isToggle ? "opacity-100" : "opacity-0"
-                  } relative transtion duration-1000 col-span-4 flex flex-col gap-4 items-start justify-start tracking-wide bg-gradient-to-br from-white/20 via-white/10 to-black/10`}
+                  } transtion relative col-span-4 flex flex-col items-start justify-start gap-4 bg-gradient-to-br from-white/20 via-white/10 to-black/10 tracking-wide duration-1000`}
                 >
-                  <div className=" absolute sm:top-0 sm:right-0 sm:-translate-x-0 sm:w-auto w-full -right-1/2 -translate-x-1/2 p-4 sm:flex gap-4">
-                    <div className="des_II_link flex sm:flex-row flex-col">
+                  <div className="absolute -right-1/2 w-full -translate-x-1/2 gap-4 p-4 sm:top-0 sm:right-0 sm:flex sm:w-auto sm:-translate-x-0">
+                    <div className="des_II_link flex flex-col sm:flex-row">
                       <a
                         href={p?.gitLink || null}
                         target="_blank"
                         rel="noopener noreferrer"
-                        className="a-tag tracking-widest "
+                        className="a-tag tracking-widest"
                       >
                         <svg>
                           <rect></rect>
@@ -646,7 +646,7 @@ const Projects = () => {
                         href={p?.webLink || null}
                         target="_blank"
                         rel="noopener noreferrer"
-                        className="a-tag tracking-widest "
+                        className="a-tag tracking-widest"
                       >
                         <svg>
                           <rect></rect>
@@ -655,12 +655,12 @@ const Projects = () => {
                       </a>
                     </div>
                   </div>
-                  <div className="sm:mt-0 mt-28 w-full ">{p.descript_II}</div>
+                  <div className="mt-28 w-full sm:mt-0">{p.descript_II}</div>
                 </div>
               </div>
 
               <button
-                className="p-link rounded-br-xl rounded-tl-xl border-l-2 border-t-1 border-white/50 bg-gradient-to-br from-slate-500/50 to-slate-900/50 select-none hover:font-bold text-center select-none cursor-pointer tracking-widest"
+                className="p-link cursor-pointer rounded-tl-xl rounded-br-xl border-t-1 border-l-2 border-white/50 bg-gradient-to-br from-slate-500/50 to-slate-900/50 text-center tracking-widest select-none hover:font-bold"
                 onClick={() => dispatch({ type: "IS_TOGGLE", payload: p })}
               >
                 {p.isToggle ? "LESS..." : "MORE..."}

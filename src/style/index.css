@@ -9,7 +9,7 @@ header {
 
 .path-li {
   -webkit-backdrop-filter: blur(1px) brightne(1.1);
-          backdrop-filter: blur(1px) brightne(1.1);
+  backdrop-filter: blur(1px) brightne(1.1);
   background: rgba(15, 37, 64, 0.5);
   transition: 0.6s;
 }
@@ -73,7 +73,13 @@ header {
   top: 20px;
   font-size: 8rem;
   transform: rotateY(10deg);
-  text-shadow: 0 1px 0 #ccc, 0 2px 0 #ccc, 0 3px 0 #ccc, 0 6px 0 #ccc, 0 9px 0 #ccc, 0 10px 10px rgba(0, 0, 0, 0.3);
+  text-shadow:
+    0 1px 0 #ccc,
+    0 2px 0 #ccc,
+    0 3px 0 #ccc,
+    0 6px 0 #ccc,
+    0 9px 0 #ccc,
+    0 10px 10px rgba(0, 0, 0, 0.3);
   animation: animate 0.8s ease infinite alternate;
 }
 .begin h1 span:nth-child(2) {
@@ -98,12 +104,20 @@ header {
 @keyframes animate {
   100% {
     top: -20px;
-    text-shadow: 0 1px 0 #ccc, 0 2px 0 #ccc, 0 3px 0 #ccc, 0 6px 0 #ccc, 0 9px 0 #ccc, 0 60px 30px rgba(0, 0, 0, 0.3);
+    text-shadow:
+      0 1px 0 #ccc,
+      0 2px 0 #ccc,
+      0 3px 0 #ccc,
+      0 6px 0 #ccc,
+      0 9px 0 #ccc,
+      0 60px 30px rgba(0, 0, 0, 0.3);
   }
 }
 .skill-item {
   transition: 0.6s;
-  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.3), 0 10px 5px rgba(0, 0, 0, 0.3);
+  box-shadow:
+    0 1px 1px rgba(0, 0, 0, 0.3),
+    0 10px 5px rgba(0, 0, 0, 0.3);
 }
 .skill-item div {
   padding: 0.5rem 0;
@@ -120,7 +134,9 @@ header {
 }
 .skill-item:hover {
   transform: translateY(-10px);
-  box-shadow: 0 3px 1px rgba(0, 0, 0, 0.3), 0 15px 20px rgba(0, 0, 0, 0.8);
+  box-shadow:
+    0 3px 1px rgba(0, 0, 0, 0.3),
+    0 15px 20px rgba(0, 0, 0, 0.8);
 }
 .skill-item:hover span {
   transform: translateY(0rem);
@@ -152,7 +168,9 @@ header {
   transition: 0.6s;
 }
 .container .p-link button {
-  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
+  font-family:
+    "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans",
+    Arial, sans-serif;
 }
 .container:hover {
   transform: translate(0px, -10px);
@@ -180,7 +198,7 @@ header {
   border-radius: 1rem;
   margin: auto;
   -o-object-fit: fill;
-     object-fit: fill;
+  object-fit: fill;
   max-width: 80%;
 }
 .des_II .des_II_link {
@@ -199,7 +217,11 @@ header {
   transition: 0.5s;
   text-transform: uppercase;
   transform: 1s;
-  background: linear-gradient(to bottom right, rgba(255, 255, 255, 0.1), rgba(0, 0, 0, 0.3));
+  background: linear-gradient(
+    to bottom right,
+    rgba(255, 255, 255, 0.1),
+    rgba(0, 0, 0, 0.3)
+  );
 }
 .des_II .des_II_link a:hover {
   font-weight: 900;
@@ -224,7 +246,8 @@ header {
   stroke-dasharray: 2rem, 8rem;
   stroke-dashoffset: 0;
   animation: glowing 12s infinite linear;
-  filter: brightness(1.2) drop-shadow(0 0 5px rgb(255, 177, 27)) drop-shadow(0 0 25px rgb(255, 177, 27));
+  filter: brightness(1.2) drop-shadow(0 0 5px rgb(255, 177, 27))
+    drop-shadow(0 0 25px rgb(255, 177, 27));
 }
 .des_II .des_II_link a:nth-child(1) {
   color: rgb(255, 177, 27);
@@ -238,7 +261,8 @@ header {
   stroke-dasharray: 2rem, 8rem;
   stroke-dashoffset: 0;
   animation: glowing 12s infinite linear;
-  filter: brightness(1.2) drop-shadow(0 0 5px rgb(255, 99, 27)) drop-shadow(0 0 25px rgb(255, 99, 27));
+  filter: brightness(1.2) drop-shadow(0 0 5px rgb(255, 99, 27))
+    drop-shadow(0 0 25px rgb(255, 99, 27));
 }
 
 @keyframes glowing {
@@ -250,7 +274,8 @@ header {
   }
 }
 @keyframes a_hover {
-  0%, 100% {
+  0%,
+  100% {
     font-size: 1rem;
   }
   50% {
@@ -296,7 +321,9 @@ header {
   stroke-width: 2;
   stroke: rgb(102, 151, 255);
   transform: translateX(-10px);
-  filter: drop-shadow(0 0 2px rgba(47, 113, 255, 0.2)) drop-shadow(0 0 5px rgba(47, 113, 255, 0.5)) drop-shadow(0 0 15px rgb(47, 113, 255));
+  filter: drop-shadow(0 0 2px rgba(47, 113, 255, 0.2))
+    drop-shadow(0 0 5px rgba(47, 113, 255, 0.5))
+    drop-shadow(0 0 15px rgb(47, 113, 255));
 }
 
 .story {
@@ -314,7 +341,8 @@ header {
 .story strong {
   color: rgb(255, 177, 27);
 }
-.story svg, .story rect {
+.story svg,
+.story rect {
   position: absolute;
   z-index: 0;
   top: 0;
@@ -323,13 +351,16 @@ header {
   height: 100%;
   fill: none;
 }
-.story svg rect, .story rect rect {
+.story svg rect,
+.story rect rect {
   stroke-width: 4;
   stroke: rgba(255, 255, 255, 0.1);
 }
 .story .story-container {
   border: 0.1rem rgb(105, 212, 255) solid;
-  box-shadow: 0 0 5px rgb(105, 212, 255), inset 0 0 5px rgb(105, 212, 255);
+  box-shadow:
+    0 0 5px rgb(105, 212, 255),
+    inset 0 0 5px rgb(105, 212, 255);
   padding: 0.5rem 0.5rem;
 }
 .story .story-container .story-item {
@@ -340,7 +371,12 @@ header {
   margin: 1rem 0.5rem;
   padding: 2rem 4rem;
   border-radius: 0;
-  background: linear-gradient(to bottom right, rgba(0, 0, 0, 0.2), rgba(138, 138, 138, 0.1), rgba(0, 0, 0, 0.3));
+  background: linear-gradient(
+    to bottom right,
+    rgba(0, 0, 0, 0.2),
+    rgba(138, 138, 138, 0.1),
+    rgba(0, 0, 0, 0.3)
+  );
   transition: 0.5s;
 }
 .story .story-container .story-item h2 {
@@ -377,7 +413,7 @@ header {
   .bg img.homepage-bg {
     width: 100%;
     -o-object-fit: cover;
-       object-fit: cover;
+    object-fit: cover;
   }
   .header-info {
     padding: 0 2rem;
@@ -391,7 +427,8 @@ header {
   .story .story-container .story-item h2 {
     font-size: 1.2rem;
   }
-  .story .story-container .story-item p, .story .story-container .story-item li {
+  .story .story-container .story-item p,
+  .story .story-container .story-item li {
     font-size: 1rem;
   }
   .workskill {
@@ -416,7 +453,8 @@ header {
   .projects .des_II h3 {
     font-size: 1.25rem;
   }
-  .projects .des_II p, .projects .des_II li {
+  .projects .des_II p,
+  .projects .des_II li {
     font-size: 1rem;
   }
   .projects .des-img img {
@@ -472,7 +510,8 @@ header {
 }
 
 @keyframes glowing_bf {
-  0%, 100% {
+  0%,
+  100% {
     r: 150;
     opacity: 1;
     filter: blur(20px) brightness(0.3) drop-shadow(0 0 30px rgb(42, 116, 255));
@@ -482,4 +521,4 @@ header {
     opacity: 1;
     filter: blur(30px) brightness(0.3) drop-shadow(0 0 15px rgb(105, 212, 255));
   }
-}/*# sourceMappingURL=index.css.map */
+} /*# sourceMappingURL=index.css.map */

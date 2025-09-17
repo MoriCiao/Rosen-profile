@@ -3,14 +3,14 @@ import { motion } from "framer-motion";
 import { Bounce } from "react-awesome-reveal";
 const Hello_II = () => {
   return (
-    <motion.div className="md:hidden hello_ii block relative w-full h-full p-10 flex flex-col gap-2 ">
+    <motion.div className="hello_ii relative block flex h-full w-full flex-col gap-2 p-10 md:hidden">
       <Bounce delay={2500}>
         <h1 className="text-end text-[4rem] tracking-wide">Hello</h1>
         <h2 className="text-end text-[2rem] tracking-wide">Stranger !</h2>
-        <h3 className="text-end text-[1.25rem] tracking-wide mt-2">
+        <h3 className="mt-2 text-end text-[1.25rem] tracking-wide">
           Welcome to
         </h3>
-        <h3 className="text-end text-[1.25rem] tracking-wide mt-2">
+        <h3 className="mt-2 text-end text-[1.25rem] tracking-wide">
           My Portfolio
         </h3>
       </Bounce>

@@ -37,15 +37,15 @@ const Skills = () => {
   return (
     <motion.section
       {...SectionAnimate}
-      className="workskill mt-4 overflow-y-overlay scroll-smooth mt-8"
+      className="workskill overflow-y-overlay mt-4 mt-8 scroll-smooth"
       id="skill"
     >
-      <div className="grid  xl:grid-cols-4 sm:grid-cols-3 grid-cols-2 gap-2 sm:pb-0 pb-10 items-center justify-center sm:gap-16  ">
+      <div className="grid grid-cols-2 items-center justify-center gap-2 pb-10 sm:grid-cols-3 sm:gap-16 sm:pb-0 xl:grid-cols-4">
         {skillsImg.map((skill, index) => {
           return (
             <Fragment key={index}>
-              <div className="skill-item relative sm:w-[180px] sm:h-[180px]  w-[120px] border border-white/50 rounded-2xl sm:p-8 p-6 backdrop-blur-sm bg-gradient-to-br from-black/10 via-white/20 to-black/10 flex flex-col items-center justify-center m-auto">
-                <div className="absolute bottom-0 text-xl  text-center font-bold ">
+              <div className="skill-item relative m-auto flex w-[120px] flex-col items-center justify-center rounded-2xl border border-white/50 bg-gradient-to-br from-black/10 via-white/20 to-black/10 p-6 backdrop-blur-sm sm:h-[180px] sm:w-[180px] sm:p-8">
+                <div className="absolute bottom-0 text-center text-xl font-bold">
                   <span className="tracking-widest">{skill.name}</span>
                 </div>
                 <motion.img
@@ -53,7 +53,7 @@ const Skills = () => {
                     scale: 1.05,
                   }}
                   transition={{ duration: 0.3, ease: easeInOut }}
-                  className="w-full h-full "
+                  className="h-full w-full"
                   src={skill.img}
                   alt={skill.name}
                   loading="lazy"

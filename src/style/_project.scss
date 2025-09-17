@@ -1,195 +1,185 @@
-.container{
-    transition: 0.6s;
-    .p-item{
-        position: relative;
-        z-index: 0;
-        background-color: transparent;
-        transition: 0.6s;
-        transition: height 1s;
-    }
-    .p-link{
-        position: absolute;
-        z-index: 1;
-        bottom: 0rem;
-        right: 0rem;
-        width: 10rem;
-        height: 2rem;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        transition: 0.6s;
-        button{
-            font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-        }
-    }
-    &:hover {
-        transform: translate(-0px, -10px);
-        .p-item {
-            box-shadow: 0 10px 20px black;
-
-        }
-
-    }
-}
-
-.expand{
-    height: 50rem;
-    border: 2px red solid;
-}
-.des_II{
-    margin: 1rem 2rem;
-    padding: 2rem 4rem;
-    border-radius: 1.25rem;
-    overflow-y:overlay ;
-    scrollbar-width: none;
-    
-    
-    .des-img{
-        gap: 2rem;
-        img{
-            border-radius: 1rem;
-            margin: auto;
-            object-fit: fill;
-            max-width: 80% ;
-            
-        }
-    }
-    .des_II_link{
-        display: flex;
-        gap: 0.5rem;
-        align-items: center;
-        justify-content: center;
-        a{
-            position: relative;
-            height: 2rem;
-            width: 8rem;
-            display: block;
-            text-align: center;
-            padding-top: 3px;
-            transition: 0.5s;
-            text-transform: uppercase;
-            transform: 1s;
-            background: linear-gradient(to bottom right,
-                    rgba(255, 255, 255, .1),
-                    rgba(0, 0, 0, 0.3)), ;
-            &:hover {
-                    font-weight: 900;
-                    font-size: 1.1rem;
-            
-                    rect {
-                        stroke-dashoffset: 240;
-                    }
-                }
-                        svg,
-                        svg rect {
-                            position: absolute;
-                            top: 0;
-                            left: 0;
-                            width: 100%;
-                            height: 100%;
-                            fill: none;
-                            transition: 0.5s;
-                        }
-            
-                        rect {
-                            stroke-width: 2;
-                            stroke: rgb(255, 177, 27);
-                            stroke-dasharray: 2rem, 8rem;
-                            stroke-dashoffset: 0;
-                            animation: glowing 12s infinite linear;
-                            filter:
-                                brightness(1.2) drop-shadow(0 0 5px rgba(255, 177, 27, 1)) drop-shadow(0 0 25px rgba(255, 177, 27, 1));
-                        }
-        }
-        a:nth-child(1){
-            color: rgb(255, 177, 27);
-
-            
-                
-        }
-        a:nth-child(2) {
-            color:rgb(255, 99, 27);
-            // animation: glowingText_II 10s infinite linear;
-
-            rect {
-                    stroke-width: 2;
-                    stroke: rgb(255, 99, 27);
-                    stroke-dasharray: 2rem, 8rem;
-                    stroke-dashoffset: 0;
-                    animation: glowing 12s infinite linear;
-                    filter:
-                    brightness(1.2)
-                    drop-shadow(0 0 5px rgba(255, 99, 27, 1))
-                    drop-shadow(0 0 25px rgba(255,99,27, 1));
-                }
-        }
-        
-
-    }
-}
-
-@keyframes glowing{
-    0%{
-       stroke-dashoffset: 480;
-    
-    }
-    100% {
-        stroke-dashoffset: 0;
-        
-    }
-}
-@keyframes a_hover{
-    0%,100%{
-        font-size: 1rem;    
-    }
-    50% {
-        font-size: 1.1rem;
-    }
-}
-
-
-.des_II_content{
-    animation: appear 2s linear;
-    animation-timeline: des_II;
-    animation-range: enter 20% cover 10%;
-}
-
-@keyframes appear{
-    from{
-        opacity: 0;
-        inset: 100% 100% 0 0;}
-    to{
-        opacity: 1;
-        inset: 0 0 0 0;
-    }
-}
-
-.img-svg{
+.container {
+  transition: 0.6s;
+  .p-item {
     position: relative;
+    z-index: 0;
+    background-color: transparent;
+    transition: 0.6s;
+    transition: height 1s;
+  }
+  .p-link {
+    position: absolute;
+    z-index: 1;
+    bottom: 0rem;
+    right: 0rem;
+    width: 10rem;
+    height: 2rem;
     display: flex;
     align-items: center;
     justify-content: center;
-    .svg-item{
-        margin: auto;
+    transition: 0.6s;
+    button {
+      font-family:
+        "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans",
+        Arial, sans-serif;
+    }
+  }
+  &:hover {
+    transform: translate(-0px, -10px);
+    .p-item {
+      box-shadow: 0 10px 20px black;
+    }
+  }
+}
+
+.expand {
+  height: 50rem;
+  border: 2px red solid;
+}
+.des_II {
+  margin: 1rem 2rem;
+  padding: 2rem 4rem;
+  border-radius: 1.25rem;
+  overflow-y: overlay;
+  scrollbar-width: none;
+
+  .des-img {
+    gap: 2rem;
+    img {
+      border-radius: 1rem;
+      margin: auto;
+      object-fit: fill;
+      max-width: 80%;
+    }
+  }
+  .des_II_link {
+    display: flex;
+    gap: 0.5rem;
+    align-items: center;
+    justify-content: center;
+    a {
+      position: relative;
+      height: 2rem;
+      width: 8rem;
+      display: block;
+      text-align: center;
+      padding-top: 3px;
+      transition: 0.5s;
+      text-transform: uppercase;
+      transform: 1s;
+      background: linear-gradient(
+        to bottom right,
+        rgba(255, 255, 255, 0.1),
+        rgba(0, 0, 0, 0.3)
+      );
+      &:hover {
+        font-weight: 900;
+        font-size: 1.1rem;
+
+        rect {
+          stroke-dashoffset: 240;
+        }
+      }
+      svg,
+      svg rect {
         position: absolute;
         top: 0;
         left: 0;
-        transform: translate();
         width: 100%;
         height: 100%;
+        fill: none;
+        transition: 0.5s;
+      }
+
+      rect {
+        stroke-width: 2;
+        stroke: rgb(255, 177, 27);
+        stroke-dasharray: 2rem, 8rem;
+        stroke-dashoffset: 0;
+        animation: glowing 12s infinite linear;
+        filter: brightness(1.2) drop-shadow(0 0 5px rgba(255, 177, 27, 1))
+          drop-shadow(0 0 25px rgba(255, 177, 27, 1));
+      }
     }
+    a:nth-child(1) {
+      color: rgb(255, 177, 27);
+    }
+    a:nth-child(2) {
+      color: rgb(255, 99, 27);
+      // animation: glowingText_II 10s infinite linear;
+
+      rect {
+        stroke-width: 2;
+        stroke: rgb(255, 99, 27);
+        stroke-dasharray: 2rem, 8rem;
+        stroke-dashoffset: 0;
+        animation: glowing 12s infinite linear;
+        filter: brightness(1.2) drop-shadow(0 0 5px rgba(255, 99, 27, 1))
+          drop-shadow(0 0 25px rgba(255, 99, 27, 1));
+      }
+    }
+  }
 }
 
-.feather{
-    
-    scale: 0.8;
-    width: 75%;
-    height: 75%;
-    stroke-width: 2;
-    stroke: rgb(102, 151, 255);
-    transform: translateX(-10px);
-    filter: 
-    drop-shadow(0 0 2px rgba(47, 113, 255,0.2))
-    drop-shadow(0 0 5px rgba(47, 113, 255,0.5))
-    drop-shadow(0 0 15px rgba(47, 113, 255,1));
+@keyframes glowing {
+  0% {
+    stroke-dashoffset: 480;
+  }
+  100% {
+    stroke-dashoffset: 0;
+  }
+}
+@keyframes a_hover {
+  0%,
+  100% {
+    font-size: 1rem;
+  }
+  50% {
+    font-size: 1.1rem;
+  }
+}
+
+.des_II_content {
+  animation: appear 2s linear;
+  animation-timeline: des_II;
+  animation-range: enter 20% cover 10%;
+}
+
+@keyframes appear {
+  from {
+    opacity: 0;
+    inset: 100% 100% 0 0;
+  }
+  to {
+    opacity: 1;
+    inset: 0 0 0 0;
+  }
+}
+
+.img-svg {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  .svg-item {
+    margin: auto;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transform: translate();
+    width: 100%;
+    height: 100%;
+  }
+}
+
+.feather {
+  scale: 0.8;
+  width: 75%;
+  height: 75%;
+  stroke-width: 2;
+  stroke: rgb(102, 151, 255);
+  transform: translateX(-10px);
+  filter: drop-shadow(0 0 2px rgba(47, 113, 255, 0.2))
+    drop-shadow(0 0 5px rgba(47, 113, 255, 0.5))
+    drop-shadow(0 0 15px rgba(47, 113, 255, 1));
 }
