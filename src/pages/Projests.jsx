@@ -27,7 +27,8 @@ const projects = [
     title: "BuyFlow",
     descript: (
       <>
-        是一個模擬真實購物體驗的電商平台，支援商品瀏覽、加入購物車、登入/註冊會員、訂單追蹤與結帳功能。
+        <p>模擬電商平台，支援商品瀏覽、加入購物車、登入/註冊會員、訂單追蹤。</p>
+        <strong className="text-orange-500">🔧目前正在優化施工中...🧰</strong>
       </>
     ),
     descript_II: (
@@ -72,9 +73,6 @@ const projects = [
             </li>
             <li className={content_style}>
               使用元件組合打造複雜的頁面（例如：Header、ProductCard、CartModal）
-            </li>
-            <li className={content_style}>
-              表單驗證與狀態切換（如登入、註冊流程）
             </li>
           </ul>
           <Hr />

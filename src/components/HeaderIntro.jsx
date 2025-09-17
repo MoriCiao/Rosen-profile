@@ -16,15 +16,17 @@ const skillsText = skills.join("、");
 const HeaderIntro = () => {
   return (
     <section className="select-none text-end flex flex-col items-end lg:gap-4 group sm:h-auto h-120 overflow-y-auto">
-      <h1 className={`title-h1 text-[2.5rem] tracking-widest`}>
+      <h1 className={`title-h1 md:text-[2.5rem] text-[1.5rem] tracking-widest`}>
         Hi , I'm <br />
-        <strong className="text-[5rem]">
+        <strong className="md:text-[5rem] text-[4rem]">
           Rosen
-          <span className="text-[2.5rem] hidden">羅森</span>{" "}
+          <span className="md:text-[2.5rem] text-[1.5rem] hidden">
+            羅森
+          </span>{" "}
         </strong>
       </h1>
       <div className="sm:h-auto max-h-[40vh]  overflow-auto flex flex-col gap-2 items-end">
-        <h3 className="sm:text-[1.5rem] text-[1.25rem]">
+        <h3 className="md:text-[1.5rem] text-[1.25rem]">
           持續努力，增進自我
           <br /> 接觸更廣闊的新知識
         </h3>
