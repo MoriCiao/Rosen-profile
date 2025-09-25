@@ -28,7 +28,6 @@ const projects = [
     descript: (
       <>
         <p>模擬電商平台，支援商品瀏覽、加入購物車、登入/註冊會員、訂單追蹤。</p>
-        <strong className="text-orange-500">🔧目前正在優化施工中...🧰</strong>
       </>
     ),
     descript_II: (
@@ -108,16 +107,6 @@ const projects = [
             <img
               src="/Rosen-profile/buyflow/ProductDetailPage.webp"
               alt="ProductDetailPage.webp"
-              loading="lazy"
-            />
-            <img
-              src="/Rosen-profile/buyflow/CheckoutPage-1.webp"
-              alt="CheckoutPage-1.webp"
-              loading="lazy"
-            />
-            <img
-              src="/Rosen-profile/buyflow/CheckoutPage-2.webp"
-              alt="CheckoutPage-2.webp"
               loading="lazy"
             />
 
